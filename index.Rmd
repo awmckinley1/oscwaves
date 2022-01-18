@@ -16,7 +16,7 @@ description: "These are the course notes for the Oscillations and Waves componen
 
 Welcome to the course notes for the Oscillations and Waves component of PHYS10005, Core Physics II.
 
-The most recent version of these notes can be found at https://awmckinley1.github.io/osc-waves1
+The most recent version of these notes can be found at https://awmckinley1.github.io/oscwaves
 
 ## About these notes {-}
 
@@ -43,6 +43,8 @@ As much as we try, sometimes errors creep in. At best, it is little more than a 
 This iteration of the course has been written by Andrew McKinley from 2021. This has been based extensively on previous course notes by Ben Maughan, Simon Hanna and Massimo Antognozzi.
 
 ## Changelog {.unnumbered #sec:changelog}
+
+2022-01-18 Updating the permalink and github repository address
 
 2021-12-01 Fixing typos across the board
 
