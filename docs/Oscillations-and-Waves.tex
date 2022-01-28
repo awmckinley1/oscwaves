@@ -4,13 +4,14 @@
 %
 \documentclass[
 ]{book}
-\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
+\usepackage{amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
+  \usepackage{amssymb}
 \else % if luatex or xetex
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
@@ -41,7 +42,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs,array}
+\usepackage{longtable,booktabs}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -84,7 +85,7 @@
 
 \title{Oscillations and Waves}
 \author{Dr.~Andrew McKinley}
-\date{2022-01-18}
+\date{2022-01-28}
 
 \begin{document}
 \maketitle
@@ -132,6 +133,8 @@ This iteration of the course has been written by Andrew McKinley from 2021. This
 \hypertarget{sec:changelog}{%
 \section*{Changelog}\label{sec:changelog}}
 \addcontentsline{toc}{section}{Changelog}
+
+2022-01-28 Added additional depth to the derivation for the simple pendulum equation of motion; corrected the torque for a physical pendulum.
 
 2022-01-18 Updating the permalink and github repository address
 
@@ -344,25 +347,77 @@ We can now make a few more observations:
 
 This allows us to compare the displacement, velocity and acceleration at four points in the oscillation (Table \ref{tab:ch1-xva-comparison1}):
 
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}@{}}
+\begin{longtable}[]{@{}llll@{}}
 \caption{\label{tab:ch1-xva-comparison1} Relating the displacement, velocity and acceleration at different times in the oscillation for a simple harmonic oscillator.}\tabularnewline
 \toprule
-Time & Displacement, \(x\) & Velocity, \(v\) & Acceleration, \(a\) \\
+\begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+Time\strut
+\end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+Displacement, \(x\)\strut
+\end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+Velocity, \(v\)\strut
+\end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+Acceleration, \(a\)\strut
+\end{minipage}\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-Time & Displacement, \(x\) & Velocity, \(v\) & Acceleration, \(a\) \\
+\begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+Time\strut
+\end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+Displacement, \(x\)\strut
+\end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+Velocity, \(v\)\strut
+\end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+Acceleration, \(a\)\strut
+\end{minipage}\tabularnewline
 \midrule
 \endhead
-\(t = 0\) & \(x_0 = A\) & \(v_0 = 0\) & \(a_0 = -a_{\textrm{max}}\) \\
-\(t = \frac{T}{4}\) & \(x_{\frac{T}{4}} = 0\) & \(v_{\frac{T}{4}} = -v_\textrm{max}\) & \(a_{\frac{T}{4}} = 0\) \\
-\(t = \frac{T}{2}\) & \(x_{\frac{T}{2}} = -A\) & \(v_{\frac{T}{2}} = 0\) & \(a_{\frac{T}{2}} = a_{\textrm{max}}\) \\
-\(t = \frac{3T}{4}\) & \(x_{\frac{3T}{4}} = 0\) & \(v_{\frac{3T}{4}} = v_\textrm{max}\) & \(a_{\frac{3T}{4}} = 0\) \\
-\(t = T\) & \(x_T = x_0 = A\) & \(v_T = v_0 = 0\) & \(a_T = a_0 = -a_{\textrm{max}}\) \\
+\begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(t = 0\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(x_0 = A\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(v_0 = 0\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(a_0 = -a_{\textrm{max}}\)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(t = \frac{T}{4}\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(x_{\frac{T}{4}} = 0\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(v_{\frac{T}{4}} = -v_\textrm{max}\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(a_{\frac{T}{4}} = 0\)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(t = \frac{T}{2}\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(x_{\frac{T}{2}} = -A\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(v_{\frac{T}{2}} = 0\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(a_{\frac{T}{2}} = a_{\textrm{max}}\)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(t = \frac{3T}{4}\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(x_{\frac{3T}{4}} = 0\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(v_{\frac{3T}{4}} = v_\textrm{max}\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(a_{\frac{3T}{4}} = 0\)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(t = T\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(x_T = x_0 = A\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(v_T = v_0 = 0\)\strut
+\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
+\(a_T = a_0 = -a_{\textrm{max}}\)\strut
+\end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -796,6 +851,42 @@ A pendulum is a mechanically simple oscillating system; its oscillation can be c
 \caption{A simple pendulum, consisting of a mass $m$ swinging on a string of length $L$. At angle $\phi$, the weight of the mass $mg$ can be resolved into components to determine the mechanics of the system.}\label{fig:ch2-simplependulum1}
 \end{figure}
 
+The mass of the pendulum can be considered to oscillate along the arc \(s\) (Figure \ref{fig:ch2-simplependulum1}), where the restoring force becomes \(mg \sin \phi\). This force then causes an acceleration along the ark, \(\frac{\mathrm{d}^2 s}{\mathrm{d} t^2}\), with the equation of motion becoming:
+
+\begin{equation}
+mg \sin \phi = - m \frac{\mathrm{d}^2 s}{\mathrm{d} t^2}
+\label{eq:ch2-simplependulum-a1}
+\end{equation}
+
+This however relates the variable \(\phi\) relative to the arc length \(s\); it is more useful to relate this to a single variable. We can derive an expression for this oscillation with respect to angle as follows:
+
+\begin{itemize}
+\tightlist
+\item
+  The arc length \(s\) can be calculated as \(s = L \phi\).
+\item
+  The second derivative of \(s\) with respect to time can then be found:
+\end{itemize}
+
+\begin{equation}
+\frac{\mathrm{d}^2 s}{\mathrm{d} t^2} = L \frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2}
+\label{eq:ch2-simplependulum-a2}
+\end{equation}
+
+We can then substitute this into Equation \eqref{eq:ch2-simplependulum-a1}:
+
+\begin{equation}
+m \frac{\mathrm{d}^2 s}{\mathrm{d} t^2} = m L \frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} =  -mg \sin \phi
+\label{eq:ch2-simplependulum-a3}
+\end{equation}
+
+A quick rearrangement gives us the equation of motion for a simple pendulum.
+
+\begin{equation}
+\frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} =  -\frac{g}{L} \sin \phi
+\label{eq:ch2-simplependulum-a3}
+\end{equation}
+
 For small displacements (small \(\phi\)), the equation of motion can be considered as in Equation \eqref{eq:ch2-simplependulum1}:
 
 \begin{equation}
@@ -837,9 +928,9 @@ Now, as a restoring force, we consider the \textbf{torque} of the centre of mass
 
 \begin{equation}
 \begin{array}{rcl}
-\textrm{Torque about pivot $P$} &=& \mathbf{F} \times \mathbf{D} \\
-&=& \mathbf{\hat{n}}~ |F| |D| \sin \phi \\
-&=& \mathbf{\hat{n}}~ mg D \sin \phi = \tau \mathbf{\hat{n}} 
+\textrm{Torque about pivot $P$} &=& \mathbf{D} \times \mathbf{F} \\
+&=& \mathbf{\hat{n}}~ |D| |F| \sin \phi \\
+&=& \mathbf{\hat{n}}~ D mg  \sin \phi = \tau \mathbf{\hat{n}} 
 \end{array}
 \label{eq:ch2-physicalpendulum1}
 \end{equation}
@@ -3038,17 +3129,17 @@ The term \(I_0\) is the absolute intensity considered to be at the absolute limi
 \begin{longtable}[]{@{}ll@{}}
 \caption{\label{tab:ch9-decibeldescription1} A description of the approximate decibel level of particular sounds.}\tabularnewline
 \toprule
-\(\beta\) /dB & Description \\
+\(\beta\) /dB & Description\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-\(\beta\) /dB & Description \\
+\(\beta\) /dB & Description\tabularnewline
 \midrule
 \endhead
-0 & Hearing threshold \\
-40 & Library \\
-70 & Busy traffic \\
-120 & Pain threshold \\
+0 & Hearing threshold\tabularnewline
+40 & Library\tabularnewline
+70 & Busy traffic\tabularnewline
+120 & Pain threshold\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -3408,19 +3499,19 @@ In general, the \(n\)th harmonic will have \(\frac{1}{n} \times\) wavelength and
 \begin{longtable}[]{@{}lll@{}}
 \caption{\label{tab:ch10-standingfrequencies} Showing the variation of wavelength and frequency of each harmonic with respect to the first (fundamental) wave.}\tabularnewline
 \toprule
-Harmonic & \(\lambda\) & \(f\) \\
+Harmonic & \(\lambda\) & \(f\)\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-Harmonic & \(\lambda\) & \(f\) \\
+Harmonic & \(\lambda\) & \(f\)\tabularnewline
 \midrule
 \endhead
-Fundamental, first & \(2L\) & \(f_1\) \\
-Second & \(L\) & \(2f_1\) \\
-Third & \(\frac{2L}{3}\) & \(3f_1\) \\
-Fourth & \(\frac{L}{2}\) & \(4f_1\) \\
-Fifth & \(\frac{2L}{5}\) & \(5f_1\) \\
-\(n\)th & \(\frac{2L}{n}\) & \(nf_1\) \\
+Fundamental, first & \(2L\) & \(f_1\)\tabularnewline
+Second & \(L\) & \(2f_1\)\tabularnewline
+Third & \(\frac{2L}{3}\) & \(3f_1\)\tabularnewline
+Fourth & \(\frac{L}{2}\) & \(4f_1\)\tabularnewline
+Fifth & \(\frac{2L}{5}\) & \(5f_1\)\tabularnewline
+\(n\)th & \(\frac{2L}{n}\) & \(nf_1\)\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -4381,18 +4472,18 @@ Refractive indices are however approximate; different wavelengths of light trave
 \begin{longtable}[]{@{}lr@{}}
 \caption{\label{tab:ch14-refractiveindices} A list of refractive indices of common materials}\tabularnewline
 \toprule
-Material & \(n_{589 \textsf{nm}}\) \\
+Material & \(n_{589 \textsf{nm}}\)\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-Material & \(n_{589 \textsf{nm}}\) \\
+Material & \(n_{589 \textsf{nm}}\)\tabularnewline
 \midrule
 \endhead
-vacuum & 1 \\
-air & 1.003 \\
-water & 1.33 \\
-common glass & 1.52 \\
-diamond & 2.42 \\
+vacuum & 1\tabularnewline
+air & 1.003\tabularnewline
+water & 1.33\tabularnewline
+common glass & 1.52\tabularnewline
+diamond & 2.42\tabularnewline
 \bottomrule
 \end{longtable}
 

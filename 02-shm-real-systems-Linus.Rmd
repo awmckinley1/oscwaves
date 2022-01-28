@@ -180,6 +180,37 @@ knitr::include_graphics("visualisations/LaTeX/ch2-simplependulum1.svg")
 ```
 
 
+The mass of the pendulum can be considered to oscillate along the arc $s$ (Figure \@ref(fig:ch2-simplependulum1)), where the restoring force becomes $mg \sin \phi$. This force then causes an acceleration along the ark, $\frac{\mathrm{d}^2 s}{\mathrm{d} t^2}$, with the equation of motion becoming:
+
+\begin{equation}
+mg \sin \phi = - m \frac{\mathrm{d}^2 s}{\mathrm{d} t^2}
+(\#eq:ch2-simplependulum-a1)
+\end{equation}
+
+This however relates the variable $\phi$ relative to the arc length $s$; it is more useful to relate this to a single variable.  We can derive an expression for this oscillation with respect to angle as follows:
+
+* The arc length $s$ can be calculated as $s = L \phi$.
+* The second derivative of $s$ with respect to time can then be found:
+
+\begin{equation}
+\frac{\mathrm{d}^2 s}{\mathrm{d} t^2} = L \frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2}
+(\#eq:ch2-simplependulum-a2)
+\end{equation}
+
+We can then substitute this into Equation \@ref(eq:ch2-simplependulum-a1):
+
+\begin{equation}
+m \frac{\mathrm{d}^2 s}{\mathrm{d} t^2} = m L \frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} =  -mg \sin \phi
+(\#eq:ch2-simplependulum-a3)
+\end{equation}
+
+A quick rearrangement gives us the equation of motion for a simple pendulum.
+
+\begin{equation}
+\frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} =  -\frac{g}{L} \sin \phi
+(\#eq:ch2-simplependulum-a3)
+\end{equation}
+
 For small displacements (small $\phi$), the equation of motion can be considered as in Equation \@ref(eq:ch2-simplependulum1):
 
 \begin{equation}
@@ -215,9 +246,9 @@ Now, as a restoring force, we consider the **torque** of the centre of mass arou
 
 \begin{equation}
 \begin{array}{rcl}
-\textrm{Torque about pivot $P$} &=& \mathbf{F} \times \mathbf{D} \\
-&=& \mathbf{\hat{n}}~ |F| |D| \sin \phi \\
-&=& \mathbf{\hat{n}}~ mg D \sin \phi = \tau \mathbf{\hat{n}} 
+\textrm{Torque about pivot $P$} &=& \mathbf{D} \times \mathbf{F} \\
+&=& \mathbf{\hat{n}}~ |D| |F| \sin \phi \\
+&=& \mathbf{\hat{n}}~ D mg  \sin \phi = \tau \mathbf{\hat{n}} 
 \end{array}
 (\#eq:ch2-physicalpendulum1)
 \end{equation}

@@ -37,6 +37,9 @@ eq:ch2-massverticalspring4
 eq:ch2-massverticalspring5
 eq:ch2-massverticalspring6
 fig:ch2-simplependulum1
+eq:ch2-simplependulum-a1
+eq:ch2-simplependulum-a2
+eq:ch2-simplependulum-a3
 eq:ch2-simplependulum1
 eq:ch2-simplependulum2
 eq:ch2-simplependulum3

@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. Andrew McKinley" />
 
 
-<meta name="date" content="2022-01-18" />
+<meta name="date" content="2022-01-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -455,20 +455,44 @@ U = \frac{1}{2} ky^{\prime 2}
 Figure 2.4: A simple pendulum, consisting of a mass <span class="math inline">\(m\)</span> swinging on a string of length <span class="math inline">\(L\)</span>. At angle <span class="math inline">\(\phi\)</span>, the weight of the mass <span class="math inline">\(mg\)</span> can be resolved into components to determine the mechanics of the system.
 </p>
 </div>
-<p>For small displacements (small <span class="math inline">\(\phi\)</span>), the equation of motion can be considered as in Equation <a href="sec-shm-real.html#eq:ch2-simplependulum1">(2.13)</a>:</p>
-<p><span class="math display" id="eq:ch2-simplependulum1">\[\begin{equation}
-\frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} = -\frac{g}{L}\sin \theta \approx -\frac{g \phi}{L} \textrm{for small} \phi
+<p>The mass of the pendulum can be considered to oscillate along the arc <span class="math inline">\(s\)</span> (Figure <a href="sec-shm-real.html#fig:ch2-simplependulum1">2.4</a>), where the restoring force becomes <span class="math inline">\(mg \sin \phi\)</span>. This force then causes an acceleration along the ark, <span class="math inline">\(\frac{\mathrm{d}^2 s}{\mathrm{d} t^2}\)</span>, with the equation of motion becoming:</p>
+<p><span class="math display" id="eq:ch2-simplependulum-a1">\[\begin{equation}
+mg \sin \phi = - m \frac{\mathrm{d}^2 s}{\mathrm{d} t^2}
 \tag{2.13}
 \end{equation}\]</span></p>
-<p>This is SHM, with angular frequency <span class="math inline">\(\omega\)</span> and period <span class="math inline">\(T\)</span> found as in Equation <a href="sec-shm-real.html#eq:ch2-simplependulum2">(2.14)</a>:</p>
-<p><span class="math display" id="eq:ch2-simplependulum2">\[\begin{equation}
-\omega^2 = \frac{g}{L} \hspace{15pt} and \hspace{15pt} T = 2\pi \sqrt{\frac{L}{g}}
+<p>This however relates the variable <span class="math inline">\(\phi\)</span> relative to the arc length <span class="math inline">\(s\)</span>; it is more useful to relate this to a single variable. We can derive an expression for this oscillation with respect to angle as follows:</p>
+<ul>
+<li>The arc length <span class="math inline">\(s\)</span> can be calculated as <span class="math inline">\(s = L \phi\)</span>.</li>
+<li>The second derivative of <span class="math inline">\(s\)</span> with respect to time can then be found:</li>
+</ul>
+<p><span class="math display" id="eq:ch2-simplependulum-a2">\[\begin{equation}
+\frac{\mathrm{d}^2 s}{\mathrm{d} t^2} = L \frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2}
 \tag{2.14}
 \end{equation}\]</span></p>
-<p>The solution for the equation of motion of this system then becomes (Equation <a href="sec-shm-real.html#eq:ch2-simplependulum3">(2.15)</a>):</p>
+<p>We can then substitute this into Equation <a href="sec-shm-real.html#eq:ch2-simplependulum-a1">(2.13)</a>:</p>
+<p><span class="math display" id="eq:ch2-simplependulum-a3">\[\begin{equation}
+m \frac{\mathrm{d}^2 s}{\mathrm{d} t^2} = m L \frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} =  -mg \sin \phi
+\tag{2.15}
+\end{equation}\]</span></p>
+<p>A quick rearrangement gives us the equation of motion for a simple pendulum.</p>
+<p><span class="math display" id="eq:ch2-simplependulum-a3">\[\begin{equation}
+\frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} =  -\frac{g}{L} \sin \phi
+\tag{2.15}
+\end{equation}\]</span></p>
+<p>For small displacements (small <span class="math inline">\(\phi\)</span>), the equation of motion can be considered as in Equation <a href="sec-shm-real.html#eq:ch2-simplependulum1">(2.16)</a>:</p>
+<p><span class="math display" id="eq:ch2-simplependulum1">\[\begin{equation}
+\frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} = -\frac{g}{L}\sin \theta \approx -\frac{g \phi}{L} \textrm{for small} \phi
+\tag{2.16}
+\end{equation}\]</span></p>
+<p>This is SHM, with angular frequency <span class="math inline">\(\omega\)</span> and period <span class="math inline">\(T\)</span> found as in Equation <a href="sec-shm-real.html#eq:ch2-simplependulum2">(2.17)</a>:</p>
+<p><span class="math display" id="eq:ch2-simplependulum2">\[\begin{equation}
+\omega^2 = \frac{g}{L} \hspace{15pt} and \hspace{15pt} T = 2\pi \sqrt{\frac{L}{g}}
+\tag{2.17}
+\end{equation}\]</span></p>
+<p>The solution for the equation of motion of this system then becomes (Equation <a href="sec-shm-real.html#eq:ch2-simplependulum3">(2.18)</a>):</p>
 <p><span class="math display" id="eq:ch2-simplependulum3">\[\begin{equation}
 \phi = \phi_0 \cos (\omega t + \delta)
-\tag{2.15}
+\tag{2.18}
 \end{equation}\]</span></p>
 <p>…where <span class="math inline">\(\phi_0\)</span> is the amplitude of the system and <span class="math inline">\(\delta\)</span> is the phase constant. Notice that, for the pendulum we express the amplitude in terms of the angle of the string rather than an absolute distance (shown as <span class="math inline">\(s\)</span> in Figure <a href="sec-shm-real.html#fig:ch2-simplependulum1">2.4</a>).</p>
 </div>
@@ -481,34 +505,34 @@ Figure 2.4: A simple pendulum, consisting of a mass <span class="math inline">\(
 Figure 2.5: A physical pendulum, consisting of a physical object of mass <span class="math inline">\(M\)</span> swinging on a pivot through point <span class="math inline">\(P\)</span> of length <span class="math inline">\(L\)</span>. At angle <span class="math inline">\(\phi\)</span>, the weight of the mass <span class="math inline">\(Mg\)</span> can again be resolved into components to determine the mechanics of the system.
 </p>
 </div>
-<p>Now, as a restoring force, we consider the <strong>torque</strong> of the centre of mass around the pivot. Remember that the torque is defined as the product of the force and the <strong>perpendicular distance of the force’s line of action from the pivot</strong>. If using vectors, this is considered as the <strong>cross product</strong> of the force vector <span class="math inline">\(\mathbf{F}\)</span> with the position vector of the centre of mass from the pivot, <span class="math inline">\(\mathbf{D}\)</span> (Equation <a href="sec-shm-real.html#eq:ch2-physicalpendulum1">(2.16)</a>):</p>
+<p>Now, as a restoring force, we consider the <strong>torque</strong> of the centre of mass around the pivot. Remember that the torque is defined as the product of the force and the <strong>perpendicular distance of the force’s line of action from the pivot</strong>. If using vectors, this is considered as the <strong>cross product</strong> of the force vector <span class="math inline">\(\mathbf{F}\)</span> with the position vector of the centre of mass from the pivot, <span class="math inline">\(\mathbf{D}\)</span> (Equation <a href="sec-shm-real.html#eq:ch2-physicalpendulum1">(2.19)</a>):</p>
 <p><span class="math display" id="eq:ch2-physicalpendulum1">\[\begin{equation}
 \begin{array}{rcl}
-\textrm{Torque about pivot $P$} &amp;=&amp; \mathbf{F} \times \mathbf{D} \\
-&amp;=&amp; \mathbf{\hat{n}}~ |F| |D| \sin \phi \\
-&amp;=&amp; \mathbf{\hat{n}}~ mg D \sin \phi = \tau \mathbf{\hat{n}} 
+\textrm{Torque about pivot $P$} &amp;=&amp; \mathbf{D} \times \mathbf{F} \\
+&amp;=&amp; \mathbf{\hat{n}}~ |D| |F| \sin \phi \\
+&amp;=&amp; \mathbf{\hat{n}}~ D mg  \sin \phi = \tau \mathbf{\hat{n}} 
 \end{array}
-\tag{2.16}
+\tag{2.19}
 \end{equation}\]</span></p>
 <p>In this case, the unit vector <span class="math inline">\(\mathbf{\hat{n}}\)</span> is perpendicular to the plane of rotation and is included for completeness’ sake. What we are interested in is the magnitude of this torque vector, <span class="math inline">\(\tau\)</span>.</p>
-<p>Recall from rotational motion that the angular acceleration <span class="math inline">\(\alpha\)</span> and the torque <span class="math inline">\(\tau\)</span> are connected via the moment of inertia <span class="math inline">\(I\)</span> (Equation <a href="sec-shm-real.html#eq:ch2-physicalpendulum2">(2.17)</a>):<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<p>Recall from rotational motion that the angular acceleration <span class="math inline">\(\alpha\)</span> and the torque <span class="math inline">\(\tau\)</span> are connected via the moment of inertia <span class="math inline">\(I\)</span> (Equation <a href="sec-shm-real.html#eq:ch2-physicalpendulum2">(2.20)</a>):<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
 <p><span class="math display" id="eq:ch2-physicalpendulum2">\[\begin{equation}
 \begin{array}{rcl}
 I \dfrac{\mathrm{d}^2 \phi}{\mathrm{d} t^2}  &amp;=&amp; I\alpha =\tau \\
 &amp;=&amp; -mgD \sin \phi
 \end{array}
-\tag{2.17}
+\tag{2.20}
 \end{equation}\]</span></p>
 <p>We now approximate this for small <span class="math inline">\(\phi\)</span>:</p>
 <p><span class="math display">\[\begin{equation}
 \frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} = -\frac{mgD\phi}{I} = -\omega^2 \phi
 \end{equation}\]</span></p>
-<p>This allows us to identify expressions again for the angular frequency, <span class="math inline">\(\omega\)</span>, and the period <span class="math inline">\(T\)</span> (Equation <a href="sec-shm-real.html#eq:ch2-physicalpendulum3">(2.18)</a>):</p>
+<p>This allows us to identify expressions again for the angular frequency, <span class="math inline">\(\omega\)</span>, and the period <span class="math inline">\(T\)</span> (Equation <a href="sec-shm-real.html#eq:ch2-physicalpendulum3">(2.21)</a>):</p>
 <p><span class="math display" id="eq:ch2-physicalpendulum3">\[\begin{equation}
 \omega^2 = \frac{mgD}{I} \hspace{15pt} and \hspace{15pt} T = 2\pi \sqrt{\frac{I}{mgD}}
-\tag{2.18}
+\tag{2.21}
 \end{equation}\]</span></p>
-<p>We can compare this result with that for the simple pendulum shown in Equation <a href="sec-shm-real.html#eq:ch2-simplependulum2">(2.14)</a>; if we remember that the moment of inertia <span class="math inline">\(I\)</span> is defined as <span class="math inline">\(I = mD^2\)</span>, we can substitute this into Equation <a href="sec-shm-real.html#eq:ch2-physicalpendulum3">(2.18)</a> and see that this is a general case for any rotating body:</p>
+<p>We can compare this result with that for the simple pendulum shown in Equation <a href="sec-shm-real.html#eq:ch2-simplependulum2">(2.17)</a>; if we remember that the moment of inertia <span class="math inline">\(I\)</span> is defined as <span class="math inline">\(I = mD^2\)</span>, we can substitute this into Equation <a href="sec-shm-real.html#eq:ch2-physicalpendulum3">(2.21)</a> and see that this is a general case for any rotating body:</p>
 <p><span class="math display">\[\begin{equation}
 T_\textrm{simple pendulum} = 2\pi \sqrt{\frac{I_\textrm{simple pendulum}}{mgD}} = 2\pi \sqrt{\frac{mD^2}{mgD}} = 2\pi \sqrt{\frac{D}{g}}
 \end{equation}\]</span></p>
