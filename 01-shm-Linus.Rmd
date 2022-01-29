@@ -255,7 +255,7 @@ Let's go back to the condition for SHM; there is a restoring force proportional 
 F = -kx
 \end{equation}
 
-Knowing that the potential energy is the first derivative of the force, we can integrate this force expression (with respect to $x$) to get back to the energy statement:^[The constant of integration will evaluate to zero from the starting condition $U = 0$ at zero displacement.] 
+Knowing that the force is the first derivative of the potential energy, we can therefore integrate this force expression (with respect to $x$) to get back to the energy statement:^[The constant of integration will evaluate to zero from the starting condition $U = 0$ at zero displacement.] 
 
 \begin{equation}
 \begin{array}{rcl}
