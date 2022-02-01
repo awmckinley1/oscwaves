@@ -100,7 +100,7 @@ Other useful principles which involve the complex conjugate are listed in Equati
 \begin{equation}
 \begin{array}{rcl}
 (z_1 + z_2)^* &=& z_1^* + z_2^*\\
-(z_1  z_2)^* &=& z_1^* + z_2^* \\
+(z_1  z_2)^* &=& z_1^* z_2^* \\
 \left( \dfrac{z_1}{z_2} \right)^* &=& \dfrac{z_1^* }{z_2^* } \\
 a = \mathrm{Re}(z) &=& \dfrac{1}{2}(z + z^* ) \\
 b = \mathrm{Im}(z) &=& \dfrac{1}{2}(z - z^* ) 

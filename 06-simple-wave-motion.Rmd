@@ -261,7 +261,7 @@ Finally, we can obtain a similar expression for the phase velocity of light wave
 c = \sqrt{\frac{1}{\mu_0 \epsilon_0}}
 \end{equation}
 
-...where \mu_0 and \epsilon_0 are the permeability of free space and the permittivity of free space respectively.
+...where $\mu_0$ and $\epsilon_0$ are the permeability of free space and the permittivity of free space respectively.
 
 ## Summary {#sec:ch6-summary}
 
