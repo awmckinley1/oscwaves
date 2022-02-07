@@ -50,6 +50,7 @@ We can therefore use Equation \@ref(eq:ch7-averagepowerstring1) to derive an exp
 \end{equation}
 
 Note that:
+
 * $A_i$, $A_r$ and $A_t$ are the amplitudes of the incident, reflected and transmitted waves respectively;
 * $\mu_1$, $v_1$, $\mu_2$, $v_2$ refer to the mass per unit length and the phase velocities for strings 1 and 2 respectively;
 * $k_1$ and $k_2$ are the wavenumbers for each of the two strings;

@@ -2,6 +2,7 @@
 # Sound waves and the Doppler effect {#sec:ch9-sounddoppler}
 
 *Textbook link: Tipler and Mosca, Section 15.2-4*
+
  As has been mentioned already, sound waves are a longitudinal wave propagated by the localised displacement of air molecules in the direction of propagation.  This displacement of air molecules within sound waves can be described by the function shown in Equation\@ref(eq:ch9-soundwaveeq1).
 
 \begin{equation}
@@ -156,7 +157,7 @@ N_{\textsf{obs}} = \frac{v_{\textsf{obs}}\Delta t}{\lambda'}
 ...where $v_{\textsf{obs}}$ is the speed of the waves relative to the observer; i.e. $v_{\textsf{obs}} = v \pm u_{\textsf{obs}}$ ; where $u_{\textsf{obs}}$ corresponds to the observer moving to the right in the diagram (as this reduces the relative velocity between the observer and the wave).  We can now rewrite the expression in Equation \@ref(eq:ch9-dopplereffect4) in terms of the phase velocity $v$ and the relative speed of the observer, $u_{\textsf{obs}}$:
 
 \begin{equation}
-N_{\textsf{obs}} = \frac{v \pm u_{\textsf{obs}}\Delta t}{\lambda'}
+N_{\textsf{obs}} = \frac{(v \pm u_{\textsf{obs}})\Delta t}{\lambda'}
 (\#eq:ch9-dopplereffect5)
 \end{equation}
 
@@ -167,7 +168,7 @@ f^\prime = \frac{N_{\textsf{obs}}}{\Delta t} = \frac{v\pm u_{\textsf{obs}}}{\lam
 (\#eq:ch9-dopplereffect6)
 \end{equation}
 
-When we combine this with the equation for $\lambda^\prime$, we obtain the general result (Equation \@ref{eq:ch9-dopplereffect7})
+When we combine this with the equation for $\lambda^\prime$, we obtain the general result (Equation \@ref(eq:ch9-dopplereffect7))
 
 \begin{equation}
 f' = \left(\frac{v\pm u_{\textsf{obs}}}{v\pm u_{s}}\right)f_{0}\quad\textsf{or}\quad f' = \left(\frac{1\pm \frac{u_{\textsf{obs}}}{v}}{1\pm \frac{u_{s}}{v}}\right)f_{0}

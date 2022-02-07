@@ -60,7 +60,7 @@ The parameter $k$ is defined as the **wave number** of the wave, in units radian
 
 ## Travelling waves {#sec:ch7-travellingwaves}
 
-The wave we showed in Section \@ref(sec:ch7-sinecosine) was a snapshot in time, so the wave was, in effect, static.  We instead wish to consider a travelling wave. To do this, instead of writing $x$ as in Equation \@ref(eq:tranversesine2) with $x - vt$ (see Section \@ref(sec:ch6-wavepulses)).  Equation \@ref(eq:tranversesine2) then becomes Equation \@ref(eq:tranversesine5):
+The wave we showed in Section \@ref(sec:ch7-sinecosine) was a snapshot in time, so the wave was, in effect, static.  We instead wish to consider a travelling wave. To do this, instead of writing $x$ as in Equation \@ref(eq:tranversesine2) with a phase difference, we rewrite with $x - vt$ (see Section \@ref(sec:ch6-wavepulses)) to illustrate the time-dependent nature of the travelling wave.  Equation \@ref(eq:tranversesine2) then becomes Equation \@ref(eq:tranversesine5):
 
 \begin{equation}
 y = A \sin k(x - vt) = A \sin (kx - kvt)
@@ -166,19 +166,19 @@ Therefore we can isolate $\Delta l$:
 We can approximate this expression by using the Taylor series expansion for $\sqrt{1+n}$, where $n = \left( \dfrac{\Delta y}{\Delta x}\right)^2$; assuming that the fraction is significantly less than one we can write this as an approximation and disregard terms past the first two terms:^[The Taylor expansion for this expression is $\sqrt{1+n} = 1+ \frac{n}{2} - \frac{n^2}{8} + \frac{n^3}{16} - \cdots$]
 
 \begin{equation}
-\Delta l \approx \delta x \left[ 1 + \frac{1}{2}\left( \dfrac{\Delta y}{\Delta x}\right)^2 + \cdots \right]
+\Delta l \approx \Delta x \left[ 1 + \frac{1}{2}\left( \dfrac{\Delta y}{\Delta x}\right)^2 + \cdots \right]
 \end{equation}
 
 Rearranging this expression to obtain the expression for the extension of the string $\Delta l - \Delta x$:
 
 \begin{equation}
-\Delta l - \delta x \approx   + \frac{\delta x}{2} \left( \dfrac{\Delta y}{\Delta x}\right)^2 + \cdots
+\Delta l - \Delta x \approx   + \frac{\Delta x}{2} \left( \dfrac{\Delta y}{\Delta x}\right)^2 + \cdots
 \end{equation}
 
 This now allows us to obtain an expression for the work done in stretching the spring solely in terms of the $x$ and $y$ displacement (from Equation \@ref(eq:ch7-workdonestring1))
 
 \begin{equation}
-\Delta u = \frac{F\Delta x}{2} \left( \dfrac{\Delta y}{\Delta x}\right)^2
+\Delta U = \frac{F\Delta x}{2} \left( \dfrac{\Delta y}{\Delta x}\right)^2
 \end{equation}
 
 

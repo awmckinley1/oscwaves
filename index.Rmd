@@ -44,6 +44,8 @@ This iteration of the course has been written by Andrew McKinley from 2021. This
 
 ## Changelog {.unnumbered #sec:changelog}
 
+2022-02-07 Fixing typos and compiling errors flagged by CB - thank you!
+
 2022-02-01 Fixed typo in "Complex Numbers" and addressed LaTeX error in Chapter 6
 
 2022-01-28 Added additional depth to the derivation for the simple pendulum equation of motion; corrected the torque for a physical pendulum. 

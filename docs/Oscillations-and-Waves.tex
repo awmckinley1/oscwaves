@@ -85,7 +85,7 @@
 
 \title{Oscillations and Waves}
 \author{Dr.~Andrew McKinley}
-\date{2022-02-01}
+\date{2022-02-07}
 
 \begin{document}
 \maketitle
@@ -133,6 +133,8 @@ This iteration of the course has been written by Andrew McKinley from 2021. This
 \hypertarget{sec:changelog}{%
 \section*{Changelog}\label{sec:changelog}}
 \addcontentsline{toc}{section}{Changelog}
+
+2022-02-07 Fixing typos and compiling errors flagged by CB - thank you!
 
 2022-02-01 Fixed typo in ``Complex Numbers'' and addressed LaTeX error in Chapter 6
 
@@ -2287,7 +2289,7 @@ The parameter \(k\) is defined as the \textbf{wave number} of the wave, in units
 \hypertarget{sec:ch7-travellingwaves}{%
 \section{Travelling waves}\label{sec:ch7-travellingwaves}}
 
-The wave we showed in Section \ref{sec:ch7-sinecosine} was a snapshot in time, so the wave was, in effect, static. We instead wish to consider a travelling wave. To do this, instead of writing \(x\) as in Equation \eqref{eq:tranversesine2} with \(x - vt\) (see Section \ref{sec:ch6-wavepulses}). Equation \eqref{eq:tranversesine2} then becomes Equation \eqref{eq:tranversesine5}:
+The wave we showed in Section \ref{sec:ch7-sinecosine} was a snapshot in time, so the wave was, in effect, static. We instead wish to consider a travelling wave. To do this, instead of writing \(x\) as in Equation \eqref{eq:tranversesine2} with a phase difference, we rewrite with \(x - vt\) (see Section \ref{sec:ch6-wavepulses}) to illustrate the time-dependent nature of the travelling wave. Equation \eqref{eq:tranversesine2} then becomes Equation \eqref{eq:tranversesine5}:
 
 \begin{equation}
 y = A \sin k(x - vt) = A \sin (kx - kvt)
@@ -2431,19 +2433,19 @@ Therefore we can isolate \(\Delta l\):
 We can approximate this expression by using the Taylor series expansion for \(\sqrt{1+n}\), where \(n = \left( \dfrac{\Delta y}{\Delta x}\right)^2\); assuming that the fraction is significantly less than one we can write this as an approximation and disregard terms past the first two terms:\footnote{The Taylor expansion for this expression is \(\sqrt{1+n} = 1+ \frac{n}{2} - \frac{n^2}{8} + \frac{n^3}{16} - \cdots\)}
 
 \begin{equation}
-\Delta l \approx \delta x \left[ 1 + \frac{1}{2}\left( \dfrac{\Delta y}{\Delta x}\right)^2 + \cdots \right]
+\Delta l \approx \Delta x \left[ 1 + \frac{1}{2}\left( \dfrac{\Delta y}{\Delta x}\right)^2 + \cdots \right]
 \end{equation}
 
 Rearranging this expression to obtain the expression for the extension of the string \(\Delta l - \Delta x\):
 
 \begin{equation}
-\Delta l - \delta x \approx   + \frac{\delta x}{2} \left( \dfrac{\Delta y}{\Delta x}\right)^2 + \cdots
+\Delta l - \Delta x \approx   + \frac{\Delta x}{2} \left( \dfrac{\Delta y}{\Delta x}\right)^2 + \cdots
 \end{equation}
 
 This now allows us to obtain an expression for the work done in stretching the spring solely in terms of the \(x\) and \(y\) displacement (from Equation \eqref{eq:ch7-workdonestring1})
 
 \begin{equation}
-\Delta u = \frac{F\Delta x}{2} \left( \dfrac{\Delta y}{\Delta x}\right)^2
+\Delta U = \frac{F\Delta x}{2} \left( \dfrac{\Delta y}{\Delta x}\right)^2
 \end{equation}
 
 As we have an expression for \(y\) in terms of \(x\) (Equation \eqref{eq:tranversesine2}), we can differentiate this with respect to \(x\) to approximate \(\frac{\Delta y}{\Delta x}\):
@@ -2699,13 +2701,24 @@ We can therefore use Equation \eqref{eq:ch7-averagepowerstring1} to derive an ex
 \end{equation}
 
 Note that:
-* \(A_i\), \(A_r\) and \(A_t\) are the amplitudes of the incident, reflected and transmitted waves respectively;
-* \(\mu_1\), \(v_1\), \(\mu_2\), \(v_2\) refer to the mass per unit length and the phase velocities for strings 1 and 2 respectively;
-* \(k_1\) and \(k_2\) are the wavenumbers for each of the two strings;
-* \(\omega\) is the \textbf{same} for all waves - this depends only on the source;
-* \(\lambda\) will be \textbf{different} on each string; since \(\lambda = \frac{v}{f} = \frac{2\pi v}{\omega}\), \emph{i.e.} \(\lambda\) will be smaller on the heavier string;
-* Conversely \(k = \frac{2\pi}{\lambda}\) will be larger on the heavier string;
-* \(\mu = \frac{F}{v^2}\); the tension \(F\) will be the same in both strings.
+
+\begin{itemize}
+\tightlist
+\item
+  \(A_i\), \(A_r\) and \(A_t\) are the amplitudes of the incident, reflected and transmitted waves respectively;
+\item
+  \(\mu_1\), \(v_1\), \(\mu_2\), \(v_2\) refer to the mass per unit length and the phase velocities for strings 1 and 2 respectively;
+\item
+  \(k_1\) and \(k_2\) are the wavenumbers for each of the two strings;
+\item
+  \(\omega\) is the \textbf{same} for all waves - this depends only on the source;
+\item
+  \(\lambda\) will be \textbf{different} on each string; since \(\lambda = \frac{v}{f} = \frac{2\pi v}{\omega}\), \emph{i.e.} \(\lambda\) will be smaller on the heavier string;
+\item
+  Conversely \(k = \frac{2\pi}{\lambda}\) will be larger on the heavier string;
+\item
+  \(\mu = \frac{F}{v^2}\); the tension \(F\) will be the same in both strings.
+\end{itemize}
 
 When we compare the proportion of the incident power which is reflected, we can show that:
 
@@ -3033,6 +3046,7 @@ For \textbf{electromagnetic waves}, the impedance depends on the medium under co
 \chapter{Sound waves and the Doppler effect}\label{sec:ch9-sounddoppler}}
 
 \emph{Textbook link: Tipler and Mosca, Section 15.2-4}
+
 As has been mentioned already, sound waves are a longitudinal wave propagated by the localised displacement of air molecules in the direction of propagation. This displacement of air molecules within sound waves can be described by the function shown in Equation\eqref{eq:ch9-soundwaveeq1}.
 
 \begin{equation}
@@ -3225,7 +3239,7 @@ N_{\textsf{obs}} = \frac{v_{\textsf{obs}}\Delta t}{\lambda'}
 \ldots where \(v_{\textsf{obs}}\) is the speed of the waves relative to the observer; i.e.~\(v_{\textsf{obs}} = v \pm u_{\textsf{obs}}\) ; where \(u_{\textsf{obs}}\) corresponds to the observer moving to the right in the diagram (as this reduces the relative velocity between the observer and the wave). We can now rewrite the expression in Equation \eqref{eq:ch9-dopplereffect4} in terms of the phase velocity \(v\) and the relative speed of the observer, \(u_{\textsf{obs}}\):
 
 \begin{equation}
-N_{\textsf{obs}} = \frac{v \pm u_{\textsf{obs}}\Delta t}{\lambda'}
+N_{\textsf{obs}} = \frac{(v \pm u_{\textsf{obs}})\Delta t}{\lambda'}
 \label{eq:ch9-dopplereffect5}
 \end{equation}
 
@@ -3236,7 +3250,7 @@ f^\prime = \frac{N_{\textsf{obs}}}{\Delta t} = \frac{v\pm u_{\textsf{obs}}}{\lam
 \label{eq:ch9-dopplereffect6}
 \end{equation}
 
-When we combine this with the equation for \(\lambda^\prime\), we obtain the general result (Equation @ref\{eq:ch9-dopplereffect7\})
+When we combine this with the equation for \(\lambda^\prime\), we obtain the general result (Equation \eqref{eq:ch9-dopplereffect7})
 
 \begin{equation}
 f' = \left(\frac{v\pm u_{\textsf{obs}}}{v\pm u_{s}}\right)f_{0}\quad\textsf{or}\quad f' = \left(\frac{1\pm \frac{u_{\textsf{obs}}}{v}}{1\pm \frac{u_{s}}{v}}\right)f_{0}
