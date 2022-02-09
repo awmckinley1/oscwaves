@@ -229,4 +229,4 @@ For a large $n$, the maxima and minima of the quantity $\psi^2(x)$ become very c
 
 This is an example of the **correspondence principle**:
 
-> In the linit of large quantum numbers, the classical and quantum mechanical calculations must yield the same results.
+> In the limit of large quantum numbers, the classical and quantum mechanical calculations must yield the same results.

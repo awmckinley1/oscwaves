@@ -80,7 +80,7 @@ y = y_0 e^{i(kx-\omega t)}\left( 1 + \mathrm{e}^{\mathrm{i}\delta} \right)
 knitr::include_graphics("visualisations/ch10-complexnumbers1.svg")
 ```
 
-We can show using an Argand diagram  (Figure \@ref(fig:ch10-complexnumbers1)) that the term $(1 + \mathrm{e}^{\mathrm{i}\\delta})$ is equal to $2\cos \left(\frac{\delta}{2}\right)e^{i\frac{\delta}{2}}$, and hence:
+We can show using an Argand diagram  (Figure \@ref(fig:ch10-complexnumbers1)) that the term $(1 + \mathrm{e}^{\mathrm{i}\delta})$ is equal to $2\cos \left(\frac{\delta}{2}\right)e^{i\frac{\delta}{2}}$, and hence:
 
 \begin{equation}
 y = 2y_0 \cos(\delta/2) e^{i(kx-\omega t + \delta/2)}
