@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. Andrew McKinley" />
 
 
-<meta name="date" content="2022-02-07" />
+<meta name="date" content="2022-03-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -192,8 +192,8 @@
 <li class="chapter" data-level="10.6" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-pipesandwindinstruments"><i class="fa fa-check"></i><b>10.6</b> Organ pipes and other wind instruments</a>
 <ul>
 <li class="chapter" data-level="10.6.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipes-open-at-both-ends"><i class="fa fa-check"></i><b>10.6.1</b> Pipes open at both ends</a></li>
+<li class="chapter" data-level="10.6.2" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipe-closed-at-one-end"><i class="fa fa-check"></i><b>10.6.2</b> Pipe closed at one end</a></li>
 </ul></li>
-<li class="chapter" data-level="10.7" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipe-closed-at-one-end"><i class="fa fa-check"></i><b>10.7</b> Pipe closed at one end</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html"><i class="fa fa-check"></i><b>11</b> Fourier analysis</a>
 <ul>
@@ -331,8 +331,8 @@ v = \frac{\lambda}{T} = f\lambda
 \end{equation}\]</span></p>
 <p>…where <span class="math inline">\(v\)</span> is the phase velocity of the wave and <span class="math inline">\(f\)</span> is the frequency in hertz (Hz), and <span class="math inline">\(\lambda\)</span> defined as the <strong>wavelength</strong> <em>i.e.</em> the spacial repeat distance of the wave.</p>
 <p>A harmonic wave has a unique frequency and wavelength, and other waves (<em>e.g.</em> wave pulses) may be regarded as a superposition of many harmonic waves of different frequencies (we will discuss the Fourier analysis of this later).</p>
-<p>At any instant in time, the wave can be described by the relation in Equation <a href="#eq:ch7-tranversesine2">(<strong>??</strong>)</a>:</p>
-<p><span class="math display" id="eq:tranversesine2">\[\begin{equation}
+<p>At any instant in time, the wave can be described by the relation in Equation <a href="sec-ch7-harmonicwaves.html#eq:ch7-tranversesine2">(7.2)</a>:</p>
+<p><span class="math display" id="eq:ch7-tranversesine2">\[\begin{equation}
 y = A \sin(kx + \delta)
 \tag{7.2}
 \end{equation}\]</span></p>
@@ -359,7 +359,7 @@ k = \frac{2\pi}{\lambda}
 </div>
 <div id="sec:ch7-travellingwaves" class="section level2" number="7.2">
 <h2><span class="header-section-number">7.2</span> Travelling waves</h2>
-<p>The wave we showed in Section <a href="sec-ch7-harmonicwaves.html#sec:ch7-sinecosine">7.1</a> was a snapshot in time, so the wave was, in effect, static. We instead wish to consider a travelling wave. To do this, instead of writing <span class="math inline">\(x\)</span> as in Equation <a href="sec-ch7-harmonicwaves.html#eq:tranversesine2">(7.2)</a> with a phase difference, we rewrite with <span class="math inline">\(x - vt\)</span> (see Section <a href="sec-ch6-wavemotion.html#sec:ch6-wavepulses">6.1</a>) to illustrate the time-dependent nature of the travelling wave. Equation <a href="sec-ch7-harmonicwaves.html#eq:tranversesine2">(7.2)</a> then becomes Equation <a href="sec-ch7-harmonicwaves.html#eq:tranversesine5">(7.6)</a>:</p>
+<p>The wave we showed in Section <a href="sec-ch7-harmonicwaves.html#sec:ch7-sinecosine">7.1</a> was a snapshot in time, so the wave was, in effect, static. We instead wish to consider a travelling wave. To do this, instead of writing <span class="math inline">\(x\)</span> as in Equation <a href="#eq:tranversesine2">(<strong>??</strong>)</a> with a phase difference, we rewrite with <span class="math inline">\(x - vt\)</span> (see Section <a href="sec-ch6-wavemotion.html#sec:ch6-wavepulses">6.1</a>) to illustrate the time-dependent nature of the travelling wave. Equation <a href="#eq:tranversesine2">(<strong>??</strong>)</a> then becomes Equation <a href="sec-ch7-harmonicwaves.html#eq:tranversesine5">(7.6)</a>:</p>
 <p><span class="math display" id="eq:tranversesine5">\[\begin{equation}
 y = A \sin k(x - vt) = A \sin (kx - kvt)
 \tag{7.6}
@@ -462,7 +462,7 @@ Figure 7.2: As the wave passes along a stretched string, we can consider it to b
 <p><span class="math display">\[\begin{equation}
 \Delta U = \frac{F\Delta x}{2} \left( \dfrac{\Delta y}{\Delta x}\right)^2
 \end{equation}\]</span></p>
-<p>As we have an expression for <span class="math inline">\(y\)</span> in terms of <span class="math inline">\(x\)</span> (Equation <a href="sec-ch7-harmonicwaves.html#eq:tranversesine2">(7.2)</a>), we can differentiate this with respect to <span class="math inline">\(x\)</span> to approximate <span class="math inline">\(\frac{\Delta y}{\Delta x}\)</span>:</p>
+<p>As we have an expression for <span class="math inline">\(y\)</span> in terms of <span class="math inline">\(x\)</span> (Equation <a href="#eq:tranversesine2">(<strong>??</strong>)</a>), we can differentiate this with respect to <span class="math inline">\(x\)</span> to approximate <span class="math inline">\(\frac{\Delta y}{\Delta x}\)</span>:</p>
 <p><span class="math display">\[\begin{equation}
 \frac{\Delta y}{\Delta x} \simeq \frac{\mathrm{d} y}{\mathrm{d} x} = kA \cos (kx - \omega t)
 \end{equation}\]</span></p>
@@ -494,7 +494,7 @@ Figure 7.3: Similar to the situation shown above, the same string segment will h
 <p><span class="math display">\[\begin{equation}
 \Delta KE = \frac{1}{2} \Delta m v_y^2 = \frac{1}{2} \mu \Delta x \left( \frac{\mathrm{d}y}{\mathrm{d}t} \right)^2
 \end{equation}\]</span></p>
-<p>Again, we know the expression for the vertical displacement <span class="math inline">\(y\)</span> in terms of <span class="math inline">\(x\)</span> and <span class="math inline">\(t\)</span> (Equation <a href="sec-ch7-harmonicwaves.html#eq:tranversesine2">(7.2)</a>), so we now differentiate with respect to <span class="math inline">\(t\)</span>:</p>
+<p>Again, we know the expression for the vertical displacement <span class="math inline">\(y\)</span> in terms of <span class="math inline">\(x\)</span> and <span class="math inline">\(t\)</span> (Equation <a href="#eq:tranversesine2">(<strong>??</strong>)</a>), so we now differentiate with respect to <span class="math inline">\(t\)</span>:</p>
 <ul>
 <li><span class="math inline">\(y = A \sin(kx - \omega t)\)</span></li>
 <li><span class="math inline">\(v_y = \frac{\mathrm{d}y}{\mathrm{d}t} = -\omega A \cos(kx - \omega t)\)</span></li>

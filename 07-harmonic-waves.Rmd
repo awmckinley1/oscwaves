@@ -28,7 +28,7 @@ At any instant in time, the wave can be described by the relation in Equation \@
 
 \begin{equation}
 y = A \sin(kx + \delta)
-(\#eq:tranversesine2)
+(\#eq:ch7-tranversesine2)
 \end{equation}
 
 ...where $A$ is the amplitude of the wave and $\delta$ is the phase constant.  Let's now choose the origin so that $\delta$ is equal to zero (*i.e.* there is no phase constant).  Now we can show the periodic condition in Equation \@ref(eq:ch7-tranversesine3):

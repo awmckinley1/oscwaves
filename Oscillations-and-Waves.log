@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.19)  7 FEB 2022 23:42
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.19)  1 MAR 2022 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -808,17 +808,17 @@ File: visualisations/ch1-shmpos.pdf Graphic file (type pdf)
 File: visualisations/ch1-xvacomp.pdf Graphic file (type pdf)
 <use visualisations/ch1-xvacomp.pdf>
 
-Overfull \hbox (18.00006pt too wide) in alignment at lines 354--367
+Overfull \hbox (18.00006pt too wide) in alignment at lines 356--369
  [] [] [] [] 
  []
 
 
-Overfull \hbox (18.00006pt too wide) in alignment at lines 367--379
+Overfull \hbox (18.00006pt too wide) in alignment at lines 369--381
  [] [] [] [] 
  []
 
 
-Overfull \hbox (18.00006pt too wide) in alignment at lines 379--426
+Overfull \hbox (18.00006pt too wide) in alignment at lines 381--428
  [] [] [] [] 
  []
 
@@ -826,7 +826,7 @@ Overfull \hbox (18.00006pt too wide) in alignment at lines 379--426
 File: visualisations/ch1-shmcircular.pdf Graphic file (type pdf)
 <use visualisations/ch1-shmcircular.pdf>
 [16] [17]
-Underfull \hbox (badness 1132) in paragraph at lines 555--556
+Underfull \hbox (badness 1132) in paragraph at lines 557--558
 []\TU/lmr/m/n/10 The $[]$-component of the motion is $[]$ out of phase with the
 
  []
@@ -894,7 +894,7 @@ File: visualisations/ch5-forcedosc4.pdf Graphic file (type pdf)
 File: visualisations/ch5-forcedosc5.pdf Graphic file (type pdf)
 <use visualisations/ch5-forcedosc5.pdf>
 [51]
-Overfull \hbox (172.63872pt too wide) detected at line 1830
+Overfull \hbox (172.63872pt too wide) detected at line 1832
 [][]
  []
 
@@ -926,19 +926,33 @@ File: visualisations/ch6-phasevelocity1.pdf Graphic file (type pdf)
 Chapter 7.
 File: visualisations/ch7-transversesine1.pdf Graphic file (type pdf)
 <use visualisations/ch7-transversesine1.pdf>
-
-LaTeX Warning: Reference `eq:ch7-tranversesine2' on page 67 undefined on input 
-line 2255.
-
 [67
 
-] [68] [69]
+]
+
+LaTeX Warning: Reference `eq:tranversesine2' on page 68 undefined on input line
+ 2294.
+
+
+LaTeX Warning: Reference `eq:tranversesine2' on page 68 undefined on input line
+ 2294.
+
+[68] [69]
 File: visualisations/LaTeX/ch7-peofstringsegment.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch7-peofstringsegment.pdf>
 Missing character: There is no 𝛥 in font [lmroman10-regular]:mapping=tex-text;!
-[70] [71]
+[70]
+
+LaTeX Warning: Reference `eq:tranversesine2' on page 71 undefined on input line
+ 2453.
+
+[71]
 File: visualisations/LaTeX/ch7-keofstringsegment.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch7-keofstringsegment.pdf>
+
+LaTeX Warning: Reference `eq:tranversesine2' on page 72 undefined on input line
+ 2498.
+
 [72]
 File: visualisations/ch7-kepestringplot1.pdf Graphic file (type pdf)
 <use visualisations/ch7-kepestringplot1.pdf>
@@ -1008,98 +1022,95 @@ File: visualisations/slides-harmonicsum_oboe.pdf Graphic file (type pdf)
 <use visualisations/slides-harmonicsum_oboe.pdf>
 File: visualisations/slides-harmonicsum_clar.pdf Graphic file (type pdf)
 <use visualisations/slides-harmonicsum_clar.pdf>
-
-LaTeX Warning: Reference `fig:ch11-oboeclarinetharmonics' on page 109 undefined
- on input line 3742.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[109]
+File: visualisations/slides-powerspectrum_oboe.pdf Graphic file (type pdf)
+<use visualisations/slides-powerspectrum_oboe.pdf>
+File: visualisations/slides-powerspectrum_clar.pdf Graphic file (type pdf)
+<use visualisations/slides-powerspectrum_clar.pdf>
+[109] [110]
 File: visualisations/ch11-ftcosinefunction1.pdf Graphic file (type pdf)
 <use visualisations/ch11-ftcosinefunction1.pdf>
-[110]
+[111]
 File: visualisations/ch11-fttophat1.pdf Graphic file (type pdf)
 <use visualisations/ch11-fttophat1.pdf>
 File: visualisations/ch11-ftgaussian1.pdf Graphic file (type pdf)
 <use visualisations/ch11-ftgaussian1.pdf>
-[111] [112]
+[112] [113] [114
+
+]
 Chapter 12.
 File: visualisations/ch12-wavepacketdispersion1.pdf Graphic file (type pdf)
 <use visualisations/ch12-wavepacketdispersion1.pdf>
-[113
+[115] [116]
 
-] [114]
-
-LaTeX Warning: Reference `eq:ch12-addtwowavebeats5' on page 115 undefined on in
-put line 3910.
+LaTeX Warning: Reference `eq:ch12-addtwowavebeats5' on page 117 undefined on in
+put line 3923.
 
 File: visualisations/ch12-beats1.pdf Graphic file (type pdf)
 <use visualisations/ch12-beats1.pdf>
 
 Overfull \hbox (33.84564pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 12.1.  TWO WAVES, SAME AMPLITUDE, DIFFERENT FREQUENCY (BEATS) \
-TU/lmr/m/n/10 115
+TU/lmr/m/n/10 117
  []
 
-[115] [116] [117]
+[117] [118] [119]
 
-LaTeX Warning: Command \v invalid in math mode on input line 4036.
+LaTeX Warning: Command \v invalid in math mode on input line 4049.
 
 Missing character: There is no ̌ in font lmmi7!
 Missing character: There is no ̌ in font lmmi10!
-[118]
+[120]
 File: visualisations/ch12-phonons1.pdf Graphic file (type pdf)
 <use visualisations/ch12-phonons1.pdf>
-[119]
+[121]
 File: visualisations/ch12-dispersioncurve1.pdf Graphic file (type pdf)
 <use visualisations/ch12-dispersioncurve1.pdf>
 File: visualisations/ch12-phonons2.pdf Graphic file (type pdf)
 <use visualisations/ch12-phonons2.pdf>
-[120] [121] [122
+[122] [123] [124
 
 ]
 Chapter 13.
-[123]
+[125]
 File: visualisations/ch13-huygenswavelets1.pdf Graphic file (type pdf)
 <use visualisations/ch13-huygenswavelets1.pdf>
 File: visualisations/LaTeX/ch13-doubleslits.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch13-doubleslits.pdf>
 File: visualisations/LaTeX/ch13-doubleslits2.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch13-doubleslits2.pdf>
-[124] [125] [126]
+[126] [127] [128]
 File: visualisations/LaTeX/ch13-cos2-interference.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch13-cos2-interference.pdf>
 File: visualisations/LaTeX/ch13-singlewideslit1.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch13-singlewideslit1.pdf>
-[127]
+[129]
 File: visualisations/LaTeX/ch13-singlewideslit2b.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch13-singlewideslit2b.pdf>
-[128]
+[130]
 File: visualisations/LaTeX/ch13-doubleslitswide1.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch13-doubleslitswide1.pdf>
-[129] [130]
+[131] [132]
 File: visualisations/ch13-doublewideslit1.pdf Graphic file (type pdf)
 <use visualisations/ch13-doublewideslit1.pdf>
-[131]
+[133]
 File: visualisations/ch13-singlesource-diffraction.pdf Graphic file (type pdf)
 <use visualisations/ch13-singlesource-diffraction.pdf>
 File: visualisations/ch13-singlesource-diffraction-b.pdf Graphic file (type pdf
 )
 <use visualisations/ch13-singlesource-diffraction-b.pdf>
-[132] [133]
+[134] [135]
 File: visualisations/ch13-opticalresolutionlimit1.pdf Graphic file (type pdf)
 <use visualisations/ch13-opticalresolutionlimit1.pdf>
 File: visualisations/ch13-opticalresolutionlimit2.pdf Graphic file (type pdf)
 <use visualisations/ch13-opticalresolutionlimit2.pdf>
 File: visualisations/ch13-opticalresolutionlimit3.pdf Graphic file (type pdf)
 <use visualisations/ch13-opticalresolutionlimit3.pdf>
-[134] [135] [136]
+[136] [137] [138]
 Chapter 14.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[137
+[139
 
 ]
 File: visualisations/LaTeX/ch14-reflection-refraction1.pdf Graphic file (type p
@@ -1107,21 +1118,21 @@ df)
 <use visualisations/LaTeX/ch14-reflection-refraction1.pdf>
 File: visualisations/LaTeX/ch14-fermatsprinciple1.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch14-fermatsprinciple1.pdf>
-[138] [139]
+[140] [141]
 File: visualisations/ch14-evansecent1.pdf Graphic file (type pdf)
 <use visualisations/ch14-evansecent1.pdf>
 File: visualisations/ch14-evansecent2.pdf Graphic file (type pdf)
 <use visualisations/ch14-evansecent2.pdf>
-[140] [141] [142
+[142] [143] [144
 
 ]
 Chapter 15.
 File: visualisations/LaTeX/ch15-planemirror1.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch15-planemirror1.pdf>
-[143]
+[145]
 Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 4677--4678
+Underfull \hbox (badness 10000) in paragraph at lines 4690--4691
 
  []
 
@@ -1129,60 +1140,60 @@ File: visualisations/LaTeX/ch15-sphericalmirror1.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch15-sphericalmirror1.pdf>
 File: visualisations/LaTeX/ch15-mirrorequation.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch15-mirrorequation.pdf>
-[144] [145] [146] [147] [148
+[146] [147] [148] [149] [150
 
 ]
 Chapter 16.
 File: visualisations/LaTeX/ch16-sphericalsurface.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch16-sphericalsurface.pdf>
-[149]
+[151]
 File: visualisations/LaTeX/ch16-sphericalsurfacedims.pdf Graphic file (type pdf
 )
 <use visualisations/LaTeX/ch16-sphericalsurfacedims.pdf>
-[150]
+[152]
 File: visualisations/LaTeX/ch16-sphericalsurfacemag1.pdf Graphic file (type pdf
 )
 <use visualisations/LaTeX/ch16-sphericalsurfacemag1.pdf>
-[151]
+[153]
 File: visualisations/LaTeX/ch16-thinlightlens1.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch16-thinlightlens1.pdf>
-[152] [153]
+[154] [155]
 File: visualisations/LaTeX/ch16-focalplane1.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch16-focalplane1.pdf>
-[154]
+[156]
 File: visualisations/LaTeX/ch16-diverginglens1.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch16-diverginglens1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[155]
+[157]
 File: visualisations/LaTeX/ch16-converginglens1.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch16-converginglens1.pdf>
-[156]
+[158]
 File: visualisations/LaTeX/ch16-diverginglens2a.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch16-diverginglens2a.pdf>
-[157]
+[159]
 File: visualisations/LaTeX/ch16-convergingset1a.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch16-convergingset1a.pdf>
 File: visualisations/LaTeX/ch16-convergingset2a.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch16-convergingset2a.pdf>
-[158]
+[160]
 File: visualisations/LaTeX/ch16-telescopeset1a.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch16-telescopeset1a.pdf>
-[159]
+[161]
 Missing character: There is no 𝜃 in font [lmroman10-regular]:mapping=tex-text;!
-[160]
+[162]
 Chapter 17.
-[161
+[163
 
-] [162] [163] [164] [165] [166]
+] [164] [165] [166] [167] [168]
 File: visualisations/LaTeX/ch18-particleinbox123.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch18-particleinbox123.pdf>
-[167] [168]
+[169] [170]
 Chapter 18.
-[169
+[171
 
-] [170] [171]
+] [172] [173]
 File: visualisations/LaTeX/ch18-infinitefinite-well1.pdf Graphic file (type pdf
 )
 <use visualisations/LaTeX/ch18-infinitefinite-well1.pdf>
@@ -1193,7 +1204,7 @@ File: visualisations/LaTeX/ch18-infinitefinite-well3.pdf Graphic file (type pdf
 )
 <use visualisations/LaTeX/ch18-infinitefinite-well3.pdf>
 
-Underfull \hbox (badness 1783) in paragraph at lines 5662--5662
+Underfull \hbox (badness 1783) in paragraph at lines 5675--5675
 []\TU/lmr/bx/n/14.4 Reflection and transmission of particle
  []
 
@@ -1204,18 +1215,18 @@ File: visualisations/LaTeX/ch18-pestep2.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[172] [173]
+[174] [175]
 File: visualisations/LaTeX/ch18-pestep3.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch18-pestep3.pdf>
 File: visualisations/LaTeX/ch18-pestep4.pdf Graphic file (type pdf)
 <use visualisations/LaTeX/ch18-pestep4.pdf>
 No file Oscillations-and-Waves.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5738.
-[174] [175]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5738.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5751.
+[176] [177]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5751.
 (./Oscillations-and-Waves.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5738.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 5738.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5751.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 5751.
 
 LaTeX Warning: There were undefined references.
 
@@ -1224,12 +1235,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19577 strings out of 479418
- 368760 string characters out of 5884585
- 822886 words of memory out of 5000000
- 36721 multiletter control sequences out of 15000+600000
+ 19590 strings out of 479418
+ 369387 string characters out of 5884585
+ 823106 words of memory out of 5000000
+ 36732 multiletter control sequences out of 15000+600000
  536421 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,11n,118p,1007b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Oscillations-and-Waves.pdf (175 pages).
+Output written on Oscillations-and-Waves.pdf (177 pages).

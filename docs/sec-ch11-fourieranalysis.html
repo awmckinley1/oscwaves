@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. Andrew McKinley" />
 
 
-<meta name="date" content="2022-02-07" />
+<meta name="date" content="2022-03-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -192,8 +192,8 @@
 <li class="chapter" data-level="10.6" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-pipesandwindinstruments"><i class="fa fa-check"></i><b>10.6</b> Organ pipes and other wind instruments</a>
 <ul>
 <li class="chapter" data-level="10.6.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipes-open-at-both-ends"><i class="fa fa-check"></i><b>10.6.1</b> Pipes open at both ends</a></li>
+<li class="chapter" data-level="10.6.2" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipe-closed-at-one-end"><i class="fa fa-check"></i><b>10.6.2</b> Pipe closed at one end</a></li>
 </ul></li>
-<li class="chapter" data-level="10.7" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipe-closed-at-one-end"><i class="fa fa-check"></i><b>10.7</b> Pipe closed at one end</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html"><i class="fa fa-check"></i><b>11</b> Fourier analysis</a>
 <ul>
@@ -396,11 +396,18 @@ Figure 11.2: As we add increasing numbers of terms to the Fourier summation, our
 Figure 11.3: We have an illusration of the waveforms for an oboe (top) and clarinet(bottom); these are both playing the same frequency, but we see a very different harmonic makeup.
 </p>
 </div>
-<p>These waveforms can be analysed in terms of the relative contributions from each of the harmonics in the harmonic series, and we can see in Figure <a href="#fig:ch11-oboeclarinetharmonics"><strong>??</strong></a> that the contributions from each of the harmonics in the harmonic series is quite different between the two. The shapes of the tubes for each of the instruments leads to different contributions from the harmonics in each instrument, and this shapes the distinctive sound we hear. The real trick of course is identifying what this harmonic makeup is from the presented waveform. This is the essence of Fourier analysis; identifying the harmonic makeup of a given waveform, and has applications way beyond musical instruments!</p>
+<p>These waveforms can be analysed in terms of the relative contributions from each of the harmonics in the harmonic series, and we can see in Figure <a href="sec-ch11-fourieranalysis.html#fig:ch11-oboeclarinetharmonics">11.4</a> that the contributions from each of the harmonics in the harmonic series is quite different between the two.</p>
+<div class="figure" style="text-align: center"><span id="fig:ch11-oboeclarinetharmonics"></span>
+<img src="visualisations/slides-powerspectrum_oboe.svg" alt="The power spectrum for an oboe (top) and clarinet(bottom); This shows the harmonic composition of the waves shown in the previous figure, and the differences between the two are clear." width="70%" /><img src="visualisations/slides-powerspectrum_clar.svg" alt="The power spectrum for an oboe (top) and clarinet(bottom); This shows the harmonic composition of the waves shown in the previous figure, and the differences between the two are clear." width="70%" />
+<p class="caption">
+Figure 11.4: The power spectrum for an oboe (top) and clarinet(bottom); This shows the harmonic composition of the waves shown in the previous figure, and the differences between the two are clear.
+</p>
+</div>
+<p>The shapes of the tubes for each of the instruments leads to different contributions from the harmonics in each instrument, and this shapes the distinctive sound we hear. The real trick of course is identifying what this harmonic makeup is from the presented waveform. This is the essence of Fourier analysis; identifying the harmonic makeup of a given waveform, and has applications way beyond musical instruments!</p>
 </div>
 <div id="sec:ch11-fouriertransforms" class="section level2" number="11.3">
 <h2><span class="header-section-number">11.3</span> Fourier Transforms</h2>
-<p>A Fourier transform is a mathematical tool which allows for the identification of the component frequencies and corresponding amplitude of a given waveform. It is a tool which is used in almost area of instrumental analysis, and its importance cannot be understated. The principles of the Fourier transform are as follows:</p>
+<p>A Fourier transform is a mathematical tool which allows for the identification of the component frequencies and corresponding amplitude of a given waveform. It is a tool which is used in almost every area of instrumental analysis, and its importance cannot be understated. The principles of the Fourier transform are as follows:</p>
 <ul>
 <li>If a period of oscillation is allowed to become infinite (<em>i.e.</em> the wave becomes non-periodic), we can calculate the spectral density (the amplitude of each contributing harmonic wave) of any non-periodic function <em>e.g.</em> a wave pulse.</li>
 <li>In this limit the Fourier coefficients become continuous functions <em>i.e.</em> all frequencies are allowed;</li>
@@ -415,7 +422,7 @@ Figure 11.3: We have an illusration of the waveforms for an oboe (top) and clari
 <div class="figure" style="text-align: center"><span id="fig:ch11-ftcosinefunction1"></span>
 <img src="visualisations/ch11-ftcosinefunction1.svg" alt="A periodic cosine function (top) made up of a single frequency gives a single 'spike' in the Fourier transform (bottom) at the appropriate frequency. Note that this Fourier transform has finite width because it is a genuine 'fast Fourier transform' performed in Python using data from a cosine plot; so is not the idealised 'infinitesimally narrow delta function' which it would otherwise be." width="70%" />
 <p class="caption">
-Figure 11.4: A periodic cosine function (top) made up of a single frequency gives a single ‘spike’ in the Fourier transform (bottom) at the appropriate frequency. Note that this Fourier transform has finite width because it is a genuine ‘fast Fourier transform’ performed in Python using data from a cosine plot; so is not the idealised ‘infinitesimally narrow delta function’ which it would otherwise be.
+Figure 11.5: A periodic cosine function (top) made up of a single frequency gives a single ‘spike’ in the Fourier transform (bottom) at the appropriate frequency. Note that this Fourier transform has finite width because it is a genuine ‘fast Fourier transform’ performed in Python using data from a cosine plot; so is not the idealised ‘infinitesimally narrow delta function’ which it would otherwise be.
 </p>
 </div>
 <p>A pure cosine wave has a single frequency; the Fourier transform yields a single spike (a single Fourier coefficient) at this frequency. Strictly, there is also a spike at <span class="math inline">\(-\omega_0\)</span> because the transform is symmetric.</p>
@@ -425,7 +432,7 @@ Figure 11.4: A periodic cosine function (top) made up of a single frequency give
 <div class="figure" style="text-align: center"><span id="fig:ch11-fttophat1"></span>
 <img src="visualisations/ch11-fttophat1.svg" alt="A non-periodic 'top hat' function is made up of an infinite Fourier series, involving all frequencies. We see this reflected in the Fourier transform (bottom) where the tranform function extends to infinity." width="70%" />
 <p class="caption">
-Figure 11.5: A non-periodic ‘top hat’ function is made up of an infinite Fourier series, involving all frequencies. We see this reflected in the Fourier transform (bottom) where the tranform function extends to infinity.
+Figure 11.6: A non-periodic ‘top hat’ function is made up of an infinite Fourier series, involving all frequencies. We see this reflected in the Fourier transform (bottom) where the tranform function extends to infinity.
 </p>
 </div>
 <p>A top-hat function is a wavepulse for a square wave, defined as a pulse width of <span class="math inline">\(\tau\)</span>. The Fourier transform yields a continuous series of Fourier coefficients, with defined positions along the frequency axis.</p>
@@ -435,7 +442,7 @@ Figure 11.5: A non-periodic ‘top hat’ function is made up of an infinite Fou
 <div class="figure" style="text-align: center"><span id="fig:ch11-ftgaussian1"></span>
 <img src="visualisations/ch11-ftgaussian1.svg" alt="The Fourier tranform of a finite Gaussian function is another Gaussian function, but the width is a reciprical of the original function." width="70%" />
 <p class="caption">
-Figure 11.6: The Fourier tranform of a finite Gaussian function is another Gaussian function, but the width is a reciprical of the original function.
+Figure 11.7: The Fourier tranform of a finite Gaussian function is another Gaussian function, but the width is a reciprical of the original function.
 </p>
 </div>
 <p>For a Gaussian function with full-width at half-maximum (FWHM) <span class="math inline">\(\tau\)</span>, its Fourier transform yields another Gaussian function, with FWHM = <span class="math inline">\(\frac{2\pi}{\tau}\)</span>. A Gaussian function is a good approximation to a laser pulse; the shorter the laser pulse, the more frequencies are required to generate it. This has ramifications on the colour of the pulse! (this is a subject for another course!)</p>

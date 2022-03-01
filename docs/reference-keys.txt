@@ -128,7 +128,7 @@ eq:ch6-wavederivsubs5b
 fig:ch6-phasevelocity1
 fig:ch7-transversesine1
 eq:ch7-tranversesine1
-eq:tranversesine2
+eq:ch7-tranversesine2
 eq:ch7-tranversesine3
 eq:ch7-tranvsersesine3b
 eq:ch7-tranversesine4
@@ -201,6 +201,7 @@ fig:ch10-waves-opentube
 fig:ch11-squarewave1
 fig:ch11-fouriersum5
 fig:ch11-oboeclarinetwaveform1
+fig:ch11-oboeclarinetharmonics
 fig:ch11-ftcosinefunction1
 fig:ch11-fttophat1
 fig:ch11-ftgaussian1

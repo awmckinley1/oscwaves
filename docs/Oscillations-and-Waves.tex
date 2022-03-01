@@ -85,7 +85,7 @@
 
 \title{Oscillations and Waves}
 \author{Dr.~Andrew McKinley}
-\date{2022-02-07}
+\date{2022-03-01}
 
 \begin{document}
 \maketitle
@@ -133,6 +133,8 @@ This iteration of the course has been written by Andrew McKinley from 2021. This
 \hypertarget{sec:changelog}{%
 \section*{Changelog}\label{sec:changelog}}
 \addcontentsline{toc}{section}{Changelog}
+
+2022-03-01 Fixing yet more typos (I thought I had those!) and added in the missing figure from section 11.2 for the power spectra of the oboe and clarinet waveforms.
 
 2022-02-07 Fixing typos and compiling errors flagged by CB - thank you!
 
@@ -2256,7 +2258,7 @@ At any instant in time, the wave can be described by the relation in Equation \e
 
 \begin{equation}
 y = A \sin(kx + \delta)
-\label{eq:tranversesine2}
+\label{eq:ch7-tranversesine2}
 \end{equation}
 
 \ldots where \(A\) is the amplitude of the wave and \(\delta\) is the phase constant. Let's now choose the origin so that \(\delta\) is equal to zero (\emph{i.e.} there is no phase constant). Now we can show the periodic condition in Equation \eqref{eq:ch7-tranversesine3}:
@@ -3363,7 +3365,7 @@ y = y_0 e^{i(kx-\omega t)}\left( 1 + \mathrm{e}^{\mathrm{i}\delta} \right)
 \caption{We can illustrate addition of complex numbers on an Argand diagram; here we show the sum $\left( 1 + \mathrm{e}^{\mathrm{i}\delta} \right)$; the result of this is the argument is halved from $\delta$ to $\frac{\delta}{2}$. }\label{fig:ch10-complexnumbers1}
 \end{figure}
 
-We can show using an Argand diagram (Figure \ref{fig:ch10-complexnumbers1}) that the term \((1 + \mathrm{e}^{\mathrm{i}\\delta})\) is equal to \(2\cos \left(\frac{\delta}{2}\right)e^{i\frac{\delta}{2}}\), and hence:
+We can show using an Argand diagram (Figure \ref{fig:ch10-complexnumbers1}) that the term \((1 + \mathrm{e}^{\mathrm{i}\delta})\) is equal to \(2\cos \left(\frac{\delta}{2}\right)e^{i\frac{\delta}{2}}\), and hence:
 
 \begin{equation}
 y = 2y_0 \cos(\delta/2) e^{i(kx-\omega t + \delta/2)}
@@ -3481,7 +3483,7 @@ This standing wave is illustrated in Figure \ref{fig:ch10-standingwave1}; but we
   Additionally, \(\lambda_n = \frac{2\pi}{k_n} = \frac{2L}{n}\) where \(n = 1, 2, 3, \dots\)
 \end{itemize}
 
-In other words, the vibrational modes are **quantised* due to the boundary conditions.
+In other words, the vibrational modes are \textbf{quantised} due to the boundary conditions.
 
 \hypertarget{sec:ch10-fixedstring1}{%
 \section{Waves on strings fixed at both ends}\label{sec:ch10-fixedstring1}}
@@ -3573,7 +3575,7 @@ We observe \textbf{all} harmonics in this system; there are no concerns about `p
 \end{equation}
 
 \hypertarget{pipe-closed-at-one-end}{%
-\section{Pipe closed at one end}\label{pipe-closed-at-one-end}}
+\subsection{Pipe closed at one end}\label{pipe-closed-at-one-end}}
 
 We now have a different situation with different boundary conditions:
 
@@ -3739,12 +3741,23 @@ The wave-forms for the oboe and clarinet are shown in Figure \ref{fig:ch11-oboec
 \caption{We have an illusration of the waveforms for an oboe (top) and clarinet(bottom); these are both playing the same frequency, but we see a very different harmonic makeup.}\label{fig:ch11-oboeclarinetwaveform1}
 \end{figure}
 
-These waveforms can be analysed in terms of the relative contributions from each of the harmonics in the harmonic series, and we can see in Figure \ref{fig:ch11-oboeclarinetharmonics} that the contributions from each of the harmonics in the harmonic series is quite different between the two. The shapes of the tubes for each of the instruments leads to different contributions from the harmonics in each instrument, and this shapes the distinctive sound we hear. The real trick of course is identifying what this harmonic makeup is from the presented waveform. This is the essence of Fourier analysis; identifying the harmonic makeup of a given waveform, and has applications way beyond musical instruments!
+These waveforms can be analysed in terms of the relative contributions from each of the harmonics in the harmonic series, and we can see in Figure \ref{fig:ch11-oboeclarinetharmonics} that the contributions from each of the harmonics in the harmonic series is quite different between the two.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/slides-powerspectrum_oboe} \includegraphics[width=0.7\linewidth]{visualisations/slides-powerspectrum_clar} 
+
+}
+
+\caption{The power spectrum for an oboe (top) and clarinet(bottom); This shows the harmonic composition of the waves shown in the previous figure, and the differences between the two are clear.}\label{fig:ch11-oboeclarinetharmonics}
+\end{figure}
+
+The shapes of the tubes for each of the instruments leads to different contributions from the harmonics in each instrument, and this shapes the distinctive sound we hear. The real trick of course is identifying what this harmonic makeup is from the presented waveform. This is the essence of Fourier analysis; identifying the harmonic makeup of a given waveform, and has applications way beyond musical instruments!
 
 \hypertarget{sec:ch11-fouriertransforms}{%
 \section{Fourier Transforms}\label{sec:ch11-fouriertransforms}}
 
-A Fourier transform is a mathematical tool which allows for the identification of the component frequencies and corresponding amplitude of a given waveform. It is a tool which is used in almost area of instrumental analysis, and its importance cannot be understated. The principles of the Fourier transform are as follows:
+A Fourier transform is a mathematical tool which allows for the identification of the component frequencies and corresponding amplitude of a given waveform. It is a tool which is used in almost every area of instrumental analysis, and its importance cannot be understated. The principles of the Fourier transform are as follows:
 
 \begin{itemize}
 \tightlist
@@ -3997,7 +4010,7 @@ v_g = \frac{\partial w(k)}{\partial k} = a
 \label{eq:ch12-dispersion4}
 \end{equation}
 
-We wee that these expressions for the phase velocity \(v_p = a + \frac{b}{k}\) and the group velocity \(v_g = a\) are different; therefore the envelope of the wave packet will move at a different speed from the phase velocity of the wave. However, the group velocity is still the same for all wavenumbers \(k\).
+We see that these expressions for the phase velocity \(v_p = a + \frac{b}{k}\) and the group velocity \(v_g = a\) are different; therefore the envelope of the wave packet will move at a different speed from the phase velocity of the wave. However, the group velocity is still the same for all wavenumbers \(k\).
 
 When \(\omega\) is a more general function of \(k\), the group and phase velocities will each depend differently on \(k\). The dependence of the group velocity on \(k\) means that envelope doesn't move at a single velocity and its components of different wavenumber (or wavelength) have different velocities, distorting the envelope.
 
@@ -5532,7 +5545,7 @@ For a large \(n\), the maxima and minima of the quantity \(\psi^2(x)\) become ve
 This is an example of the \textbf{correspondence principle}:
 
 \begin{quote}
-In the linit of large quantum numbers, the classical and quantum mechanical calculations must yield the same results.
+In the limit of large quantum numbers, the classical and quantum mechanical calculations must yield the same results.
 \end{quote}
 
 \hypertarget{sec:ch18-schrodinger}{%

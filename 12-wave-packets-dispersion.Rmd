@@ -146,7 +146,7 @@ v_g = \frac{\partial w(k)}{\partial k} = a
 (\#eq:ch12-dispersion4)
 \end{equation}
 
-We wee that these expressions for the phase velocity $v_p = a + \frac{b}{k}$ and the group velocity $v_g = a$ are different; therefore the envelope of the wave packet will move at a different speed from the phase velocity of the wave.  However, the group velocity is still the same for all wavenumbers $k$.
+We see that these expressions for the phase velocity $v_p = a + \frac{b}{k}$ and the group velocity $v_g = a$ are different; therefore the envelope of the wave packet will move at a different speed from the phase velocity of the wave.  However, the group velocity is still the same for all wavenumbers $k$.
 
 When $\omega$ is a more general function of $k$, the group and phase velocities will each depend differently on $k$.  The dependence of the group velocity on $k$ means that envelope doesn't move at a single velocity and its components of different wavenumber (or wavelength) have different velocities, distorting the envelope.
 

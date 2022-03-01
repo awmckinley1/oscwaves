@@ -176,7 +176,7 @@ This standing wave is illustrated in Figure \@ref(fig:ch10-standingwave1); but w
 * If $\sin kL = 0$, then $kL = 0, \pi, 2\pi, \dots$, or $k_n L = n\pi$
 * Additionally, $\lambda_n = \frac{2\pi}{k_n} = \frac{2L}{n}$ where $n = 1, 2, 3, \dots$
 
-In other words, the vibrational modes are **quantised* due to the boundary conditions.
+In other words, the vibrational modes are **quantised** due to the boundary conditions.
 
 ## Waves on strings fixed at both ends {#sec:ch10-fixedstring1}
 
@@ -240,7 +240,7 @@ We observe **all** harmonics in this system; there are no concerns about 'positi
 \lambda_n = \frac{2L_\textsf{eff}}{n} \quad \textsf{and} \quad f_n = \frac{nv}{2L_\textsf{eff}}
 \end{equation}
 
-## Pipe closed at one end
+### Pipe closed at one end
 
 We now have a different situation with different boundary conditions:
 

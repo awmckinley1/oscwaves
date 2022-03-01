@@ -100,11 +100,18 @@ knitr::include_graphics("visualisations/slides-harmonicsum_oboe.svg")
 knitr::include_graphics("visualisations/slides-harmonicsum_clar.svg")
 ```
 
-These waveforms can be analysed in terms of the relative contributions from each of the harmonics in the harmonic series, and we can see in Figure \@ref(fig:ch11-oboeclarinetharmonics) that the contributions from each of the harmonics in the harmonic series is quite different between the two.  The shapes of the tubes for each of the instruments leads to different contributions from the harmonics in each instrument, and this shapes the distinctive sound we hear.  The real trick of course is identifying what this harmonic makeup is from the presented waveform.  This is the essence of Fourier analysis; identifying the harmonic makeup of a given waveform, and has applications way beyond musical instruments!
+These waveforms can be analysed in terms of the relative contributions from each of the harmonics in the harmonic series, and we can see in Figure \@ref(fig:ch11-oboeclarinetharmonics) that the contributions from each of the harmonics in the harmonic series is quite different between the two.  
+
+```{r echo=FALSE, ch11-oboeclarinetharmonics, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The power spectrum for an oboe (top) and clarinet(bottom); This shows the harmonic composition of the waves shown in the previous figure, and the differences between the two are clear."}
+knitr::include_graphics("visualisations/slides-powerspectrum_oboe.svg")
+knitr::include_graphics("visualisations/slides-powerspectrum_clar.svg")
+```
+
+The shapes of the tubes for each of the instruments leads to different contributions from the harmonics in each instrument, and this shapes the distinctive sound we hear.  The real trick of course is identifying what this harmonic makeup is from the presented waveform.  This is the essence of Fourier analysis; identifying the harmonic makeup of a given waveform, and has applications way beyond musical instruments!
 
 ## Fourier Transforms {#sec:ch11-fouriertransforms}
 
-A Fourier transform is a mathematical tool which allows for the identification of the component frequencies and corresponding amplitude of a given waveform. It is a tool which is used in almost area of instrumental analysis, and its importance cannot be understated.  The principles of the Fourier transform are as follows:
+A Fourier transform is a mathematical tool which allows for the identification of the component frequencies and corresponding amplitude of a given waveform. It is a tool which is used in almost every area of instrumental analysis, and its importance cannot be understated.  The principles of the Fourier transform are as follows:
 
 * If a period of oscillation is allowed to become infinite (*i.e.* the wave becomes non-periodic), we can calculate the spectral density (the amplitude of each contributing harmonic wave) of any non-periodic function *e.g.* a wave pulse.
 * In this limit the Fourier coefficients become continuous functions *i.e.* all frequencies are allowed;
