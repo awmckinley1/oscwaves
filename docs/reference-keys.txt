@@ -210,6 +210,7 @@ eq:ch12-addtwowavebeats1
 eq:ch12-addtwowavebeats2
 eq:ch12-addtwowavebeats3
 eq:ch12-addtwowavebeats4
+eq:ch12-addtwowavebeats5
 fig:ch12-oscillationbeats1
 eq:ch12-addtwowavessine1
 eq:ch12-dispersion1

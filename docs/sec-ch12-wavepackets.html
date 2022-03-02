@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. Andrew McKinley" />
 
 
-<meta name="date" content="2022-03-01" />
+<meta name="date" content="2022-03-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -357,9 +357,10 @@ r = 2 \cos\left(\frac{\omega_1t - \omega_2t}{2}\right) \quad \textsf{and} \quad 
 <p><span class="math display">\[\begin{equation}
 y = 2 y_0 \cos \left( \frac{\omega_1t - \omega_2t}{2} \right) \mathrm{e}^{\mathrm{i}\left(\frac{\omega_1 t + \omega_2t}{2} \right)}
 \end{equation}\]</span></p>
-<p>As we said above, we are interested in the ‘imaginary’ (sine) component, and we end up with the same result as shown in Equation <a href="sec-ch12-wavepackets.html#eq:ch12-addtwowavebeats2">(12.2)</a>. We can simplify the expression as in Equation <a href="#eq:ch12-addtwowavebeats5">(<strong>??</strong>)</a>.</p>
-<p><span class="math display">\[\begin{equation}
+<p>As we said above, we are interested in the ‘imaginary’ (sine) component, and we end up with the same result as shown in Equation <a href="sec-ch12-wavepackets.html#eq:ch12-addtwowavebeats2">(12.2)</a>. We can simplify the expression as in Equation <a href="sec-ch12-wavepackets.html#eq:ch12-addtwowavebeats5">(12.5)</a>.</p>
+<p><span class="math display" id="eq:ch12-addtwowavebeats5">\[\begin{equation}
 y = \underbrace{ 2y_{0} \cos \left( \frac{\Delta \omega}{2}t \right)}_{\textsf{slowly varying amplitude}} \underbrace{ \sin \omega_{av}t}_{\textsf{wave with average frequency}}
+\tag{12.5}
 \end{equation}\]</span></p>
 <p>…where <span class="math inline">\(\Delta \omega = \omega_1 - \omega_2\)</span>.</p>
 <p>The frequency fo the resulting wave is the average of the two input waves, while the amplitude oscillates with frequency <span class="math inline">\(\frac{\Delta \omega}{2}\)</span>. This is known as <strong>beating</strong>. The actual frequency of the beats themselves is twice this, as shown in Figure <a href="sec-ch12-wavepackets.html#fig:ch12-oscillationbeats1">12.2</a>.</p>
@@ -370,12 +371,12 @@ Figure 12.2: As two waves interfere with each other (<span class="math inline">\
 </p>
 </div>
 <p>Therefore, if the frequency of the slowly varying amplitude is <span class="math inline">\(\frac{\Delta \omega}{2}\)</span>, the observed frequency of the ‘beats’ will be twice this; <em>i.e.</em> the difference in frequency between the two sources.</p>
-<p>Repeating the analysis above but with the full expressions for the two sine waves (<em>i.e.</em> <span class="math inline">\(y_n = y_0 \sin(kx - \omega t)\)</span>), we obtain the expression in Equation <a href="sec-ch12-wavepackets.html#eq:ch12-addtwowavessine1">(12.5)</a></p>
+<p>Repeating the analysis above but with the full expressions for the two sine waves (<em>i.e.</em> <span class="math inline">\(y_n = y_0 \sin(kx - \omega t)\)</span>), we obtain the expression in Equation <a href="sec-ch12-wavepackets.html#eq:ch12-addtwowavessine1">(12.6)</a></p>
 <p><span class="math display" id="eq:ch12-addtwowavessine1">\[\begin{equation}
 y= 2 y_{0} \cos \left (\frac{\Delta kx - \Delta\omega t}{2}\right) \cdot \sin(k_\textsf{av}x - \omega_\textsf{av}t )
-\tag{12.5}
+\tag{12.6}
 \end{equation}\]</span></p>
-<p>From Equation <a href="sec-ch12-wavepackets.html#eq:ch12-addtwowavessine1">(12.5)</a> we find there are two velocities to consider; the phase velocity of the “average” wave, and the phase velocity of the “envelope” (the waveform which describes the amplitude; see Figure <a href="sec-ch12-wavepackets.html#fig:ch12-oscillationbeats1">12.2</a>). These are laid out below:</p>
+<p>From Equation <a href="sec-ch12-wavepackets.html#eq:ch12-addtwowavessine1">(12.6)</a> we find there are two velocities to consider; the phase velocity of the “average” wave, and the phase velocity of the “envelope” (the waveform which describes the amplitude; see Figure <a href="sec-ch12-wavepackets.html#fig:ch12-oscillationbeats1">12.2</a>). These are laid out below:</p>
 <p>The phase velocity of the “average” wave:</p>
 <p><span class="math display">\[\begin{equation}
 v_{av} = \frac{\omega_{av}}{k_{av}}
@@ -393,30 +394,30 @@ v_{g} = \frac{\Delta\omega}{\Delta k}
 <div id="sec:ch12-dispersion" class="section level2" number="12.2">
 <h2><span class="header-section-number">12.2</span> Dispersion</h2>
 <p>As has already been mentioned, in a <strong>dispersive</strong> medium, <span class="math inline">\(v_p\)</span> is different for every frequency component, and the group velocity is not equal to the initial phase velocity <span class="math inline">\(v_p\)</span>; <em>i.e.</em> <span class="math inline">\(v_g \neq v_p\)</span>. For any dispersive medium, we can write a relationship between <span class="math inline">\(\omega\)</span> and <span class="math inline">\(k\)</span> so that <span class="math inline">\(\omega\)</span> varies as a function of <span class="math inline">\(k\)</span>; <em>i.e.</em> <span class="math inline">\(\omega = \omega(k)\)</span>. This is called the <strong>dispersion relation</strong> and depends on the physics of the particular wave phenomena being observed.</p>
-<p>In the general case, the group velocity is given by the derivative of the dispersion relation (Equation <a href="sec-ch12-wavepackets.html#eq:ch12-dispersion1">(12.6)</a>). The proof of this relation is available in some advanced textbooks, but it is not necessary for this course.</p>
+<p>In the general case, the group velocity is given by the derivative of the dispersion relation (Equation <a href="sec-ch12-wavepackets.html#eq:ch12-dispersion1">(12.7)</a>). The proof of this relation is available in some advanced textbooks, but it is not necessary for this course.</p>
 <p><span class="math display" id="eq:ch12-dispersion1">\[\begin{equation}
 v_g \equiv \frac{\partial w(k)}{\partial k}
-\tag{12.6}
-\end{equation}\]</span></p>
-<p>For a non-dispersive medium, <span class="math inline">\(\omega\)</span> is directly proportional to <span class="math inline">\(k\)</span> (Equation <a href="sec-ch12-wavepackets.html#eq:ch12-dispersion2">(12.7)</a>)</p>
-<p><span class="math display" id="eq:ch12-dispersion2">\[\begin{equation}
-w(k) = v_p k \quad \textsf{with} \quad v_p = \textsf{constant}
 \tag{12.7}
 \end{equation}\]</span></p>
-<p>The consequence of this is that, when the function is differentiated according to the principle in Equation <a href="sec-ch12-wavepackets.html#eq:ch12-dispersion1">(12.6)</a>, we find that <span class="math inline">\(v_g = v_p\)</span> (Equation <a href="sec-ch12-wavepackets.html#eq:ch12-dispersion2b">(12.8)</a>) as has been mentioned previously.</p>
-<p><span class="math display" id="eq:ch12-dispersion2b">\[\begin{equation}
-v_g \equiv \frac{\partial w(k)}{\partial k} = \frac{\mathrm{d} (v_p k)}{\mathrm{d}k} = v_p
+<p>For a non-dispersive medium, <span class="math inline">\(\omega\)</span> is directly proportional to <span class="math inline">\(k\)</span> (Equation <a href="sec-ch12-wavepackets.html#eq:ch12-dispersion2">(12.8)</a>)</p>
+<p><span class="math display" id="eq:ch12-dispersion2">\[\begin{equation}
+w(k) = v_p k \quad \textsf{with} \quad v_p = \textsf{constant}
 \tag{12.8}
 \end{equation}\]</span></p>
-<p>For a dispersive medium however, <span class="math inline">\(v_p\)</span> becomes a function of <span class="math inline">\(k\)</span>. If we consider a simple case where <span class="math inline">\(\omega\)</span> has a linear dependence on k (Equation <a href="sec-ch12-wavepackets.html#eq:ch12-dispersion3">(12.9)</a>) with constant terms <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>:</p>
-<p><span class="math display" id="eq:ch12-dispersion3">\[\begin{equation}
-\omega = ak + b
+<p>The consequence of this is that, when the function is differentiated according to the principle in Equation <a href="sec-ch12-wavepackets.html#eq:ch12-dispersion1">(12.7)</a>, we find that <span class="math inline">\(v_g = v_p\)</span> (Equation <a href="sec-ch12-wavepackets.html#eq:ch12-dispersion2b">(12.9)</a>) as has been mentioned previously.</p>
+<p><span class="math display" id="eq:ch12-dispersion2b">\[\begin{equation}
+v_g \equiv \frac{\partial w(k)}{\partial k} = \frac{\mathrm{d} (v_p k)}{\mathrm{d}k} = v_p
 \tag{12.9}
 \end{equation}\]</span></p>
-<p>As before, the phase velocity is still defined as <span class="math inline">\(v_p = \frac{\omega}{k} = a + \frac{b}{k}\)</span>, while the group velocity is found by differentiation (Equation <a href="sec-ch12-wavepackets.html#eq:ch12-dispersion4">(12.10)</a>):</p>
+<p>For a dispersive medium however, <span class="math inline">\(v_p\)</span> becomes a function of <span class="math inline">\(k\)</span>. If we consider a simple case where <span class="math inline">\(\omega\)</span> has a linear dependence on k (Equation <a href="sec-ch12-wavepackets.html#eq:ch12-dispersion3">(12.10)</a>) with constant terms <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>:</p>
+<p><span class="math display" id="eq:ch12-dispersion3">\[\begin{equation}
+\omega = ak + b
+\tag{12.10}
+\end{equation}\]</span></p>
+<p>As before, the phase velocity is still defined as <span class="math inline">\(v_p = \frac{\omega}{k} = a + \frac{b}{k}\)</span>, while the group velocity is found by differentiation (Equation <a href="sec-ch12-wavepackets.html#eq:ch12-dispersion4">(12.11)</a>):</p>
 <p><span class="math display" id="eq:ch12-dispersion4">\[\begin{equation}
 v_g = \frac{\partial w(k)}{\partial k} = a
-\tag{12.10}
+\tag{12.11}
 \end{equation}\]</span></p>
 <p>We see that these expressions for the phase velocity <span class="math inline">\(v_p = a + \frac{b}{k}\)</span> and the group velocity <span class="math inline">\(v_g = a\)</span> are different; therefore the envelope of the wave packet will move at a different speed from the phase velocity of the wave. However, the group velocity is still the same for all wavenumbers <span class="math inline">\(k\)</span>.</p>
 <p>When <span class="math inline">\(\omega\)</span> is a more general function of <span class="math inline">\(k\)</span>, the group and phase velocities will each depend differently on <span class="math inline">\(k\)</span>. The dependence of the group velocity on <span class="math inline">\(k\)</span> means that envelope doesn’t move at a single velocity and its components of different wavenumber (or wavelength) have different velocities, distorting the envelope.</p>
@@ -431,12 +432,12 @@ v_g = \frac{\partial w(k)}{\partial k} = a
 </div>
 <div id="sec:ch12-waterwaves" class="section level2" number="12.3">
 <h2><span class="header-section-number">12.3</span> Water waves</h2>
-<p>The dispersion relation for water is given in Equation <a href="sec-ch12-wavepackets.html#eq:ch12-waterdispersion1">(12.11)</a>, which includes the acceleration due to gravity (<span class="math inline">\(g\)</span>) and the depth of the water (<span class="math inline">\(h\)</span>):</p>
+<p>The dispersion relation for water is given in Equation <a href="sec-ch12-wavepackets.html#eq:ch12-waterdispersion1">(12.12)</a>, which includes the acceleration due to gravity (<span class="math inline">\(g\)</span>) and the depth of the water (<span class="math inline">\(h\)</span>):</p>
 <p><span class="math display" id="eq:ch12-waterdispersion1">\[\begin{equation}
 \omega^2 = gk\tanh(kh)
-\tag{12.11}
+\tag{12.12}
 \end{equation}\]</span></p>
-<p>For shallow water and/or long wavelengths, <span class="math inline">\(kh \ll 1\)</span> and <span class="math inline">\(tanh(kh) \simeq kh\)</span>. This allows Equation <a href="sec-ch12-wavepackets.html#eq:ch12-waterdispersion1">(12.11)</a> to be simplified to:</p>
+<p>For shallow water and/or long wavelengths, <span class="math inline">\(kh \ll 1\)</span> and <span class="math inline">\(tanh(kh) \simeq kh\)</span>. This allows Equation <a href="sec-ch12-wavepackets.html#eq:ch12-waterdispersion1">(12.12)</a> to be simplified to:</p>
 <p><span class="math display">\[\begin{equation}
 \omega^2 \simeq gk \cdot kh \quad \textsf{and} \quad \omega \simeq k \sqrt{gh}
 \end{equation}\]</span></p>
@@ -453,12 +454,12 @@ v_p = \frac{\omega}{k} = \sqrt{gh}
 <p><span class="math display">\[\begin{equation}
 \omega^2 \simeq gk \cdot \left(kh - \frac{(kh)^3}{3} \right)
 \end{equation}\]</span></p>
-<p>We can now use this to determine the phase velocity of the wavepacket in water (Equation <a href="sec-ch12-wavepackets.html#eq:ch12-waterdispersion2">(12.12)</a>):</p>
+<p>We can now use this to determine the phase velocity of the wavepacket in water (Equation <a href="sec-ch12-wavepackets.html#eq:ch12-waterdispersion2">(12.13)</a>):</p>
 <p><span class="math display" id="eq:ch12-waterdispersion2">\[\begin{equation}
 v_p = \frac{\omega}{k} = \frac{\sqrt{gh}}{\sqrt{1+\frac{(kh)^2}{3}}}
-\tag{12.12}
+\tag{12.13}
 \end{equation}\]</span></p>
-<p>Equation <a href="sec-ch12-wavepackets.html#eq:ch12-waterdispersion2">(12.12)</a>) tells us that the dispersion of the wave increases with increasing water depth relative to the wavelength.</p>
+<p>Equation <a href="sec-ch12-wavepackets.html#eq:ch12-waterdispersion2">(12.13)</a>) tells us that the dispersion of the wave increases with increasing water depth relative to the wavelength.</p>
 </div>
 <div id="sec:ch12-phonondispersion" class="section level2" number="12.4">
 <h2><span class="header-section-number">12.4</span> Sound waves in a crystal (phonons)</h2>
@@ -470,16 +471,16 @@ v_p = \frac{\omega}{k} = \frac{\sqrt{gh}}{\sqrt{1+\frac{(kh)^2}{3}}}
 Figure 12.3: A 1 dimensional lattice can carry sound waves (phonons, also known as lattice vibrations) via both transverse and longitudinal vibrational modes.
 </p>
 </div>
-<p>From this model, it can be shown that the phase velocity can be given by the relationship shown in Equation <a href="sec-ch12-wavepackets.html#eq:ch12-phononvibration1">(12.13)</a>, relating the tension in the 1-D lattice (<span class="math inline">\(F\)</span>), the linear density of the 1-D lattice (<span class="math inline">\(\mu\)</span>) and the periodicity of the lattice, <span class="math inline">\(a\)</span>.</p>
+<p>From this model, it can be shown that the phase velocity can be given by the relationship shown in Equation <a href="sec-ch12-wavepackets.html#eq:ch12-phononvibration1">(12.14)</a>, relating the tension in the 1-D lattice (<span class="math inline">\(F\)</span>), the linear density of the 1-D lattice (<span class="math inline">\(\mu\)</span>) and the periodicity of the lattice, <span class="math inline">\(a\)</span>.</p>
 <p><span class="math display" id="eq:ch12-phononvibration1">\[\begin{equation}
 v_{p} = \frac{\omega}{k} = \frac{F}{\mu}\frac{\sin \left(\frac{ka}{2}\right)}{\frac{ka}{2}}
-\tag{12.13}
+\tag{12.14}
 \end{equation}\]</span></p>
 <p>In the long-wavelength limit, <span class="math inline">\(k \rightarrow 0\)</span> and <span class="math inline">\(v_p \rightarrow \frac{F}{\mu}\)</span>.</p>
-<p>Additionally, we can rewrite Equation <a href="sec-ch12-wavepackets.html#eq:ch12-phononvibration1">(12.13)</a> to gain an expression for <span class="math inline">\(\omega\)</span>:</p>
+<p>Additionally, we can rewrite Equation <a href="sec-ch12-wavepackets.html#eq:ch12-phononvibration1">(12.14)</a> to gain an expression for <span class="math inline">\(\omega\)</span>:</p>
 <p><span class="math display" id="eq:ch12-phononvibration2">\[\begin{equation}
 \omega = \frac{kF}{\mu}\frac{\sin \left(\frac{ka}{2}\right)}{\frac{ka}{2}} = \frac{2F}{a\mu}\sin \left(\frac{ka}{2}\right)
-\tag{12.14}
+\tag{12.15}
 \end{equation}\]</span></p>
 <p>If we plot the angular frequency <span class="math inline">\(\omega\)</span> against the wavenumber <span class="math inline">\(k\)</span>, we obtain the <strong>dispersion curve</strong>, shown in Figure <a href="sec-ch12-wavepackets.html#fig:ch12-dispersioncurve1">12.4</a>.</p>
 <div class="figure" style="text-align: center"><span id="fig:ch12-dispersioncurve1"></span>
@@ -488,12 +489,12 @@ v_{p} = \frac{\omega}{k} = \frac{F}{\mu}\frac{\sin \left(\frac{ka}{2}\right)}{\f
 Figure 12.4: The variation in angular frequency <span class="math inline">\(\omega\)</span> with wavenumber <span class="math inline">\(k\)</span> in a dispersive medium. There is an upper limit to the wavenumber which the medium can sustain, namely <span class="math inline">\(\pi / a\)</span>
 </p>
 </div>
-<p>From Equation <a href="sec-ch12-wavepackets.html#eq:ch12-phononvibration2">(12.14)</a>, we can find the group velocity <span class="math inline">\(v_g\)</span> by differentiation:</p>
+<p>From Equation <a href="sec-ch12-wavepackets.html#eq:ch12-phononvibration2">(12.15)</a>, we can find the group velocity <span class="math inline">\(v_g\)</span> by differentiation:</p>
 <p><span class="math display" id="eq:ch12-phononvibration3">\[\begin{equation}
 v_g = \frac{\mathrm{d}\omega}{\mathrm{d}k} = \frac{F}{\mu} \cos \left(\frac{ka}{2}\right)
-\tag{12.15}
+\tag{12.16}
 \end{equation}\]</span></p>
-<p>Once again, examination of Equation <a href="sec-ch12-wavepackets.html#eq:ch12-phononvibration3">(12.15)</a> shows:</p>
+<p>Once again, examination of Equation <a href="sec-ch12-wavepackets.html#eq:ch12-phononvibration3">(12.16)</a> shows:</p>
 <ul>
 <li>The group velocity, <span class="math inline">\(v_g\)</span> tends to <span class="math inline">\(\frac{F}{\mu}\)</span> as <span class="math inline">\(k \rightarrow 0\)</span>; and:</li>
 <li>The group velocity also drops to zero when <span class="math inline">\(k = \frac{\pi}{a}\)</span></li>

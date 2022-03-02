@@ -4,14 +4,13 @@
 %
 \documentclass[
 ]{book}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
-  \usepackage{amssymb}
 \else % if luatex or xetex
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
@@ -42,7 +41,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -85,7 +84,7 @@
 
 \title{Oscillations and Waves}
 \author{Dr.~Andrew McKinley}
-\date{2022-03-01}
+\date{2022-03-02}
 
 \begin{document}
 \maketitle
@@ -353,77 +352,25 @@ We can now make a few more observations:
 
 This allows us to compare the displacement, velocity and acceleration at four points in the oscillation (Table \ref{tab:ch1-xva-comparison1}):
 
-\begin{longtable}[]{@{}llll@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}@{}}
 \caption{\label{tab:ch1-xva-comparison1} Relating the displacement, velocity and acceleration at different times in the oscillation for a simple harmonic oscillator.}\tabularnewline
 \toprule
-\begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-Time\strut
-\end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-Displacement, \(x\)\strut
-\end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-Velocity, \(v\)\strut
-\end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-Acceleration, \(a\)\strut
-\end{minipage}\tabularnewline
+Time & Displacement, \(x\) & Velocity, \(v\) & Acceleration, \(a\) \\
 \midrule
 \endfirsthead
 \toprule
-\begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-Time\strut
-\end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-Displacement, \(x\)\strut
-\end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-Velocity, \(v\)\strut
-\end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-Acceleration, \(a\)\strut
-\end{minipage}\tabularnewline
+Time & Displacement, \(x\) & Velocity, \(v\) & Acceleration, \(a\) \\
 \midrule
 \endhead
-\begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(t = 0\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(x_0 = A\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(v_0 = 0\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(a_0 = -a_{\textrm{max}}\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(t = \frac{T}{4}\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(x_{\frac{T}{4}} = 0\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(v_{\frac{T}{4}} = -v_\textrm{max}\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(a_{\frac{T}{4}} = 0\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(t = \frac{T}{2}\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(x_{\frac{T}{2}} = -A\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(v_{\frac{T}{2}} = 0\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(a_{\frac{T}{2}} = a_{\textrm{max}}\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(t = \frac{3T}{4}\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(x_{\frac{3T}{4}} = 0\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(v_{\frac{3T}{4}} = v_\textrm{max}\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(a_{\frac{3T}{4}} = 0\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(t = T\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(x_T = x_0 = A\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(v_T = v_0 = 0\)\strut
-\end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.25}}\raggedright
-\(a_T = a_0 = -a_{\textrm{max}}\)\strut
-\end{minipage}\tabularnewline
+\(t = 0\) & \(x_0 = A\) & \(v_0 = 0\) & \(a_0 = -a_{\textrm{max}}\) \\
+\(t = \frac{T}{4}\) & \(x_{\frac{T}{4}} = 0\) & \(v_{\frac{T}{4}} = -v_\textrm{max}\) & \(a_{\frac{T}{4}} = 0\) \\
+\(t = \frac{T}{2}\) & \(x_{\frac{T}{2}} = -A\) & \(v_{\frac{T}{2}} = 0\) & \(a_{\frac{T}{2}} = a_{\textrm{max}}\) \\
+\(t = \frac{3T}{4}\) & \(x_{\frac{3T}{4}} = 0\) & \(v_{\frac{3T}{4}} = v_\textrm{max}\) & \(a_{\frac{3T}{4}} = 0\) \\
+\(t = T\) & \(x_T = x_0 = A\) & \(v_T = v_0 = 0\) & \(a_T = a_0 = -a_{\textrm{max}}\) \\
 \bottomrule
 \end{longtable}
 
@@ -3147,17 +3094,17 @@ The term \(I_0\) is the absolute intensity considered to be at the absolute limi
 \begin{longtable}[]{@{}ll@{}}
 \caption{\label{tab:ch9-decibeldescription1} A description of the approximate decibel level of particular sounds.}\tabularnewline
 \toprule
-\(\beta\) /dB & Description\tabularnewline
+\(\beta\) /dB & Description \\
 \midrule
 \endfirsthead
 \toprule
-\(\beta\) /dB & Description\tabularnewline
+\(\beta\) /dB & Description \\
 \midrule
 \endhead
-0 & Hearing threshold\tabularnewline
-40 & Library\tabularnewline
-70 & Busy traffic\tabularnewline
-120 & Pain threshold\tabularnewline
+0 & Hearing threshold \\
+40 & Library \\
+70 & Busy traffic \\
+120 & Pain threshold \\
 \bottomrule
 \end{longtable}
 
@@ -3517,19 +3464,19 @@ In general, the \(n\)th harmonic will have \(\frac{1}{n} \times\) wavelength and
 \begin{longtable}[]{@{}lll@{}}
 \caption{\label{tab:ch10-standingfrequencies} Showing the variation of wavelength and frequency of each harmonic with respect to the first (fundamental) wave.}\tabularnewline
 \toprule
-Harmonic & \(\lambda\) & \(f\)\tabularnewline
+Harmonic & \(\lambda\) & \(f\) \\
 \midrule
 \endfirsthead
 \toprule
-Harmonic & \(\lambda\) & \(f\)\tabularnewline
+Harmonic & \(\lambda\) & \(f\) \\
 \midrule
 \endhead
-Fundamental, first & \(2L\) & \(f_1\)\tabularnewline
-Second & \(L\) & \(2f_1\)\tabularnewline
-Third & \(\frac{2L}{3}\) & \(3f_1\)\tabularnewline
-Fourth & \(\frac{L}{2}\) & \(4f_1\)\tabularnewline
-Fifth & \(\frac{2L}{5}\) & \(5f_1\)\tabularnewline
-\(n\)th & \(\frac{2L}{n}\) & \(nf_1\)\tabularnewline
+Fundamental, first & \(2L\) & \(f_1\) \\
+Second & \(L\) & \(2f_1\) \\
+Third & \(\frac{2L}{3}\) & \(3f_1\) \\
+Fourth & \(\frac{L}{2}\) & \(4f_1\) \\
+Fifth & \(\frac{2L}{5}\) & \(5f_1\) \\
+\(n\)th & \(\frac{2L}{n}\) & \(nf_1\) \\
 \bottomrule
 \end{longtable}
 
@@ -3924,6 +3871,7 @@ As we said above, we are interested in the `imaginary' (sine) component, and we 
 
 \begin{equation}
 y = \underbrace{ 2y_{0} \cos \left( \frac{\Delta \omega}{2}t \right)}_{\textsf{slowly varying amplitude}} \underbrace{ \sin \omega_{av}t}_{\textsf{wave with average frequency}}
+\label{eq:ch12-addtwowavebeats5}
 \end{equation}
 
 \ldots where \(\Delta \omega = \omega_1 - \omega_2\).
@@ -4501,18 +4449,18 @@ Refractive indices are however approximate; different wavelengths of light trave
 \begin{longtable}[]{@{}lr@{}}
 \caption{\label{tab:ch14-refractiveindices} A list of refractive indices of common materials}\tabularnewline
 \toprule
-Material & \(n_{589 \textsf{nm}}\)\tabularnewline
+Material & \(n_{589 \textsf{nm}}\) \\
 \midrule
 \endfirsthead
 \toprule
-Material & \(n_{589 \textsf{nm}}\)\tabularnewline
+Material & \(n_{589 \textsf{nm}}\) \\
 \midrule
 \endhead
-vacuum & 1\tabularnewline
-air & 1.003\tabularnewline
-water & 1.33\tabularnewline
-common glass & 1.52\tabularnewline
-diamond & 2.42\tabularnewline
+vacuum & 1 \\
+air & 1.003 \\
+water & 1.33 \\
+common glass & 1.52 \\
+diamond & 2.42 \\
 \bottomrule
 \end{longtable}
 

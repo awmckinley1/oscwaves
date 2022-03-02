@@ -64,6 +64,7 @@ As we said above, we are interested in the 'imaginary' (sine) component, and we 
 
 \begin{equation}
 y = \underbrace{ 2y_{0} \cos \left( \frac{\Delta \omega}{2}t \right)}_{\textsf{slowly varying amplitude}} \underbrace{ \sin \omega_{av}t}_{\textsf{wave with average frequency}}
+(\#eq:ch12-addtwowavebeats5)
 \end{equation}
 
 ...where $\Delta \omega = \omega_1 - \omega_2$.
