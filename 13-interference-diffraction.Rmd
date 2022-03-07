@@ -54,7 +54,7 @@ knitr::include_graphics("visualisations/LaTeX/ch13-doubleslits.svg")
 ```
 
 
-If we examine the path of waves travelling in an arbitrary direction from each slit which converge on the observation screen (Figure \#ref(fig:ch13-doubleslit2)), we can start to consider the behaviour of our wavelets.
+If we examine the path of waves travelling in an arbitrary direction from each slit which converge on the observation screen (Figure \@ref(fig:ch13-doubleslit2)), we can start to consider the behaviour of our wavelets.
 
 ```{r echo=FALSE, ch13-doubleslit2, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Looking at the whole double slit experiment, we can determine the angles within the experiment and define the observation position $X$ on the screen as a function of these angles. Under the Fraunhofer condition (long field interference), the rays can be considered parallel, allowing the path difference and hence phase offset to be determined."}
 knitr::include_graphics("visualisations/LaTeX/ch13-doubleslits2.svg")
@@ -212,7 +212,7 @@ Equation \@ref(eq:ch13-ftindiffraction1) is telling us that we can scale our wav
 If we substitute $\delta(x) = 2\pi \left(\frac{x}{\lambda}\right) \sin \theta$ and let $\Delta x \rightarrow \mathrm{d}x$, we can then replace the summation with the integral shown in Equation \@ref(eq:ch13-ftindiffraction2):
 
 \begin{equation}
-A = \int_{-\infty}^{\infty} f(x) \mathrm{e}^{\mathrm{i}2\pi \left(\frac{x}{\lambda}\right) \sin \theta} \Delta x
+A = \int_{-\infty}^{\infty} f(x) \mathrm{e}^{\mathrm{i}2\pi \left(\frac{x}{\lambda}\right) \sin \theta} \delta x
 (\#eq:ch13-ftindiffraction2)
 \end{equation}
 

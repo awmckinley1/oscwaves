@@ -153,6 +153,7 @@
 	\draw[red](-{(\waveoffset+4*\wavespace)},-\waveheight) -- (-{(\waveoffset+4*\wavespace)},+\waveheight);
 	\draw[red](-{(\waveoffset+5*\wavespace)},-\waveheight) -- (-{(\waveoffset+5*\wavespace)},+\waveheight);
 	\draw[red](-{(\waveoffset+6*\wavespace)},-\waveheight) -- (-{(\waveoffset+6*\wavespace)},+\waveheight);
+	\draw[purple,densely dotted] (0,0) -- (\distancetoscreen,\pointP);
 	
 	
 %	\draw[red] ({0+\wavespace*cos(-60)},{(\slitsep/2)-\wavespace*sin(60)}) arc (-60:60:\wavespace);
@@ -181,7 +182,7 @@
 \draw[red](0,{\slitsep/2}) -- ({\distancetoscreen},{\pointP});
 \draw[red](0,-{\slitsep/2}) -- ({\distancetoscreen},{\pointP});
 \draw[blue,<->,thick] ({\distancetoscreen+0.5},0) -- node[right]{$X$} ({\distancetoscreen+0.5},\pointP);
-\draw[<->] (0:0.8*\distancetoscreen) arc  (0:11.8:0.8*\distancetoscreen) node[midway,right]{ $\theta$} ;
+\draw[<->] (0:0.8*\distancetoscreen) arc  (0:11.3:0.8*\distancetoscreen) node[midway,right]{ $\theta$} ;
 \draw[<->,red] (2,{\slitsep/2}) arc  (0:10:2) node[midway,right]{ $\theta_1$} ;
 \draw[<->,red] (2,-{\slitsep/2}) arc  (0:12:2) node[midway,right]{ $\theta_2$} ;
 \draw[black,thick](0,0) circle (1);

@@ -102,7 +102,7 @@ v_{env} = \frac{\Delta\omega}{\Delta k}
 
 In a *non-dispersive* medium (*i.e.* all frequencies travel with the same phase velocity), it can be shown that $v_{\textsf{av}} = v_{\textsf{env}} = \frac{\omega_1}{k_1} = \frac{\omega_2}{k_2} =$ the phase velocity of the medium.
 
-However, in a dispersive medium, the velocities are not equal, *i.e.* $v_av \neq v_env$, and the "envelope" propagates at a different speed to the individual components.  We associate $v_env$ with the group velocity $v_g$ and in this case would be represented as:
+However, in a dispersive medium, the velocities are not equal, *i.e.* $v_{av} \neq v_{env}$, and the "envelope" propagates at a different speed to the individual components.  We associate $v_{env}$ with the group velocity $v_g$ and in this case would be represented as:
 
 \begin{equation}
 v_{g} = \frac{\Delta\omega}{\Delta k}
@@ -175,7 +175,7 @@ For shallow water and/or long wavelengths, $kh \ll 1$ and $tanh(kh) \simeq kh$. 
 \omega^2 \simeq gk \cdot kh \quad \textsf{and} \quad \omega \simeq k \sqrt{gh}
 \end{equation}
 
-We can then determine the phase velocity $\v_p$ in this situation as:
+We can then determine the phase velocity $v_p$ in this situation as:
 
 \begin{equation}
 v_p = \frac{\omega}{k} = \sqrt{gh}
@@ -198,7 +198,7 @@ For intermediate depths, we might use the expansion of $\tanh(x)$ to write this 
 We can now use this to determine the phase velocity of the wavepacket in water (Equation \@ref(eq:ch12-waterdispersion2)):
 
 \begin{equation}
-v_p = \frac{\omega}{k} = \frac{\sqrt{gh}}{\sqrt{1+\frac{(kh)^2}{3}}}
+v_p = \frac{\omega}{k} =\sqrt{gh} \times \sqrt{1-\frac{(kh)^2}{3}}
 (\#eq:ch12-waterdispersion2)
 \end{equation}
 

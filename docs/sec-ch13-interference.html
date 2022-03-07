@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. Andrew McKinley" />
 
 
-<meta name="date" content="2022-03-02" />
+<meta name="date" content="2022-03-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -356,7 +356,7 @@ Figure 13.1: The Huygens’ wavelet construction. A wavefront is considered to b
 Figure 13.2: The configuration of the double slit experiment. Two narrow slits are separated at distance <span class="math inline">\(d\)</span>, each of which becomes a source of secondary wavelets which can then create the interference pattern.
 </p>
 </div>
-<p>If we examine the path of waves travelling in an arbitrary direction from each slit which converge on the observation screen (Figure #ref(fig:ch13-doubleslit2)), we can start to consider the behaviour of our wavelets.</p>
+<p>If we examine the path of waves travelling in an arbitrary direction from each slit which converge on the observation screen (Figure <a href="sec-ch13-interference.html#fig:ch13-doubleslit2">13.3</a>), we can start to consider the behaviour of our wavelets.</p>
 <div class="figure" style="text-align: center"><span id="fig:ch13-doubleslit2"></span>
 <img src="visualisations/LaTeX/ch13-doubleslits2.svg" alt="Looking at the whole double slit experiment, we can determine the angles within the experiment and define the observation position $X$ on the screen as a function of these angles. Under the Fraunhofer condition (long field interference), the rays can be considered parallel, allowing the path difference and hence phase offset to be determined." width="70%" />
 <p class="caption">
@@ -486,7 +486,7 @@ A = \sum_{\textsf{aperture}} f(x) \mathrm{e}^{\mathrm{i}\delta(x)} \Delta x
 <p>Equation <a href="sec-ch13-interference.html#eq:ch13-ftindiffraction1">(13.9)</a> is telling us that we can scale our wave (described by the complex representation) originating from aperture element <span class="math inline">\(\Delta x\)</span> by the aperture function <span class="math inline">\(f(x)\)</span>, and find out the overall result by summing up all these components.</p>
 <p>If we substitute <span class="math inline">\(\delta(x) = 2\pi \left(\frac{x}{\lambda}\right) \sin \theta\)</span> and let <span class="math inline">\(\Delta x \rightarrow \mathrm{d}x\)</span>, we can then replace the summation with the integral shown in Equation <a href="sec-ch13-interference.html#eq:ch13-ftindiffraction2">(13.10)</a>:</p>
 <p><span class="math display" id="eq:ch13-ftindiffraction2">\[\begin{equation}
-A = \int_{-\infty}^{\infty} f(x) \mathrm{e}^{\mathrm{i}2\pi \left(\frac{x}{\lambda}\right) \sin \theta} \Delta x
+A = \int_{-\infty}^{\infty} f(x) \mathrm{e}^{\mathrm{i}2\pi \left(\frac{x}{\lambda}\right) \sin \theta} \delta x
 \tag{13.10}
 \end{equation}\]</span></p>
 <p>This integral is an example of a Fourier transform <em>i.e.</em> the <em>amplitude</em> of a (far-field, Fraunhofer) diffraction pattern is given by the Fourier transform of the aperture. The diffracted intensity is then given by the square of this Fourier transform.</p>
