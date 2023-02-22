@@ -60,7 +60,7 @@ The parameter $k$ is defined as the **wave number** of the wave, in units radian
 
 ## Travelling waves {#sec:ch7-travellingwaves}
 
-The wave we showed in Section \@ref(sec:ch7-sinecosine) was a snapshot in time, so the wave was, in effect, static.  We instead wish to consider a travelling wave. To do this, instead of writing $x$ as in Equation \@ref(eq:tranversesine2) with a phase difference, we rewrite with $x - vt$ (see Section \@ref(sec:ch6-wavepulses)) to illustrate the time-dependent nature of the travelling wave.  Equation \@ref(eq:tranversesine2) then becomes Equation \@ref(eq:tranversesine5):
+The wave we showed in Section \@ref(sec:ch7-sinecosine) was a snapshot in time, so the wave was, in effect, static.  We instead wish to consider a travelling wave. To do this, instead of writing $x$ as in Equation \@ref(eq:ch7-tranversesine2) with a phase difference, we rewrite with $x - vt$ (see Section \@ref(sec:ch6-wavepulses)) to illustrate the time-dependent nature of the travelling wave.  Equation \@ref(eq:ch7-tranversesine2) then becomes Equation \@ref(eq:tranversesine5):
 
 \begin{equation}
 y = A \sin k(x - vt) = A \sin (kx - kvt)
@@ -137,7 +137,7 @@ As the waves move along the string, so the energy is transported along the strin
 
 We now consider the same string segment as we showed in Figure \@ref(fig:ch6-waveeqnderiv1), but now we consider it stretched (Figure \@ref(fig:ch7-stretchedsegment1)). We can picture this as the string is "relaxed" in its 'horizontal' orientation (length of segment is $\Delta x$), but when a wave passes along it, the string elongates to accommodate the curve of the wave form. This means our segment now takes on a new length $\Delta l$.
 
-```{r echo=FALSE, ch7-stretchedsegment1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="As the wave passes along a stretched string, we can consider it to be 'stretched'; considering a string element of lencth $\\Delta x$, it is stretched to new length $\\Delta l$ as the wave passes by."}
+```{r echo=FALSE, ch7-stretchedsegment1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="As the wave passes along a stretched string, we can consider it to be 'stretched'; considering a string element of length $\\Delta x$, it is stretched to new length $\\Delta l$ as the wave passes by."}
 knitr::include_graphics("visualisations/LaTeX/ch7-peofstringsegment.svg")
 ```
 
@@ -182,7 +182,7 @@ This now allows us to obtain an expression for the work done in stretching the s
 \end{equation}
 
 
-As we have an expression for $y$ in terms of $x$ (Equation \@ref(eq:tranversesine2)), we can differentiate this with respect to $x$ to approximate $\frac{\Delta y}{\Delta x}$:
+As we have an expression for $y$ in terms of $x$ (Equation \@ref(eq:ch7-tranversesine2)), we can differentiate this with respect to $x$ to approximate $\frac{\Delta y}{\Delta x}$:
 
 \begin{equation}
 \frac{\Delta y}{\Delta x} \simeq \frac{\mathrm{d} y}{\mathrm{d} x} = kA \cos (kx - \omega t)
@@ -223,7 +223,7 @@ As before, the segment is stretched to new length $\Delta l$, but the mass is st
 \Delta KE = \frac{1}{2} \Delta m v_y^2 = \frac{1}{2} \mu \Delta x \left( \frac{\mathrm{d}y}{\mathrm{d}t} \right)^2
 \end{equation}
 
-Again, we know the expression for the vertical displacement $y$ in terms of $x$ and $t$ (Equation \@ref(eq:tranversesine2)), so we now differentiate with respect to $t$:
+Again, we know the expression for the vertical displacement $y$ in terms of $x$ and $t$ (Equation \@ref(eq:tranversesine5)), so we now differentiate with respect to $t$:
 
 * $y = A \sin(kx - \omega t)$
 * $v_y = \frac{\mathrm{d}y}{\mathrm{d}t} = -\omega A \cos(kx - \omega t)$

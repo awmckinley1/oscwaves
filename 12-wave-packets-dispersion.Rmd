@@ -14,7 +14,7 @@ knitr::include_graphics("visualisations/ch12-wavepacketdispersion1.svg")
 
 ## Two waves, same amplitude, different frequency (Beats) {#sec:ch12-twowavesbeats1}
 
-Let's consider two waves with the same amplitude but differing in frequency (*i.e.* amplitude $y_0$ is common to both, each has independent frequency $\omega_1$ and $\omega 2$). For convenience we will assume that the phase difference between the two is zero at time $t=0$, and we will then consider their displacements at an arbitrary $x$ coordinate (*e.g.* $x=0$).
+Let's consider two waves with the same amplitude but differing in frequency (*i.e.* amplitude $y_0$ is common to both, each has independent frequency $\omega_1$ and $\omega_2$). For convenience we will assume that the phase difference between the two is zero at time $t=0$, and we will then consider their displacements at an arbitrary $x$ coordinate (*e.g.* $x=0$).
 
 Firstly, let's lay out the mathematical description of each wave:
 

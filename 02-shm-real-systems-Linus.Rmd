@@ -180,7 +180,7 @@ knitr::include_graphics("visualisations/LaTeX/ch2-simplependulum1.svg")
 ```
 
 
-The mass of the pendulum can be considered to oscillate along the arc $s$ (Figure \@ref(fig:ch2-simplependulum1)), where the restoring force becomes $mg \sin \phi$. This force then causes an acceleration along the ark, $\frac{\mathrm{d}^2 s}{\mathrm{d} t^2}$, with the equation of motion becoming:
+The mass of the pendulum can be considered to oscillate along the arc $s$ (Figure \@ref(fig:ch2-simplependulum1)), where the restoring force becomes $mg \sin \phi$. This force then causes an acceleration along the arc, $\frac{\mathrm{d}^2 s}{\mathrm{d} t^2}$, with the equation of motion becoming:
 
 \begin{equation}
 mg \sin \phi = - m \frac{\mathrm{d}^2 s}{\mathrm{d} t^2}
@@ -214,7 +214,7 @@ A quick rearrangement gives us the equation of motion for a simple pendulum.
 For small displacements (small $\phi$), the equation of motion can be considered as in Equation \@ref(eq:ch2-simplependulum1):
 
 \begin{equation}
-\frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} = -\frac{g}{L}\sin \theta \approx -\frac{g \phi}{L} \textrm{for small} \phi
+\frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} = -\frac{g}{L}\sin \phi \approx -\frac{g \phi}{L} \textrm{for small} \phi
 (\#eq:ch2-simplependulum1)
 \end{equation}
 

@@ -42,7 +42,7 @@ F_x = ma_x \\
 (\#eq:shm-massonspring1)
 \end{equation}
 
-The general form of this expresssion for any system can be considered as shown in Equation \@ref(eq:shm-general-massonspring1)
+The general form of this expression for any system can be considered as shown in Equation \@ref(eq:shm-general-massonspring1)
 
 \begin{equation}
 \frac{\textrm{d}^2 x}{\textrm{d} t^2} = -Cx \quad\mathrm{or}\quad\ddot{x} = -Cx

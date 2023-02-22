@@ -44,6 +44,8 @@ This iteration of the course has been written by Andrew McKinley from 2021. This
 
 ## Changelog {.unnumbered #sec:changelog}
 
+2023-02-22 Fixing flagged errors (TL,NT/FM,KS/PM,HG,TK,JP,CK)
+
 2022-03-07 Even more CB-flagged typos.  Fixed Equation \@ref(eq:ch12-waterdispersion2) and refined Figure \@ref(fig:ch13-doubleslit2).
 
 2022-03-01 Fixing yet more typos (I thought I had those!) and added in the missing figure from section 11.2 for the power spectra of the oboe and clarinet waveforms.

@@ -121,7 +121,7 @@ A_0 = -A \mathrm{e}^{-\mathrm{i}\left( \delta + \delta^\prime \right)}
 As with any complex representation, we now compare the **real** and **imaginary** parts of the solution.  Remember that Equation \@ref(eq:ch5-forcedoscillfullsoln2) expands *via* De Moivre's theorem to:
 
 \begin{equation}
-A_0 = -A \left( \cos \left( \delta + \delta^\prime \right) + \mathrm{i} \sin \left( \delta + \delta^\prime \right)  \right)
+A_0 = -A \left( \cos \left( \delta - \delta^\prime \right) + \mathrm{i} \sin \left( \delta + \delta^\prime \right)  \right)
 (\#eq:ch5-forcedoscillfullsoln3)
 \end{equation}
 

@@ -6,8 +6,8 @@
 ]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -33,14 +33,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdftitle={Oscillations and Waves},
-  pdfauthor={Dr.~Andrew McKinley},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -76,15 +68,23 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-\ifluatex
+\ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Oscillations and Waves},
+  pdfauthor={Dr.~Andrew McKinley},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
 
 \title{Oscillations and Waves}
 \author{Dr.~Andrew McKinley}
-\date{2022-03-07}
+\date{2023-02-22}
 
 \begin{document}
 \maketitle
@@ -132,6 +132,8 @@ This iteration of the course has been written by Andrew McKinley from 2021. This
 \hypertarget{sec:changelog}{%
 \section*{Changelog}\label{sec:changelog}}
 \addcontentsline{toc}{section}{Changelog}
+
+2023-02-22 Fixing flagged errors (TL,NT/FM,KS/PM,HG,TK,JP,CK)
 
 2022-03-07 Even more CB-flagged typos. Fixed Equation \eqref{eq:ch12-waterdispersion2} and refined Figure \ref{fig:ch13-doubleslit2}.
 
@@ -226,7 +228,7 @@ F_x = ma_x \\
 \label{eq:shm-massonspring1}
 \end{equation}
 
-The general form of this expresssion for any system can be considered as shown in Equation \eqref{eq:shm-general-massonspring1}
+The general form of this expression for any system can be considered as shown in Equation \eqref{eq:shm-general-massonspring1}
 
 \begin{equation}
 \frac{\textrm{d}^2 x}{\textrm{d} t^2} = -Cx \quad\mathrm{or}\quad\ddot{x} = -Cx
@@ -355,25 +357,41 @@ We can now make a few more observations:
 This allows us to compare the displacement, velocity and acceleration at four points in the oscillation (Table \ref{tab:ch1-xva-comparison1}):
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
 \caption{\label{tab:ch1-xva-comparison1} Relating the displacement, velocity and acceleration at different times in the oscillation for a simple harmonic oscillator.}\tabularnewline
-\toprule
-Time & Displacement, \(x\) & Velocity, \(v\) & Acceleration, \(a\) \\
-\midrule
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Time
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Displacement, \(x\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Velocity, \(v\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Acceleration, \(a\)
+\end{minipage} \\
+\midrule()
 \endfirsthead
-\toprule
-Time & Displacement, \(x\) & Velocity, \(v\) & Acceleration, \(a\) \\
-\midrule
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Time
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Displacement, \(x\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Velocity, \(v\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Acceleration, \(a\)
+\end{minipage} \\
+\midrule()
 \endhead
 \(t = 0\) & \(x_0 = A\) & \(v_0 = 0\) & \(a_0 = -a_{\textrm{max}}\) \\
 \(t = \frac{T}{4}\) & \(x_{\frac{T}{4}} = 0\) & \(v_{\frac{T}{4}} = -v_\textrm{max}\) & \(a_{\frac{T}{4}} = 0\) \\
 \(t = \frac{T}{2}\) & \(x_{\frac{T}{2}} = -A\) & \(v_{\frac{T}{2}} = 0\) & \(a_{\frac{T}{2}} = a_{\textrm{max}}\) \\
 \(t = \frac{3T}{4}\) & \(x_{\frac{3T}{4}} = 0\) & \(v_{\frac{3T}{4}} = v_\textrm{max}\) & \(a_{\frac{3T}{4}} = 0\) \\
 \(t = T\) & \(x_T = x_0 = A\) & \(v_T = v_0 = 0\) & \(a_T = a_0 = -a_{\textrm{max}}\) \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \hypertarget{sec:shm-initialconditions}{%
@@ -806,7 +824,7 @@ A pendulum is a mechanically simple oscillating system; its oscillation can be c
 \caption{A simple pendulum, consisting of a mass $m$ swinging on a string of length $L$. At angle $\phi$, the weight of the mass $mg$ can be resolved into components to determine the mechanics of the system.}\label{fig:ch2-simplependulum1}
 \end{figure}
 
-The mass of the pendulum can be considered to oscillate along the arc \(s\) (Figure \ref{fig:ch2-simplependulum1}), where the restoring force becomes \(mg \sin \phi\). This force then causes an acceleration along the ark, \(\frac{\mathrm{d}^2 s}{\mathrm{d} t^2}\), with the equation of motion becoming:
+The mass of the pendulum can be considered to oscillate along the arc \(s\) (Figure \ref{fig:ch2-simplependulum1}), where the restoring force becomes \(mg \sin \phi\). This force then causes an acceleration along the arc, \(\frac{\mathrm{d}^2 s}{\mathrm{d} t^2}\), with the equation of motion becoming:
 
 \begin{equation}
 mg \sin \phi = - m \frac{\mathrm{d}^2 s}{\mathrm{d} t^2}
@@ -845,7 +863,7 @@ A quick rearrangement gives us the equation of motion for a simple pendulum.
 For small displacements (small \(\phi\)), the equation of motion can be considered as in Equation \eqref{eq:ch2-simplependulum1}:
 
 \begin{equation}
-\frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} = -\frac{g}{L}\sin \theta \approx -\frac{g \phi}{L} \textrm{for small} \phi
+\frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} = -\frac{g}{L}\sin \phi \approx -\frac{g \phi}{L} \textrm{for small} \phi
 \label{eq:ch2-simplependulum1}
 \end{equation}
 
@@ -1624,7 +1642,7 @@ A_0 = -A \mathrm{e}^{-\mathrm{i}\left( \delta + \delta^\prime \right)}
 As with any complex representation, we now compare the \textbf{real} and \textbf{imaginary} parts of the solution. Remember that Equation \eqref{eq:ch5-forcedoscillfullsoln2} expands \emph{via} De Moivre's theorem to:
 
 \begin{equation}
-A_0 = -A \left( \cos \left( \delta + \delta^\prime \right) + \mathrm{i} \sin \left( \delta + \delta^\prime \right)  \right)
+A_0 = -A \left( \cos \left( \delta - \delta^\prime \right) + \mathrm{i} \sin \left( \delta + \delta^\prime \right)  \right)
 \label{eq:ch5-forcedoscillfullsoln3}
 \end{equation}
 
@@ -2240,7 +2258,7 @@ The parameter \(k\) is defined as the \textbf{wave number} of the wave, in units
 \hypertarget{sec:ch7-travellingwaves}{%
 \section{Travelling waves}\label{sec:ch7-travellingwaves}}
 
-The wave we showed in Section \ref{sec:ch7-sinecosine} was a snapshot in time, so the wave was, in effect, static. We instead wish to consider a travelling wave. To do this, instead of writing \(x\) as in Equation \eqref{eq:tranversesine2} with a phase difference, we rewrite with \(x - vt\) (see Section \ref{sec:ch6-wavepulses}) to illustrate the time-dependent nature of the travelling wave. Equation \eqref{eq:tranversesine2} then becomes Equation \eqref{eq:tranversesine5}:
+The wave we showed in Section \ref{sec:ch7-sinecosine} was a snapshot in time, so the wave was, in effect, static. We instead wish to consider a travelling wave. To do this, instead of writing \(x\) as in Equation \eqref{eq:ch7-tranversesine2} with a phase difference, we rewrite with \(x - vt\) (see Section \ref{sec:ch6-wavepulses}) to illustrate the time-dependent nature of the travelling wave. Equation \eqref{eq:ch7-tranversesine2} then becomes Equation \eqref{eq:tranversesine5}:
 
 \begin{equation}
 y = A \sin k(x - vt) = A \sin (kx - kvt)
@@ -2356,7 +2374,7 @@ We now consider the same string segment as we showed in Figure \ref{fig:ch6-wave
 
 }
 
-\caption{As the wave passes along a stretched string, we can consider it to be 'stretched'; considering a string element of lencth $\Delta x$, it is stretched to new length $\Delta l$ as the wave passes by.}\label{fig:ch7-stretchedsegment1}
+\caption{As the wave passes along a stretched string, we can consider it to be 'stretched'; considering a string element of length $\Delta x$, it is stretched to new length $\Delta l$ as the wave passes by.}\label{fig:ch7-stretchedsegment1}
 \end{figure}
 
 The work done (\Delta U) in stretching the segment \(\Delta x\) can be expressed as:
@@ -2399,7 +2417,7 @@ This now allows us to obtain an expression for the work done in stretching the s
 \Delta U = \frac{F\Delta x}{2} \left( \dfrac{\Delta y}{\Delta x}\right)^2
 \end{equation}
 
-As we have an expression for \(y\) in terms of \(x\) (Equation \eqref{eq:tranversesine2}), we can differentiate this with respect to \(x\) to approximate \(\frac{\Delta y}{\Delta x}\):
+As we have an expression for \(y\) in terms of \(x\) (Equation \eqref{eq:ch7-tranversesine2}), we can differentiate this with respect to \(x\) to approximate \(\frac{\Delta y}{\Delta x}\):
 
 \begin{equation}
 \frac{\Delta y}{\Delta x} \simeq \frac{\mathrm{d} y}{\mathrm{d} x} = kA \cos (kx - \omega t)
@@ -2444,7 +2462,7 @@ As before, the segment is stretched to new length \(\Delta l\), but the mass is 
 \Delta KE = \frac{1}{2} \Delta m v_y^2 = \frac{1}{2} \mu \Delta x \left( \frac{\mathrm{d}y}{\mathrm{d}t} \right)^2
 \end{equation}
 
-Again, we know the expression for the vertical displacement \(y\) in terms of \(x\) and \(t\) (Equation \eqref{eq:tranversesine2}), so we now differentiate with respect to \(t\):
+Again, we know the expression for the vertical displacement \(y\) in terms of \(x\) and \(t\) (Equation \eqref{eq:tranversesine5}), so we now differentiate with respect to \(t\):
 
 \begin{itemize}
 \tightlist
@@ -3095,19 +3113,19 @@ The term \(I_0\) is the absolute intensity considered to be at the absolute limi
 
 \begin{longtable}[]{@{}ll@{}}
 \caption{\label{tab:ch9-decibeldescription1} A description of the approximate decibel level of particular sounds.}\tabularnewline
-\toprule
+\toprule()
 \(\beta\) /dB & Description \\
-\midrule
+\midrule()
 \endfirsthead
-\toprule
+\toprule()
 \(\beta\) /dB & Description \\
-\midrule
+\midrule()
 \endhead
 0 & Hearing threshold \\
 40 & Library \\
 70 & Busy traffic \\
 120 & Pain threshold \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \hypertarget{sec:ch9-dopplereffect1}{%
@@ -3465,13 +3483,13 @@ In general, the \(n\)th harmonic will have \(\frac{1}{n} \times\) wavelength and
 
 \begin{longtable}[]{@{}lll@{}}
 \caption{\label{tab:ch10-standingfrequencies} Showing the variation of wavelength and frequency of each harmonic with respect to the first (fundamental) wave.}\tabularnewline
-\toprule
+\toprule()
 Harmonic & \(\lambda\) & \(f\) \\
-\midrule
+\midrule()
 \endfirsthead
-\toprule
+\toprule()
 Harmonic & \(\lambda\) & \(f\) \\
-\midrule
+\midrule()
 \endhead
 Fundamental, first & \(2L\) & \(f_1\) \\
 Second & \(L\) & \(2f_1\) \\
@@ -3479,7 +3497,7 @@ Third & \(\frac{2L}{3}\) & \(3f_1\) \\
 Fourth & \(\frac{L}{2}\) & \(4f_1\) \\
 Fifth & \(\frac{2L}{5}\) & \(5f_1\) \\
 \(n\)th & \(\frac{2L}{n}\) & \(nf_1\) \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 In general, for the \(n\)th harmonic:
@@ -3823,7 +3841,7 @@ The velocity of propagation of the packet is known as the \textbf{group velocity
 \hypertarget{sec:ch12-twowavesbeats1}{%
 \section{Two waves, same amplitude, different frequency (Beats)}\label{sec:ch12-twowavesbeats1}}
 
-Let's consider two waves with the same amplitude but differing in frequency (\emph{i.e.} amplitude \(y_0\) is common to both, each has independent frequency \(\omega_1\) and \(\omega 2\)). For convenience we will assume that the phase difference between the two is zero at time \(t=0\), and we will then consider their displacements at an arbitrary \(x\) coordinate (\emph{e.g.} \(x=0\)).
+Let's consider two waves with the same amplitude but differing in frequency (\emph{i.e.} amplitude \(y_0\) is common to both, each has independent frequency \(\omega_1\) and \(\omega_2\)). For convenience we will assume that the phase difference between the two is zero at time \(t=0\), and we will then consider their displacements at an arbitrary \(x\) coordinate (\emph{e.g.} \(x=0\)).
 
 Firstly, let's lay out the mathematical description of each wave:
 
@@ -4450,20 +4468,20 @@ Refractive indices are however approximate; different wavelengths of light trave
 
 \begin{longtable}[]{@{}lr@{}}
 \caption{\label{tab:ch14-refractiveindices} A list of refractive indices of common materials}\tabularnewline
-\toprule
+\toprule()
 Material & \(n_{589 \textsf{nm}}\) \\
-\midrule
+\midrule()
 \endfirsthead
-\toprule
+\toprule()
 Material & \(n_{589 \textsf{nm}}\) \\
-\midrule
+\midrule()
 \endhead
 vacuum & 1 \\
 air & 1.003 \\
 water & 1.33 \\
 common glass & 1.52 \\
 diamond & 2.42 \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 It is worth noting that the \textbf{frequency} of light remains unchanged while passing through different media; rather it is the \textbf{wavelength} which varies:
