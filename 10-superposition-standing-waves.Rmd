@@ -1,11 +1,11 @@
 
-# Superposition and Standing Waves {#sec:ch10-superposition}
+# Superposition and Standing Waves {#sec-ch10-superposition}
 
 *Textbook link: Tipler and Mosca, Section 15.1*
 
-## Superposition of harmonic waves {#sec:ch10-superposharmonic1}
+## Superposition of harmonic waves {#sec-ch10-superposharmonic1}
 
-In Section \@ref(sec:ch6-wavepulses) we showed that the wave equation (eq. \@ref(eq:ch6-waveequation1)) is satisfied by any function in the form $y = f(x \pm vt)$.  We can go further than this, and specify general expressions which can satisfy the wave equation.  
+In Section \@ref(sec-ch6-wavepulses) we showed that the wave equation (eq. \@ref(eq:ch6-waveequation1)) is satisfied by any function in the form $y = f(x \pm vt)$.  We can go further than this, and specify general expressions which can satisfy the wave equation.  
 
 Specifically, if we have two functions, $y_1$ and $y_2$ (Equation \@ref(eq:ch10-superposition1)), which satisfy the wave equation, then their sum (Equation \@ref(eq:ch10-superposition2), including scaling constants $C_1$ and $C_2$) must also satisfy the wave equation.
 
@@ -27,7 +27,7 @@ Using double angle formulae we can demonstrate that $y_3$ can also be written in
 
 It is worth remembering that the wave equation was derived in the case of small amplitude disturbances; therefore if the vibration amplitudes become too large, the principle of superposition may fail.  This can lead to some very interesting effects, including **non-linear optics**^[Related to the non-linear response of the electromagnetic interactions with the medium, rather than light travelling in straight lines!]
 
-## Two waves with same amplitude and frequency {#sec:ch10-identicalwaves1}
+## Two waves with same amplitude and frequency {#sec-ch10-identicalwaves1}
 
 Let's now consider two waves with the same amplitude and frequency; but differing in phase (Equation \@ref(eq:ch10-superposition3)):
 
@@ -109,11 +109,11 @@ There are three special cases to be aware of:
 
 All three of these cases can be derived by substituting the relevant value of $\delta$ into Equation \@ref(eq:ch10-superposition5c).
 
-## Standing waves {#sec:ch10-standingwaves1}
+## Standing waves {#sec-ch10-standingwaves1}
 
 A standing wave is a specific outcome which occurs when a wave is confined to space (for example on a piano string) and it reflects at the boundaries and travels back along its original path. This leads to waves travelling in both directions which combine by superposition.  Only certain frequencies can exist in a standing wave, as the superposition leads to a stationary pattern called a **standing wave**.
 
-## Wave function for a standing wave {#sec:ch10-standingwaves2}
+## Wave function for a standing wave {#sec-ch10-standingwaves2}
 
 In order to fully consider a standing wave, we need to derive the form of its wavefunction.  To do this, we consider two waves travelling in opposite directions along a string (Equation \@ref(eq:ch10-standingwaves1)). Because one is a reflection of the other (they each reflect from the boundaries), they will have the same frequency and phase.
 
@@ -178,7 +178,7 @@ This standing wave is illustrated in Figure \@ref(fig:ch10-standingwave1); but w
 
 In other words, the vibrational modes are **quantised** due to the boundary conditions.
 
-## Waves on strings fixed at both ends {#sec:ch10-fixedstring1}
+## Waves on strings fixed at both ends {#sec-ch10-fixedstring1}
 
 We have described the mathematics of standing waves; let's now apply this to a wave travelling on a string which is fixed at both ends.  Figure \@ref(fig:ch10-stringfundamental1) illustrates the fundamental wavelength of the string, which corresponds to twice the length of the string.
 
@@ -222,7 +222,7 @@ The resonant frequencies, or harmonics, of the string are known as its natural f
 
 In stringed instruments (violin, piano, guitar etc.) the vibration of the string is amplified by a mechanical resonator; a soundboard in the case of the piano, or resonant cavities for a guitar or violin.  These resonators must be carefully designed to resonate equally well over a wide range of frequencies.
 
-## Organ pipes and other wind instruments {#sec:ch10-pipesandwindinstruments}
+## Organ pipes and other wind instruments {#sec-ch10-pipesandwindinstruments}
 
 In contrast to a vibrating string, wind instruments rely on a resonance within a column of air.  We can model these pipes as a simple pipe, resonating at its natural frequencies when air is blown into (or across) an opening at one end.  The resonant behaviour will differ depending on whether the other end of the pipe is open or closed.  We will consider each of these cases in turn.
 

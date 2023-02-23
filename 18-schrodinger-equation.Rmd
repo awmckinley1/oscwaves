@@ -1,5 +1,5 @@
 
-# The Schr&ouml;dinger Equation {#sec:ch18-schrodinger}
+# The Schr&ouml;dinger Equation {#sec-ch18-schrodinger}
 
 *Textbook link: Tipler and Mosca, Section 35.1*
 
@@ -46,7 +46,7 @@ P(x,t) = |\psi(x)|^2
 
 ...where $E = \hbar \omega$ is the energy of the particle.
 
-Since we are only working in the non-relativistic case, the rest-mass energy is not included in $E$ here (*i.e.* we are discussing energies in addition to the rest-mass energy). As discussed in the last chapter (\@ref(sec:ch17-waveparticle)), this is fine as it simply offsets all energies by a constant amount without changing any of the physics. In this case, $E$ in the time-independent Schr&ouml;dinger equation is again just the sum of the kinetic and potential energies.
+Since we are only working in the non-relativistic case, the rest-mass energy is not included in $E$ here (*i.e.* we are discussing energies in addition to the rest-mass energy). As discussed in the last chapter (\@ref(sec-ch17-waveparticle)), this is fine as it simply offsets all energies by a constant amount without changing any of the physics. In this case, $E$ in the time-independent Schr&ouml;dinger equation is again just the sum of the kinetic and potential energies.
 
 The time-independent Schr&ouml;dinger equation may be solved for a variety of systems, provided that the resultant wavefunction, $\psi(x)$ satisfies any boundary conditions, as well as satisfying the normalisation condition:
 
@@ -61,11 +61,11 @@ The time-independent Schr&ouml;dinger equation may be solved for a variety of sy
 \end{equation}
 
 
-## Particle in a square potential well {#sec:ch18-partsquarewell1}
+## Particle in a square potential well {#sec-ch18-partsquarewell1}
 
 ### The infinite potential well
 
-We have already introduced an example of this; the particle in a box problem (Section \@ref(sec:ch17-particlebox)), and the formal solutions for a particle in a square potential well were deduced there. There are parallels with electrons in an atom, however going from a one dimensional "box" to a three dimensional spherical surface is slightly involved.^[The wavefunctions which fit onto the surface of a sphere describe the shapes of atomic orbitals, a collection of waveforms known as *spherical harmonics*. These same waveforms are widely used in other applications, including (among other things) acoustic engineering.]
+We have already introduced an example of this; the particle in a box problem (Section \@ref(sec-ch17-particlebox)), and the formal solutions for a particle in a square potential well were deduced there. There are parallels with electrons in an atom, however going from a one dimensional "box" to a three dimensional spherical surface is slightly involved.^[The wavefunctions which fit onto the surface of a sphere describe the shapes of atomic orbitals, a collection of waveforms known as *spherical harmonics*. These same waveforms are widely used in other applications, including (among other things) acoustic engineering.]
 
 The general principal with the infinite well is that the particle cannot ever escape the box; inside the box the potential energy $U$ is equal to zero, and the time-independent equation reduces to the form shown in Equation \@ref(eq:ch18-infinitewell1) (for one dimension):
 
@@ -80,7 +80,7 @@ The general principal with the infinite well is that the particle cannot ever es
 k^2 = \frac{2mE}{\hbar} = \frac{p^2}{\hbar^2} \quad \textsf{as expected}
 \end{equation}
 
-This equation should look very familiar to us; it looks like a simple harmonic oscillator with the oscillation instead being in space rather than in time (see Section \@ref(sec:ch1-simpleshmexample)).  The solutions to this equation then are any sine or cosine wave, leading to the expected standing wave solutions when the boundaries are taken into account.
+This equation should look very familiar to us; it looks like a simple harmonic oscillator with the oscillation instead being in space rather than in time (see Section \@ref(sec-ch1-simpleshmexample)).  The solutions to this equation then are any sine or cosine wave, leading to the expected standing wave solutions when the boundaries are taken into account.
 
 ### The finite potential well
 
@@ -118,7 +118,7 @@ knitr::include_graphics("visualisations/LaTeX/ch18-infinitefinite-well3.svg")
 ```
 
 
-## Reflection and transmission of particle waves {#sec:ch18-reflectionparticlewaves}
+## Reflection and transmission of particle waves {#sec-ch18-reflectionparticlewaves}
 
 Let's now consider what happens as a particle of energy $E$ travels towards a potential energy step function of height $U_0$ (Figure \@ref(fig:ch18-reflectionparticlewave1)).
 
@@ -145,13 +145,13 @@ Whether the particle is transmitted or reflected is a probabilistic process; the
 R = \frac{(k_1 - k_2)^2}{(k_1 + k_2)^2}
 \end{equation}
 
-...where $k_1$ and $k_2$ are the wavenumbers in each of the two regions.  This result should, again, be familiar to us as the same result we obtained for waves reflecting on strings as the wave moves from one string to another of a different density (Section \@ref(sec:ch8-powertransmittedreflected)).  Once again, remember that a given wavenumber $k$ is defined as:
+...where $k_1$ and $k_2$ are the wavenumbers in each of the two regions.  This result should, again, be familiar to us as the same result we obtained for waves reflecting on strings as the wave moves from one string to another of a different density (Section \@ref(sec-ch8-powertransmittedreflected)).  Once again, remember that a given wavenumber $k$ is defined as:
 
 \begin{equation}
 k^2 = \frac{2mE}{\hbar^2} = \frac{p^2}{\hbar^2}
 \end{equation}
 
-## Barrier penetration - 'tunnelling' {#sec:ch18-tunnelling1}
+## Barrier penetration - 'tunnelling' {#sec-ch18-tunnelling1}
 
 Now, instead of a step potential, consider a potential barrier in the path of the particle, at a height such that the energy of the particle $E$ is slightly less than $U_0$ (Figure \@ref(fig:ch18-tunelling1)):
 
@@ -161,13 +161,13 @@ knitr::include_graphics("visualisations/LaTeX/ch18-pestep3.svg")
 ```
 
 
-As in Section \@ref(sec:ch18-reflectionparticlewaves), we expect the wavefunction to penetrate into the barrier, **however** if the barrier is sufficiently narrow, the wavefunction will have a finite amplitude when it reaches the end of the barrier, and the wavefunction returns from exponential behaviour to oscillating sinusoidal behaviour once again, though with a reduced amplitude (Figure \@ref(fig:ch18-tunelling2)):
+As in Section \@ref(sec-ch18-reflectionparticlewaves), we expect the wavefunction to penetrate into the barrier, **however** if the barrier is sufficiently narrow, the wavefunction will have a finite amplitude when it reaches the end of the barrier, and the wavefunction returns from exponential behaviour to oscillating sinusoidal behaviour once again, though with a reduced amplitude (Figure \@ref(fig:ch18-tunelling2)):
 
 
 ```{r echo=FALSE, ch18-tunelling2, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A waveparticle approaching a potential barrier can tunnel through the barrier if it is sufficiently narrow. It will appear the other side of the barrier with a decayed amplitude, suggesting a smaller probability of finding the particle on the other side."}
 knitr::include_graphics("visualisations/LaTeX/ch18-pestep4.svg")
 ```
 
-In other words, there is a probability that the particle will penetrate, or "tunnel through", the barrier.  The smaller amplitude on the other side of the barrier indicates that there is a smaller probability of finding the particle on the transmission side of the barrier.  In classical mechanics this would be a completely forbidden behaviour; though classical tunneling of waves is possible (via evanescent modes when a wave is undergoing total internal reflection; see Section \@ref(sec:ch14-evanescence)).
+In other words, there is a probability that the particle will penetrate, or "tunnel through", the barrier.  The smaller amplitude on the other side of the barrier indicates that there is a smaller probability of finding the particle on the transmission side of the barrier.  In classical mechanics this would be a completely forbidden behaviour; though classical tunneling of waves is possible (via evanescent modes when a wave is undergoing total internal reflection; see Section \@ref(sec-ch14-evanescence)).
 
 Quantum mechanical tunneling has been proposed as the mechanism by which $\alpha$ particles are spontaneously and unpredictably ejected from radioactive nuclei, and the phenomenon sees application in the scanning tunneling microscope (STM) to obtain atomic resolution images of certain surfaces by monitoring the current as electrons tunnel across a gap between a probe and the surface.

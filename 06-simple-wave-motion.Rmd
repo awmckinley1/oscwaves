@@ -1,6 +1,6 @@
 <!-- `r if (knitr:::is_html_output()) ' -->
 
-# Simple wave motion and the Wave Equation {#sec:ch6-wavemotion}
+# Simple wave motion and the Wave Equation {#sec-ch6-wavemotion}
 
 *Textbook link: Tipler and Mosca, Section 15.1*
 
@@ -21,7 +21,7 @@ knitr::include_graphics("visualisations/ch6-longitudinalwave1.gif")
 
 In contrast with longitudinal waves, the medium carrying a transverse wave is displaced perpendicular to the direction of travel. This gives rise to the phenomenon of **polarisation**.  A *plane of polarisation* is defined as a plane containing the displacement direction and the direction of propagation.  For any given transverse wave, two orthogonal independent polarisations are possible.  All other polarisations may be constructed from weighted combinations of these two basic polarisations.  For electromagnetic waves, it is the **electric field vector** which defines the plane of polarisation in combination with the direction of propagation.  We will revisit these properties of transverse waves as we go through our discussion.
 
-## Wave pulses {#sec:ch6-wavepulses}
+## Wave pulses {#sec-ch6-wavepulses}
 
 Where a wave is a sustained periodic disturbance which propagates energy through a medium, a **wave pulse** in contrast is any localised non-periodic disturbance propagating an energy pulse through the medium.  A typical pulse is shown in Figure \@ref(fig:ch6-wavepulse1).
 
@@ -82,7 +82,7 @@ The *wave function* is a solution of the **wave equation** (Equation \@ref(eq:ch
 * $y = \frac{\sin(x-vt)}{x-vt}$
 * $y = \cos (x+vt)$
 
-## Deriving the wave equation {#sec:ch6-derivingwaveequation}
+## Deriving the wave equation {#sec-ch6-derivingwaveequation}
 
 To better understand the wave equation, it is useful to know its derivation. To do this, we shall first consider a segment of string from a curved part of a wave pulse (Figure \@ref(fig:ch6-waveeqnderiv1)):
 
@@ -145,11 +145,11 @@ Finally, by combining this result in Equation \@ref(eq:ch6-waveeqnderiv6) with t
 (\#eq:ch6-waveeqnderiv7)
 \end{equation}
 
-As we mentioned in Section \@ref(sec:ch6-wavepulses), any function of the form $y = f(x \pm vt)$ will be a solution to the wave equation \@ref(eq:ch6-waveeqnderiv7).  In the case of the string, the solution will solve the wave equation provided that $v^2 = \frac{F}{\mu}$.
+As we mentioned in Section \@ref(sec-ch6-wavepulses), any function of the form $y = f(x \pm vt)$ will be a solution to the wave equation \@ref(eq:ch6-waveeqnderiv7).  In the case of the string, the solution will solve the wave equation provided that $v^2 = \frac{F}{\mu}$.
 
-## The wave equation - proof by substitution {#sec:ch6-waveequationproof2}
+## The wave equation - proof by substitution {#sec-ch6-waveequationproof2}
 
-In this section, we will show the proof of the wave equation which we determined graphically in Section \@ref(sec:ch6-derivingwaveequation).  Here we will use *partial differentiation*, explaining the $\partial$ notation we have already seen in this work.^[Partial differentiation is needed when we have multivariate expressions. We can only differentiate one variable at a time, so *partial* differentiation indicates that we are holding all other variables constant.  In our wave equations, we have position and time variables, so when differentiating $x$ with respect to $y$, we are holding the time $t$ constant.]
+In this section, we will show the proof of the wave equation which we determined graphically in Section \@ref(sec-ch6-derivingwaveequation).  Here we will use *partial differentiation*, explaining the $\partial$ notation we have already seen in this work.^[Partial differentiation is needed when we have multivariate expressions. We can only differentiate one variable at a time, so *partial* differentiation indicates that we are holding all other variables constant.  In our wave equations, we have position and time variables, so when differentiating $x$ with respect to $y$, we are holding the time $t$ constant.]
 
 Let's work through this step by step:
 
@@ -218,7 +218,7 @@ For electromagnetic waves, Equation \@ref(eq:ch6-wavederivsubs3) becomes either:
 **Note**: The speed of propagation cannot be deduced from the wave equation, instead it must be obtained from a model of the system concerned.
 
 
-## The Phase Velocity - the velocity of waves {#sec:ch6-phasevelocity}
+## The Phase Velocity - the velocity of waves {#sec-ch6-phasevelocity}
 
 We define the phase velocity as the speed of propagation of any particular point on a wave. Since the wave propagates without changing shape, it does not matter which point we pick.
 
@@ -263,7 +263,7 @@ c = \sqrt{\frac{1}{\mu_0 \epsilon_0}}
 
 ...where $\mu_0$ and $\epsilon_0$ are the permeability of free space and the permittivity of free space respectively.
 
-## Summary {#sec:ch6-summary}
+## Summary {#sec-ch6-summary}
 
 In this chapter, we have introduced the principle of waves and the wave equation.  Waves carry energy and momentum through space by localised organised oscillations without net transport of matter.  They can be transverse (oscillation perpendicular to direction of propagation) or longitudinal (oscillation parallel to direction of propagation), or can have a more complex displacement pattern.  Waves do not have to be sinusoidal, and can have any shape.
 

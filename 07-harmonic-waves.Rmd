@@ -1,11 +1,11 @@
 
-# Harmonic Waves {#sec:ch7-harmonicwaves}
+# Harmonic Waves {#sec-ch7-harmonicwaves}
 
 *Textbook link: Tipler and Mosca, Section 15.2*
 
 A *harmonic wave* is a general term for a wave which, at some instant of time, can be described by a sinusoidal function (*i.e.* it is a sine or a cosine function).  They are the simplest of waves to consider, and we will devote this chapter to exploring their properties.
 
-## Transverse sine and cosine waves {#sec:ch7-sinecosine}
+## Transverse sine and cosine waves {#sec-ch7-sinecosine}
 
 If we consider a string which is excited by a tuning fork or other object undergoing simple harmonic motion (SHM), we can imagine the shape of the save on the string at some instant of time appearing as a sine or a cosine wave (depending on our choice of origin) (Figure \@ref(fig:ch7-transversesine1)):
 
@@ -58,9 +58,9 @@ k = \frac{2\pi}{\lambda}
 
 The parameter $k$ is defined as the **wave number** of the wave, in units radians per metre (rad m^-1^).
 
-## Travelling waves {#sec:ch7-travellingwaves}
+## Travelling waves {#sec-ch7-travellingwaves}
 
-The wave we showed in Section \@ref(sec:ch7-sinecosine) was a snapshot in time, so the wave was, in effect, static.  We instead wish to consider a travelling wave. To do this, instead of writing $x$ as in Equation \@ref(eq:ch7-tranversesine2) with a phase difference, we rewrite with $x - vt$ (see Section \@ref(sec:ch6-wavepulses)) to illustrate the time-dependent nature of the travelling wave.  Equation \@ref(eq:ch7-tranversesine2) then becomes Equation \@ref(eq:tranversesine5):
+The wave we showed in Section \@ref(sec-ch7-sinecosine) was a snapshot in time, so the wave was, in effect, static.  We instead wish to consider a travelling wave. To do this, instead of writing $x$ as in Equation \@ref(eq:ch7-tranversesine2) with a phase difference, we rewrite with $x - vt$ (see Section \@ref(sec-ch6-wavepulses)) to illustrate the time-dependent nature of the travelling wave.  Equation \@ref(eq:ch7-tranversesine2) then becomes Equation \@ref(eq:tranversesine5):
 
 \begin{equation}
 y = A \sin k(x - vt) = A \sin (kx - kvt)
@@ -83,7 +83,7 @@ Applying the same reasoning as shown in Equation scheme \@ref(eq:ch7-tranvserses
 kvT = 2\pi
 \end{equation}
 
-If we revisit our discussions on SHM (Chapter \@ref(sec:shm-freq-angularfreq)) we defined the relationship between $T$ and $2\pi$ (Equation \@ref(eq:ch1-definingomega1)) as $T = \frac{2\pi}{\omega}$ (and also $\omega = 2\pi f$).  This allows us to define a number of factors as follows:
+If we revisit our discussions on SHM (Chapter \@ref(sec-shm-freq-angularfreq)) we defined the relationship between $T$ and $2\pi$ (Equation \@ref(eq:ch1-definingomega1)) as $T = \frac{2\pi}{\omega}$ (and also $\omega = 2\pi f$).  This allows us to define a number of factors as follows:
 
 * **Phase velocity**:
 
@@ -113,7 +113,7 @@ It is worth noting for each of these factors:
     * positive for waves travelling to left
 1. The wave expressions can be shown to satisfy the wave equation by substitution.
 
-## Complex representation of waves {#sec:ch7-complexrep}
+## Complex representation of waves {#sec-ch7-complexrep}
 
 We introduced complex numbers for descriptions of oscillations; we can use the same treatment for our wave equations.  Just as $\sin(kx - \omega t)$ and $\cos(kx-\omega t)$ satisfy the wave equation, so too will $\mathrm{e}^{\mathrm{i}(kx-\omega t)}$.  It is often convenient to write the wave expression in a complex form as shown in Equation \@ref(eq:ch7-wavecomplex1):
 
@@ -124,7 +124,7 @@ y = A \mathrm{e}^{\mathrm{i}(kx-\omega t)}
 
 In this expression, the sine wave is given by the 'imaginary' component of $y$, while the cosine part is given by the 'real' component.
 
-## Energy carried by waves on a string {#sec:ch7-energywavesstring}
+## Energy carried by waves on a string {#sec-ch7-energywavesstring}
 
 Suppose we now have a string attached to an oscillating driver at one end.  As the driver oscillates, it imparts energy to the string at $x=0$ by:
 
@@ -133,7 +133,7 @@ Suppose we now have a string attached to an oscillating driver at one end.  As t
 
 As the waves move along the string, so the energy is transported along the string.
 
-### Potential energy of string segment {#sec:ch7-peofstringsegment}
+### Potential energy of string segment {#sec-ch7-peofstringsegment}
 
 We now consider the same string segment as we showed in Figure \@ref(fig:ch6-waveeqnderiv1), but now we consider it stretched (Figure \@ref(fig:ch7-stretchedsegment1)). We can picture this as the string is "relaxed" in its 'horizontal' orientation (length of segment is $\Delta x$), but when a wave passes along it, the string elongates to accommodate the curve of the wave form. This means our segment now takes on a new length $\Delta l$.
 
@@ -201,9 +201,9 @@ Tidying up and cancelling, we obtain the expression for the potential energy sto
 (\#eq:ch7-pestoredstring1)
 \end{equation}
 
-### Kinetic energy of string segment {#sec:ch7-keofstringsegment}
+### Kinetic energy of string segment {#sec-ch7-keofstringsegment}
 
-We will again consider the segment of string discussed in Section \@ref(sec:ch7-peofstringsegment); an element $\Delta x$ of the string, of mass $\Delta m$ (Figure \@ref(fig:ch7-kestringsegment)).
+We will again consider the segment of string discussed in Section \@ref(sec-ch7-peofstringsegment); an element $\Delta x$ of the string, of mass $\Delta m$ (Figure \@ref(fig:ch7-kestringsegment)).
 
 ```{r echo=FALSE, ch7-kestringsegment, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Similar to the situation shown above, the same string segment will have a kinetic energy associated with its velocity $v_y$."}
 knitr::include_graphics("visualisations/LaTeX/ch7-keofstringsegment.svg")
@@ -237,7 +237,7 @@ Therefore our expression for the kinetic energy becomes:
 
 A quick comparison of Equations \@ref(eq:ch7-pestoredstring1) and \@ref(eq:ch7-kestoredstring1) shows that these expressions are identical; *i.e.* the KE stored in the string is the **same** as the PE stored in the spring.
 
-### Total energy of wave on a string {#sec:ch7-totenergystringsegment}
+### Total energy of wave on a string {#sec-ch7-totenergystringsegment}
 
 We can therefore find the total energy of the string segment carrying a harmonic wave as the total of the kinetic and potential energies:
 
@@ -281,7 +281,7 @@ These points are illustrated in Figure \@ref(fig:ch7-kepestringplot1).
 knitr::include_graphics("visualisations/ch7-kepestringplot1.gif")
 ```
 
-### Transport of energy and power {#sec:ch7-transportenergypower}
+### Transport of energy and power {#sec-ch7-transportenergypower}
 
 As the wave propagates along the string, energy is transported by the moving wavefront at speed $v$.  The average energy passing a point on the string in time $\Delta t$ is the average energy in the segment of length $\Delta x = v\Delta t$. This means we can rewrite Equation \@ref(eq:ch7-averageenergystring1):
 
@@ -297,9 +297,9 @@ Since the power transmitted is a *rate of change of energy*, *i.e.* $\frac{\Delt
 (\#eq:ch7-averagepowerstring1)
 \end{equation}
 
-From this result, we can see that both the average energy and average power transmitted are both proportional to $A^2$; a similar observation as in SHM (Chapter \@ref(sec:shm)).
+From this result, we can see that both the average energy and average power transmitted are both proportional to $A^2$; a similar observation as in SHM (Chapter \@ref(sec-shm)).
 
-## Summary {#sec:ch7-summary}
+## Summary {#sec-ch7-summary}
 
 We have covered a large amount of derivations in this chapter, however the take-home points are the following:
 

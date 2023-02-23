@@ -1,4 +1,4 @@
-# SHM in Real Systems {#sec:shm-real}
+# SHM in Real Systems {#sec-shm-real}
 
 *Textbook link: Tipler and Mosca: Ch 14.2 to 14.4*
 
@@ -18,14 +18,14 @@ F_x = - \frac{\mathrm{d}U}{\mathrm{d}x}
 (\#eq:ch2-forceenergyderiv2)
 \end{equation}
 
-As mentioned in Section \@ref(sec:ch1-simpleshmexample), under SHM the force is proportional to the displacement from the equilibrium position and in the opposite direction; *i.e.*:
+As mentioned in Section \@ref(sec-ch1-simpleshmexample), under SHM the force is proportional to the displacement from the equilibrium position and in the opposite direction; *i.e.*:
 
 \begin{equation}
 F_x = -kx
 (\#eq:ch2-hookeslaw1)
 \end{equation}
 
-Applying the principle from Equation \@ref(eq:ch2-forceenergyderiv1) we can therefore integrate this experession with respect to $x$ to obtain the expression for our potential energy.  We covered this in Section \@ref(sec:ch1-shm-energy1), and we found the result (Equation \@ref(eq:ch2-potentialfromforce1); remember that, due to initial conditions, the constant of integration reduces to zero). 
+Applying the principle from Equation \@ref(eq:ch2-forceenergyderiv1) we can therefore integrate this experession with respect to $x$ to obtain the expression for our potential energy.  We covered this in Section \@ref(sec-ch1-shm-energy1), and we found the result (Equation \@ref(eq:ch2-potentialfromforce1); remember that, due to initial conditions, the constant of integration reduces to zero). 
 
 \begin{equation}
 U  = \frac{1}{2}kx^2 
@@ -40,7 +40,7 @@ Simple inspection and recall of our mathematics knowledge tells us that this sim
 
 The simplicity of the **simple harmonic oscillator** model is what makes it such a generally useful system to consider.
 
-## Example: a diatomic molecule {#sec:ch2-diatomicmolecule}
+## Example: a diatomic molecule {#sec-ch2-diatomicmolecule}
 
 A diatomic molecule is a useful system to consider as an example because it can be approximated to a harmonic oscillator at small displacements about the equilibrium.  The potential energy curve for a vibrating diatomic molecule (in this case the H~2~ hydrogen molecule) is shown in Figure \@ref(fig:ch2-diatomicmolecule1).
 
@@ -78,9 +78,9 @@ F_r &=& - \dfrac{\mathrm{d}U}{\mathrm{d}r} \\
 
 Since the term $(r-r_0)$ is the displacement from the equilibrium position, we see that the force, $F_r$ is a **restoring force** and is proportional to the displacement (and in the opposite direction!), telling us that the motion is SHM.  In this example however, the parabolic approximation fails at larger amplitudes.
 
-## Example: Mass on a vertical spring {#sec:ch2-massverticalspring}
+## Example: Mass on a vertical spring {#sec-ch2-massverticalspring}
 
-In Section \@ref(sec:ch1-simpleshmexample) we considered a mass on a horizontal spring; there was only a single force acting on the mass (the force from the spring), however we are now considering a vertical spring and must consider the effects of gravity (Figure \@ref(fig:ch2-massverticalspring1)).
+In Section \@ref(sec-ch1-simpleshmexample) we considered a mass on a horizontal spring; there was only a single force acting on the mass (the force from the spring), however we are now considering a vertical spring and must consider the effects of gravity (Figure \@ref(fig:ch2-massverticalspring1)).
 
 ```{r echo=FALSE, ch2-massverticalspring1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A particle oscillating on a vertical spring.  There are two equilibrium positions corresponding to the equilibrium position of the unladen spring (a) and the equilibrium position of the mass loaded on spring (b), where the weight of the load is balanced by the force from the extended spring."}
 knitr::include_graphics("visualisations/LaTeX/ch2-blocksonvertspring1.svg")
@@ -171,7 +171,7 @@ U = \frac{1}{2} ky^{\prime 2}
 
 Overall, the expression for the total potential energy shown in Equation \@ref(eq:ch2-massverticalspring6) will still yield a parabola and as such the oscillation is still a simple harmonic oscillation as before.
 
-## The Simple Pendulum {#sec:ch2-simplependulum}
+## The Simple Pendulum {#sec-ch2-simplependulum}
 
 A pendulum is a mechanically simple oscillating system; its oscillation can be considered SHM for small displacements. A simple pendulum is shown in Figure \@ref(fig:ch2-simplependulum1), and it is worth quickly revisiting this example as we will extend this in our further examples.
 
@@ -234,7 +234,7 @@ The solution for the equation of motion of this system then becomes (Equation \@
 
 ...where $\phi_0$ is the amplitude of the system and $\delta$ is the phase constant.  Notice that, for the pendulum we express the amplitude in terms of the angle of the string rather than an absolute distance (shown as $s$ in Figure \@ref(fig:ch2-simplependulum1)).
 
-## The Physical Pendulum {#sec:ch2-physicalpendulum}
+## The Physical Pendulum {#sec-ch2-physicalpendulum}
 
 Many oscillating systems demonstrate rotational oscillations under gravity akin to the simple pendulum. In this case, the system rotates around a pivot, $P$, and this can then be considered as a pendulum with the centre of mass acting as the 'bob'. An example of a general system is shown in Figure \@ref(fig:ch2-physicalpendulum1).
 

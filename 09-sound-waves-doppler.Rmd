@@ -1,5 +1,5 @@
 
-# Sound waves and the Doppler effect {#sec:ch9-sounddoppler}
+# Sound waves and the Doppler effect {#sec-ch9-sounddoppler}
 
 *Textbook link: Tipler and Mosca, Section 15.2-4*
 
@@ -21,7 +21,7 @@ p = p_0 \sin (kx - \omega t - \frac{\pi}{2})
 
 ... where the initial pressure $p_0 = \rho \omega v s_0$ and $v$ is the phase velocity.
 
-## Energy of sound waves {#sec:ch9-energysoundwaves}
+## Energy of sound waves {#sec-ch9-energysoundwaves}
 
 When considering the energy of sound waves, we can examine the expression we already have for transverse waves and adapt this for our longitudinal waves.
 
@@ -44,7 +44,7 @@ Our result is therefore:
 (\#eq:ch9-averageenergysound1)
 \end{equation}
 
-## Wave intensity {#sec:ch9-waveintensity}
+## Wave intensity {#sec-ch9-waveintensity}
 
 We have mentioned that with sound waves we are now considering a three-dimensional volume.  This means we need to consider the effect of this on the energy of the wave at a distance $r$ from its origin. The energy at a given distance will be spread uniformly over a spherical surface; therefore we need to consider the power per unit area of this surface. This is the **intensity** of the wave.
 
@@ -79,7 +79,7 @@ I = \frac{1}{2}\rho \omega^2 s_0^2 v = \frac{p_0^2}{2\rho v}
 
 In other words, the intensity of the sound wave travelling at constant speed $v$ through a medium of constant density $\rho$ at a point in space is proportional to the square of the amplitude of the wave, $p_0$.
 
-## Levels of intensity {#sec:ch9-intensitylevels}
+## Levels of intensity {#sec-ch9-intensitylevels}
 
 The human ear perceives sounds according to the logarithm of their intensity - not the absolute value of the intensity.^[When you encounter electronics you will find potentiometers labelled "audio taper"; this describes their use in audio applications in which the resistance is a logarithmic response to accommodate our logarithmic perception of sound. ] To represent an **intensity level** we use the term **decibel** (dB).  This intensity level, $\beta$ is represented in Equation \@ref(eq:ch9-decibel1) as follows:
 
@@ -99,7 +99,7 @@ Table: (\#tab:ch9-decibeldescription1) A description of the approximate decibel 
 |  70 |  Busy traffic |
 | 120  | Pain threshold  |
 
-## The Doppler Effect (non-relativistic)  {#sec:ch9-dopplereffect1}
+## The Doppler Effect (non-relativistic)  {#sec-ch9-dopplereffect1}
 
 You have already met the Doppler effect for light in the context of the Special Relativity course; here we will briefly revisit it in the context of non-relativistic cases.
 

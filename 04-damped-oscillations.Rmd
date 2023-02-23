@@ -1,4 +1,4 @@
-# Damped oscillations {#sec:ch4-dampedoscillations}
+# Damped oscillations {#sec-ch4-dampedoscillations}
 
 *Textbook link* 
 
@@ -10,7 +10,7 @@ knitr::include_graphics("visualisations/ch4-dampedoscill1.svg")
 
 The change in amplitude of a damped oscillation is illustrated in Figure \@ref(fig:ch4-dampedoscillation1).  Both amplitude and energy decrease by a **constant percentage** in each cycle; this is an **exponential decrease**.
 
-## The general case of damping {#sec:ch4-generalcasedamping}
+## The general case of damping {#sec-ch4-generalcasedamping}
 
 For a simply damped system, the damping force is proportional to the velocity of the oscillating mass and **opposes** the direction of motion (Equation \@ref(eq:ch4-velocitydamp1)):
 
@@ -121,7 +121,7 @@ x = A_0 \mathrm{e}^{-\frac{t}{2\tau}} \cos(\omega^\prime t + \delta)
 
 Having derived and defined a general expression for damped oscillations, we will now turn to look at different modes of damping.
 
-## Light Damping {#sec:ch4-lightdamping}
+## Light Damping {#sec-ch4-lightdamping}
 
 In a system which is lightly damped, we can make a number of assumptions:
 
@@ -137,7 +137,7 @@ A = A_0 \mathrm{e}^{-\frac{t}{2\tau}}
 
 The effect of this light damping is that if $b$ (the damping coefficient on the velocity, Equation \@ref(eq:ch4-velocitydamp1)) increases, the damped frequency $\omega^\prime$ will decrease, and the characteristic decay time, $\tau$ will also decrease.
 
-## Critical damping {#sec:ch4-criticaldamping}
+## Critical damping {#sec-ch4-criticaldamping}
 
 In a critically damped system, the **system does not oscillate**; rather, it returns to equilibrium in the shortest possible time.  This can be imagined as the damping required to **exactly stop** the vibration and no more.  The damped oscillation frequency $\omega^\prime$ then, by definition, is equal to zero ($\omega^\prime = 0$) and, by placing this condition into Equation \@ref(eq:ch4-dampfrequency1), we obtain the result for the damping coefficient, $b$ (Equation \@ref(eq:ch4-criticaldamp1))
 
@@ -151,9 +151,9 @@ b = b_c = 2m\omega_0
 (\#eq:ch4-criticaldamp1)
 \end{equation}
 
-## Overdamping {#sec:ch4-overdamping}
+## Overdamping {#sec-ch4-overdamping}
 
-An overdamped system is one which has so much damping applied that the system returns to equilibrium *even more slowly* than in the critically damped case (Section \@ref(sec:ch4-criticaldamping)).  This could be imagined as a mass on a spring which is allowed to return to equilibrium within an extremely viscous medium (honey, or treacle!) and takes a considerable time to slowly return to equilibrium. A comparison of the displacement/time curve between a critically damped system and an overdamped system is shown in Figure \@ref(fig:ch4-critvsoverdamped1).
+An overdamped system is one which has so much damping applied that the system returns to equilibrium *even more slowly* than in the critically damped case (Section \@ref(sec-ch4-criticaldamping)).  This could be imagined as a mass on a spring which is allowed to return to equilibrium within an extremely viscous medium (honey, or treacle!) and takes a considerable time to slowly return to equilibrium. A comparison of the displacement/time curve between a critically damped system and an overdamped system is shown in Figure \@ref(fig:ch4-critvsoverdamped1).
 
 ```{r echo=FALSE, ch4-critvsoverdamped1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A critically damped system returns to its equilbrium position in the shortest possible time, while an overdamped system works against an overbearing damping force slowly returning it to its equilibrium position."}
 knitr::include_graphics("visualisations/ch4-critoverdamp1.svg")
@@ -167,7 +167,7 @@ b > b_c
 \end{equation}
 
 
-## Quality factor and energy in damped SHM {#sec:ch4-qualityfactor}
+## Quality factor and energy in damped SHM {#sec-ch4-qualityfactor}
 
 Recall that we determined energies within SHM in Equations \@ref(eq:ch1-potentialfromforce4) and \@ref(eq:ch1-potentialfromforce5); remembering that $\omega^2 = \frac{k}{m}$, we can write the overall energy of the system as in Equation \@ref(eq:ch4-qualityfactorenergy1):
 
@@ -186,7 +186,7 @@ E &=& \frac{1}{2}m\omega^2 \left( A_0 \mathrm{e}^{-\frac{t}{2\tau}} \right)^2\\
 (\#eq:ch4-qualityfactorenergy2)
 \end{equation}
 
-The decay time $\tau$ can now be considered the time taken for the energy to decrease to $\frac{1}{\mathrm{e}}$ of its original value (see? There was a reason we considered the timescale $2\tau$ in Section \@ref(sec:ch4-generalcasedamping)).
+The decay time $\tau$ can now be considered the time taken for the energy to decrease to $\frac{1}{\mathrm{e}}$ of its original value (see? There was a reason we considered the timescale $2\tau$ in Section \@ref(sec-ch4-generalcasedamping)).
 
 A useful measure of the **persistence** of an oscillation is the **quality factor**, $Q$.  This is defined as shown in Equation \@ref(eq:ch4-qualityfactor1):
 

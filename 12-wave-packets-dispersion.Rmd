@@ -1,5 +1,5 @@
 
-# Wave packets and Dispersion {#sec:ch12-wavepackets}
+# Wave packets and Dispersion {#sec-ch12-wavepackets}
 
 *Textbook link: Tipler and Mosca, Section 16.3*
 
@@ -12,7 +12,7 @@ knitr::include_graphics("visualisations/ch12-wavepacketdispersion1.svg")
 ```
 
 
-## Two waves, same amplitude, different frequency (Beats) {#sec:ch12-twowavesbeats1}
+## Two waves, same amplitude, different frequency (Beats) {#sec-ch12-twowavesbeats1}
 
 Let's consider two waves with the same amplitude but differing in frequency (*i.e.* amplitude $y_0$ is common to both, each has independent frequency $\omega_1$ and $\omega_2$). For convenience we will assume that the phase difference between the two is zero at time $t=0$, and we will then consider their displacements at an arbitrary $x$ coordinate (*e.g.* $x=0$).
 
@@ -108,7 +108,7 @@ However, in a dispersive medium, the velocities are not equal, *i.e.* $v_{av} \n
 v_{g} = \frac{\Delta\omega}{\Delta k}
 \end{equation}
 
-## Dispersion {#sec:ch12-dispersion}
+## Dispersion {#sec-ch12-dispersion}
 
 As has already been mentioned, in a **dispersive** medium, $v_p$ is different for every frequency component, and the group velocity is not equal to the initial phase velocity $v_p$; *i.e.* $v_g \neq v_p$.  For any dispersive medium, we can write a relationship between $\omega$ and $k$ so that $\omega$ varies as a function of $k$; *i.e.* $\omega = \omega(k)$.  This is called the **dispersion relation** and depends on the physics of the particular wave phenomena being observed.
 
@@ -160,7 +160,7 @@ Examples of dispersion include:
 * Phonons propagating through a crystalline solid
 * Spreading of light pulses in fibre-optic cables. The dispersion limits the maximum length of cable before signal reconditioning is needed.
 
-## Water waves {#sec:ch12-waterwaves}
+## Water waves {#sec-ch12-waterwaves}
 
 The dispersion relation for water is given in Equation \@ref(eq:ch12-waterdispersion1), which includes the acceleration due to gravity ($g$) and the depth of the water ($h$):
 
@@ -204,7 +204,7 @@ v_p = \frac{\omega}{k} =\sqrt{gh} \times \sqrt{1-\frac{(kh)^2}{3}}
 
 Equation \@ref(eq:ch12-waterdispersion2)) tells us that the dispersion of the wave increases with increasing water depth relative to the wavelength.
 
-## Sound waves in a crystal (phonons) {#sec:ch12-phonondispersion}
+## Sound waves in a crystal (phonons) {#sec-ch12-phonondispersion}
 
 When we consider sound-waves in a crystal, we can consider both longitudinal sound waves as well as transverse sound waves (as we are not in a fluid, a transverse wave is now possible due to the intermolecular forces within the crystal).
 

@@ -1,8 +1,8 @@
-# Forced oscillations {#sec:ch5-forcedoscillations}
+# Forced oscillations {#sec-ch5-forcedoscillations}
 
 *Textbook link: Tipler and Mosca 14.5*
 
-In Chapter \@ref(sec:ch4-dampedoscillations) we explored the effect of damping on a system and we said that every system in the real world is, to a greater or lesser extent, a damped system in which energy is lost (dissipated) to the surroundings.  In order to maintain the amplitude of any oscillation we must supply energy to the system at the same rate as it is lost to the surroundings; for example, pushing a child on a swing.
+In Chapter \@ref(sec-ch4-dampedoscillations) we explored the effect of damping on a system and we said that every system in the real world is, to a greater or lesser extent, a damped system in which energy is lost (dissipated) to the surroundings.  In order to maintain the amplitude of any oscillation we must supply energy to the system at the same rate as it is lost to the surroundings; for example, pushing a child on a swing.
 
 The equation for forced SHM is given in Equation \@ref(eq:ch5-forcedshm1):
 
@@ -20,7 +20,7 @@ Any forced oscillation consists of two distinct regimes:
 
 The general solution of the equation for forced SHM shown in Equation \@ref(eq:ch5-forcedshm1) is a combination of these two regimes.
 
-## The Transient Solution {#sec:ch5-transientsolution}
+## The Transient Solution {#sec-ch5-transientsolution}
 
 The solution to the transient component of the forced oscillator is identical to the solution of damped SHM (*i.e.* Equation \@ref(eq:ch5-forcedshm1) with the right-hand side set to zero; identical to Equation \@ref(eq:ch4-velocitydamp3)). Its solution is shown in Equation \@ref(eq:ch5-forcedshm2):
 
@@ -34,7 +34,7 @@ The solution to the transient component of the forced oscillator is identical to
 
 This contribution to motion establishes the oscillation, but rapidly decays with time constant $\tau = \frac{m}{b}$. The term $\delta^\prime$ is simply the phase constant for this transient oscillation.
 
-## The Steady State solution {#sec:ch5-steadystatesolution}
+## The Steady State solution {#sec-ch5-steadystatesolution}
 
 Once in the steady state, the energy which is put into the system during each cycle is equal to the energy dissipated per cycle due to the damping in the system.  If there is no damping of the system, energy keeps being added to the system and the amplitude will increase indefinitely. This is **not** a steady state, and is an **unphysical result**.  The frequency then of this 'driven' oscillator in the steady state is equal to the driving frequency.
 
@@ -57,7 +57,7 @@ A = \frac{F_0}{\sqrt{m^2 \left(\omega_0^2 - \omega^2 \right)^2 + b^2 \omega^2}}
 (\#eq:ch5-forcedshm5)
 \end{equation}
 
-## Steady state behaviour - Resonance {#sec:ch5-steadystatebehaviour}
+## Steady state behaviour - Resonance {#sec-ch5-steadystatebehaviour}
 
 When we vary the frequency of the driving frequency we find that the response of the driven system varies.  If we examine the power transferred to the system as we vary the driving frequency, we see that there is a peak around the natural frequency, $\omega_0$, of the driven system (Figure \@ref(fig:ch5-resonancepowerfrequency1)). This is a phenomenon known as **resonance**.  
 
@@ -85,9 +85,9 @@ knitr::include_graphics("visualisations/ch5-forcedosc3.svg")
 
 We can see that at low driving frequencies, there is very little phase shift between the two (the force is at a minimum when the displacement is at a minimum and is in the same direction), while at very high driving frequencies we approach a maximum phase shift of $\frac{\pi}{2}$ between the two (force still at a minimum at minimum displacement, but now the force is directed in the opposite direction to the displacement; akin to SHM). The phase change is at its most rapid when the frequency of the driving force $\omega$ is similar to the natural frequency of the oscillator ($\omega_0$). At this point, the driving force are "in quadrature" (90$^\circ$ out of phase), with the force at a maximum when $x$ is changing most rapidly.
 
-## Full solution of the forced oscillator {#sec:ch5-fullsolutionforcedoscillator}
+## Full solution of the forced oscillator {#sec-ch5-fullsolutionforcedoscillator}
 
-As with the damped oscillator explored in Chapter \@ref(sec:ch4-dampedoscillations), the full solution of the forced oscillator is found through the combination of the "transient state" (a free, damped system) and the "steady state" (fully forced oscillations).  This is illustrated in Equation \@ref(eq:ch5-forcedoscillfullsoln1):
+As with the damped oscillator explored in Chapter \@ref(sec-ch4-dampedoscillations), the full solution of the forced oscillator is found through the combination of the "transient state" (a free, damped system) and the "steady state" (fully forced oscillations).  This is illustrated in Equation \@ref(eq:ch5-forcedoscillfullsoln1):
 
 \begin{equation}
 \begin{array}{lrcccc}
@@ -212,7 +212,7 @@ knitr::include_graphics("visualisations/ch5-forcedosc5.svg")
 ```
 
 
-## Energy in driven oscillators {#sec:ch5-energydrivenoscillators}
+## Energy in driven oscillators {#sec-ch5-energydrivenoscillators}
 
 In a driven oscillator, energy is continually added to the system. When it reaches its steady state, the rate of loss of energy in each cycle due to damping of the system is equal to the work done by the driving force.
 
@@ -235,7 +235,7 @@ v = \dfrac{\mathrm{d}x}{\mathrm{d}t} &=& -\omega A \sin (\omega t - \delta)
 (\#eq:ch5-oscillatorenergy2)
 \end{equation}
 
-### Energy input for driven oscillators {#sec:ch5-energyinputdrivenosc}
+### Energy input for driven oscillators {#sec-ch5-energyinputdrivenosc}
 
 To find the energy which is put into the system over one cycle, we therefore need to find the integral of the force acting over one cycle of the oscillation, from $t = 0$ to $t = T$ (remember that $T$ is the period of the oscillation). We do this integration by substituting our variable $\mathrm{d}x$ for $v\mathrm{d}t$ (as defined in Equation \@ref(eq:ch5-oscillatorenergy2)):
 
@@ -269,9 +269,9 @@ E_{\mathrm{in}} = \pi b \omega A^2
 (\#eq:ch5-oscillatorenergy5)
 \end{equation}
 
-### Energy lost in driving oscillators {#sec:ch5-energylostdrivenosc}
+### Energy lost in driving oscillators {#sec-ch5-energylostdrivenosc}
 
-To now determine the amount of energy, we follow a similar process as followed in Section \@ref(sec:ch5-energyinputdrivenosc). This time however we need to determine the work done by the oscillator on the damping force during one cycle.  This integral is set up as follows:
+To now determine the amount of energy, we follow a similar process as followed in Section \@ref(sec-ch5-energyinputdrivenosc). This time however we need to determine the work done by the oscillator on the damping force during one cycle.  This integral is set up as follows:
 
 \begin{equation}
 E_{\mathrm{lost}} = \int_0^T F v \mathrm{d}t
@@ -296,7 +296,7 @@ A similar result may be obtained for electrical systems in resonance.
 
 **Note**: When $b = 0$ the above result appears to fail (no energy is lost, but none is put in??); in fact, in an undamped system there can be no steady state (as no energy is lost!), so the amplitude of vibration $A \rightarrow \infty$, so this result does not apply.
 
-## Impedance {#sec:ch5-impedance}
+## Impedance {#sec-ch5-impedance}
 
 As you learn about fields, you will examine electrical circuits and see that circuits containing capacitors and inductors are analogous to mechanical oscillators, with the electrical charge oscillating within the circuit. These properties of circuits have many important applications and you will find that much of the analysis we have done here can be applied to those electrical systems.
 

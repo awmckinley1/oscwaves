@@ -28,7 +28,7 @@ The HTML notes allow for embedding of rich content (videos, animations, etc.), a
 
 These notes are a "live document", and as such they can (and will) be updated should any erroneous explanations be found or additional explanations be needed.  For this reason, please do email me if you have any questions or if anything is not clear.
 
-The most recent version can always be found at the link at the top of this section, and any changes are reflected in the change-log (\@ref(sec:changelog))
+The most recent version can always be found at the link at the top of this section, and any changes are reflected in the change-log (\@ref(sec-changelog))
 
 Please note that as this is a "live document", a downloaded version can become obsolete.  Please refer back regularly and refer to the changelog for any updates.
 
@@ -42,7 +42,7 @@ As much as we try, sometimes errors creep in. At best, it is little more than a 
 
 This iteration of the course has been written by Andrew McKinley from 2021. This has been based extensively on previous course notes by Ben Maughan, Simon Hanna and Massimo Antognozzi.
 
-## Changelog {.unnumbered #sec:changelog}
+## Changelog {.unnumbered #sec-changelog}
 
 2023-02-22 Fixing flagged errors (TL,NT/FM,KS/PM,HG,TK,JP,CK)
 
@@ -80,14 +80,14 @@ This iteration of the course has been written by Andrew McKinley from 2021. This
 <!-- * Figures to be included (chapter 1) -->
 <!-- * ~~Fix equation links in chapter 1 (not rendering correctly)~~ -->
 <!--   * FIXED: Underscores can't be used in labels. -->
-<!-- * Address KE/PE in wave travelling on spring (Section \@ref(sec:ch7-keofstringsegment)) -->
+<!-- * Address KE/PE in wave travelling on spring (Section \@ref(sec-ch7-keofstringsegment)) -->
 <!-- * Check formatting of bullet points including indents -->
-<!-- * Show derivation of diffraction through a wide slit (Section \@ref(sec:ch13-singlewideslit)) -->
-<!-- * Complete the multiple slit diffraction patterns (Section \@ref(sec:ch13-diffmultipleslits)) -->
-<!-- * Resolve the resolution limit derivations (Section \@ref(sec:ch13-resolutionlimit)) -->
-<!-- * Complete discussion of Fresnel equations (Section \@ref(sec:ch14-reflectionrefraction)) -->
-<!-- * Animation of nodes in longitudinal waves (Section \@ref(sec:ch10-pipesandwindinstruments)) -->
-<!-- * Power spectra of musical instruments (Section \@ref(sec:ch11-harmonicwavemakeup1)) -->
+<!-- * Show derivation of diffraction through a wide slit (Section \@ref(sec-ch13-singlewideslit)) -->
+<!-- * Complete the multiple slit diffraction patterns (Section \@ref(sec-ch13-diffmultipleslits)) -->
+<!-- * Resolve the resolution limit derivations (Section \@ref(sec-ch13-resolutionlimit)) -->
+<!-- * Complete discussion of Fresnel equations (Section \@ref(sec-ch14-reflectionrefraction)) -->
+<!-- * Animation of nodes in longitudinal waves (Section \@ref(sec-ch10-pipesandwindinstruments)) -->
+<!-- * Power spectra of musical instruments (Section \@ref(sec-ch11-harmonicwavemakeup1)) -->
 
 ## Report an error {-}
 

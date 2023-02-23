@@ -1,4 +1,4 @@
-# Complex Numbers {#sec:ch3-complexnumbers}
+# Complex Numbers {#sec-ch3-complexnumbers}
 
 *Textbook link: Jordan and Smith, Ch. 6*
 
@@ -6,7 +6,7 @@ As we move on with our descriptions of oscillations and, in particular, wave beh
 
 While the idea of a "complex number" sounds ... *complex*, the use of these numbers becomes straightforward as we apply our familiar mathematical techniques. In the context of mathematics, the term **complex** simply means 'more than one part'; therefore, a **complex number** is a number with more than one part.  It is this two-component nature of a complex number which makes them so useful in many aspects of Physics, and particularly when describing wave behaviour.
 
-## Overview of complex numbers {#sec:ch3-complexoverview}
+## Overview of complex numbers {#sec-ch3-complexoverview}
 
 The general form of a complex number $z$ is shown in Equation \@ref(eq:ch3-complexnumber1):
 
@@ -43,7 +43,7 @@ In general, for any complex number of the form $z = a \pm \mathrm{i}b$, there ex
 
 The complex conjugate is particularly useful when finding fractions of complex numbers as it is used to make the denominator of the fraction wholly "real".
 
-## Useful results for complex numbers {#sec:ch3-complexusefulresults}
+## Useful results for complex numbers {#sec-ch3-complexusefulresults}
 
 There are a number of useful results worth remembering when handling complex numbers, and these are listed here.
 
@@ -109,7 +109,7 @@ b = \mathrm{Im}(z) &=& \dfrac{1}{2}(z - z^* )
 \end{equation}
 
 
-## The Argand Diagram {#sec:ch3-arganddiagram}
+## The Argand Diagram {#sec-ch3-arganddiagram}
 
 Since a complex number consists of two independent components, we have another way to describe these numbers. Complex numbers can be plotted on a graph, with the '**real**' component plotted on one axis (the $x$-axis) and the '**imaginary**' component plotted on the other axis (the $y$-axis). This is the basis of the Argand diagram (Figure \@ref(fig:ch3-argand1)).
 
@@ -139,7 +139,7 @@ The Argand diagram is a representation of the **complex plane**, through which i
 knitr::include_graphics("visualisations/ch3-complexnumbers2.svg")
 ```
 
-## Polar representation of complex numbers {#sec:ch3-polarcomplexnumbers}
+## Polar representation of complex numbers {#sec-ch3-polarcomplexnumbers}
 
 As well as the **Cartesian interpretation** of the Argand diagram, we can also consider a **polar representation** of a complex number; where instead of "real" and "imaginary" components acting as $(x,y)$ coordinates, we define the position of the complex number on the complex plane as a radius and an angle, $\theta$.  We have already illustrated this in Figure \@ref(fig:ch3-argand1)
 
@@ -165,7 +165,7 @@ z = r \left( \cos \theta + \mathrm{i} \sin \theta \right)
 (\#eq:ch3-complexnumber7)
 \end{equation}
 
-## Exponential representation of complex numbers {#sec:ch3-exponentialrepresentationcomplex}
+## Exponential representation of complex numbers {#sec-ch3-exponentialrepresentationcomplex}
 
 The exponential representation of a complex number takes the general form of $z = Ae^{\mathrm{i}\theta}$. This is based on series expansions of $\cos \theta$ and $\mathrm{i}\sin \theta$, which shows *De Moivre's theorem*. Key results from this are shown in Equation \@ref(eq:ch3-demoivre1):
 
@@ -200,7 +200,7 @@ Combining these with Equation \@ref(eq:ch3-complexnumber5) we also note the foll
 \end{equation}
 
 
-## Complex representation of oscillations {#sec:ch3-complexreposcillation}
+## Complex representation of oscillations {#sec-ch3-complexreposcillation}
 
 Having quickly readdressed our understanding of complex numbers, we now turn our attention to the application of these in the context of oscillations and waves.
 

@@ -1,8 +1,8 @@
-# The Wave-Particle duality {#sec:ch17-waveparticle}
+# The Wave-Particle duality {#sec-ch17-waveparticle}
 
 *Textbook link: Tipler and Mosca, Chapter 34*
 
-So far, we have spoken about light as an electromagnetic wave; indeed it was demonstrated to have wave behaviour by Thomas Young in 1801 with his double-slit experiment. We covered the background to this experiment in Section \@ref(sec:ch13-twoslitinterference) and demonstrated how this shows the wave nature of light using our knowledge of superposition.  Prior to Young's demonstration however there had been much debate about whether light was a wave or a particle.
+So far, we have spoken about light as an electromagnetic wave; indeed it was demonstrated to have wave behaviour by Thomas Young in 1801 with his double-slit experiment. We covered the background to this experiment in Section \@ref(sec-ch13-twoslitinterference) and demonstrated how this shows the wave nature of light using our knowledge of superposition.  Prior to Young's demonstration however there had been much debate about whether light was a wave or a particle.
 
 In 1905, Einstein reintroduced the idea that light might behave as a particle, suggesting that light is quantised into photons of discrete energies; this offered an explanation for the photoelectric effect (the emission of electrons from a metal surface by light of certain frequencies or higher).
 
@@ -17,7 +17,7 @@ In this relationship, $h$ is Planck's constant ($h = 6.626 \times 10^{-34}$ J s)
 
 As we have two experiments, each of which demonstrates that light behaves as either a wave or as a particle depending on the circumstances, but neither wave nor particle behaviour adequately describes the behaviour of light in all situations.  Generally however, we can say that the interaction between light and matter can be described by its particle properties, while the propagation of light can be described by its wave properties.
 
-## The de Broglie hypothesis {#sec:ch17-debrogliehyp1}
+## The de Broglie hypothesis {#sec-ch17-debrogliehyp1}
 
 In 1924, Louis de Broglie suggested that if something which was previously understood to be a wave (light) can have particle properties, could something already understood to be a particle (*i.e.* matter) also have wave properties? He therefore postulated that particles might posses a wavelength related to its linear momentum $p$, described in Equation \@ref(eq:ch17-debroglie1):
 
@@ -60,7 +60,7 @@ Today, the wave-nature of particles is well established, with electron and neutr
 
 * If a particle is a wave, what is the nature of the wave, and what is the wave equation which governs it?
 
-## The wavefunction and its interpretation{#sec:ch17-wavefunction1}
+## The wavefunction and its interpretation{#sec-ch17-wavefunction1}
 
 *Tipler and Mosca 34.5*
 
@@ -72,7 +72,7 @@ If a particle does behave like a wave, what does the wavefunction, $\psi(x)$, lo
 * For a sound wave, it is either the lateral displacement of the molecules, or the pressure at a given point;
 * For an electromagnetic wave (light), it is either the electric or the magnetic field vector.
 
-Recall that, for any wave, its power is proportional to the square of the amplitude, $\textsf{power} \propto \textsf{amplitude}^2$ (Section \@ref(sec:ch7-transportenergypower)). In the context of light, we additionally said that the power was proportional to the intensity (Section \@ref(sec:ch13-twoslitinterference)) and that the intensity was proportional to the number of photons.  It therefore follows that the number of photons is proportional to the square of the amplitude of the wavefunction; *i.e.*:
+Recall that, for any wave, its power is proportional to the square of the amplitude, $\textsf{power} \propto \textsf{amplitude}^2$ (Section \@ref(sec-ch7-transportenergypower)). In the context of light, we additionally said that the power was proportional to the intensity (Section \@ref(sec-ch13-twoslitinterference)) and that the intensity was proportional to the number of photons.  It therefore follows that the number of photons is proportional to the square of the amplitude of the wavefunction; *i.e.*:
 
 \begin{equation}
 N \propto \psi^2 (x)
@@ -94,11 +94,11 @@ We can therefore interpret the square of a particle's wavefunction as a measure 
 
 The wavefunction is also a solution of the **Schr&ouml;dinger wave equation**; a fundamental equation describing the propagation and evolution of the wavefunction of a particle.  It effectively tells us how the probability of finding a particle at any point in space changes with time; we will come back to this concept presently.
 
-## Heisenberg's Uncertainty Principle {#sec:ch17-heisenberg1}
+## Heisenberg's Uncertainty Principle {#sec-ch17-heisenberg1}
 
 *Tipler and Mosca 34.6*
 
-The central idea within the wave-particle duality is that if a particle's behaviour can be fully described using a wave representation, it will be governed by all of the physics we already know for waves.  In particular, the wavefunction will be subject to the bandwidth theorem (Section \@ref(sec:ch11-bandwidththeorem)), reproduced in Equation \@ref(eq:ch17-heisenberg1):
+The central idea within the wave-particle duality is that if a particle's behaviour can be fully described using a wave representation, it will be governed by all of the physics we already know for waves.  In particular, the wavefunction will be subject to the bandwidth theorem (Section \@ref(sec-ch11-bandwidththeorem)), reproduced in Equation \@ref(eq:ch17-heisenberg1):
 
 \begin{equation}
  \Delta x \Delta k \approx 2\pi
@@ -161,7 +161,7 @@ Therefore, via substitution:
 \end{equation}
 
 
-## The "Particle in a box" problem {#sec:ch17-particlebox}
+## The "Particle in a box" problem {#sec-ch17-particlebox}
 
 The "Particle in a box" model is a useful model for considering how a particle behaves when it is confined within spatial limits; for example an electron trapped within an atom, a proton confined within a nucleus, and so on.  There are numerous discussions of the model, all of varying complexity, however they all rely on the same basic assumptions:
 
@@ -218,7 +218,7 @@ In other words, Equation \@ref(eq:ch17-partbox1) shows how only energy levels $E
 \psi = c_1\psi_1 + c_2\psi_2 + c_3\psi3 + \dots
 \end{equation}
 
-**The position of the particle** cannot be exactly determined in a quantum mechanical system. While a classical particle could be anywhere within the box, the quantum particle's position is given when we determine its probability of existence *via* $\psi^2(x)$ (see Section \@ref(sec:ch17-wavefunction1)).  When we plot the square of the wavefunction we see that a quantum mechanical particle is more likely be be in certain regions in the box, and there will be nodes in the box where the particle will not reside (Figure \@ref(fig:ch17-partbox1)).
+**The position of the particle** cannot be exactly determined in a quantum mechanical system. While a classical particle could be anywhere within the box, the quantum particle's position is given when we determine its probability of existence *via* $\psi^2(x)$ (see Section \@ref(sec-ch17-wavefunction1)).  When we plot the square of the wavefunction we see that a quantum mechanical particle is more likely be be in certain regions in the box, and there will be nodes in the box where the particle will not reside (Figure \@ref(fig:ch17-partbox1)).
 
 ```{r echo=FALSE, ch17-partbox1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The relative energies of the first three quantum numbers $n = 1, 2, 3$ for the particle in a box. The wave function of the particle ($\\psi(x)$; dotted blue line) is shown along with the probability of finding the particle at each energy state ($\\psi^2(x)$; solid red line). "}
 knitr::include_graphics("visualisations/LaTeX/ch18-particleinbox123.svg")

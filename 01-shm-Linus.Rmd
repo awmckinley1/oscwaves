@@ -1,4 +1,4 @@
-# Simple Harmonic Motion {#sec:shm}
+# Simple Harmonic Motion {#sec-shm}
 
 Simple harmonic motion (SHM) is a simple and common type of oscillatory motion. It is a model which is widely used in modelling systems due to its simplicity.  
 
@@ -9,7 +9,7 @@ In general, an object will move under SHM where its acceleration is:
 
 The force causing this acceleration is often termed a *restoring force* as it acts to push the object back to its starting point. 
 
-## A simple example of SHM {#sec:ch1-simpleshmexample}
+## A simple example of SHM {#sec-ch1-simpleshmexample}
 
 Consider a block on a spring (Figure \@ref(fig:ch1-blockonspring1))
 
@@ -56,7 +56,7 @@ The general form of this expression for any system can be considered as shown in
 * **Period**: The time $T$ for one complete oscilation back and forth (units s)
 * **Frequency**: The reciprocal of the period; $f = \frac{1}{T}$, units s^-1^ or Hz.
 
-## Positioning in SHM {#sec:shm-position}
+## Positioning in SHM {#sec-shm-position}
 
 SHM can be described by a general equation of motion, defining the position ($x$) of the oscillating mass using a cosine function (Equation \@ref(eq:shm-general-positionx1)):
 
@@ -78,7 +78,7 @@ For any single oscillator, the time origin can always be chosen so that $\delta 
 knitr::include_graphics("visualisations/ch1-shmpos.svg")
 ```
 
-## Velocity in SHM {#sec:shm-velocity}
+## Velocity in SHM {#sec-shm-velocity}
 
 To find the velocity of the oscillating mass, we can simply find the first derivative of its position with respect to time (Equation \@ref(eq:shm-general-velocityx1)):
 
@@ -92,7 +92,7 @@ v & = & \frac{\textrm{d}x}{\textrm{d}t}\\
 
 A quick inspection of this shows that the velocity $v$ is maximised when $x$ is at a minimum; *i.e.* as the object passes through its equilibirum position.
 
-## Acceleration in SHM  {#sec:shm-acceleration}
+## Acceleration in SHM  {#sec-shm-acceleration}
 
 Again, to find the acceleration, we find the second derivative of its position with respect to time (Equation \@ref(eq:shm-general-accelerationx1)):
 
@@ -121,7 +121,7 @@ If we now compare this with Equation \@ref(eq:shm-massonspring1) we can see that
 (\#eq:shm-general-omega1)
 \end{equation}
 
-## Comparing displacement, velocity and acceleration {#sec:shm-comparing-xva}
+## Comparing displacement, velocity and acceleration {#sec-shm-comparing-xva}
 
 When we now compare the displacement, velocity and acceleration we make a number of observations.  Firstly, they are all sinusoidal functions; variously sine and cosine functions. However, when we overlay these we have a better indication of how they interrelate (Figure \@ref(fig:shm-general-comparison-xva))
 
@@ -150,9 +150,9 @@ Table: (\#tab:ch1-xva-comparison1) Relating the displacement, velocity and accel
 | $t = \frac{3T}{4}$ | $x_{\frac{3T}{4}} = 0$ | $v_{\frac{3T}{4}} = v_\textrm{max}$ | $a_{\frac{3T}{4}} = 0$ |
 | $t = T$ | $x_T = x_0 = A$ | $v_T = v_0 = 0$ | $a_T = a_0 = -a_{\textrm{max}}$ |
 
-## Initial conditions {#sec:shm-initialconditions}
+## Initial conditions {#sec-shm-initialconditions}
 
-We mentioned in Section \@ref(sec:shm-comparing-xva) that the displacement, velocity and acceleration expressions were based on sinusoial functions, and each function had a scaling factor $A$ (the **amplitude** of the oscillation) and a **phase** component $\delta$. In most problems, we wish to determine the value of these constants.  In order to determine these, we establish the initial conditions of the oscillation.
+We mentioned in Section \@ref(sec-shm-comparing-xva) that the displacement, velocity and acceleration expressions were based on sinusoial functions, and each function had a scaling factor $A$ (the **amplitude** of the oscillation) and a **phase** component $\delta$. In most problems, we wish to determine the value of these constants.  In order to determine these, we establish the initial conditions of the oscillation.
 
 In Figure \@ref(fig:shm-general-comparison-xva) we defined our displacement at $+A$ which set up the rest of the problem. However, we will not always be so fortunate.  For a general case, we then need to be more discerning.
 
@@ -175,9 +175,9 @@ We now treat these as simultaneous equations to find $\delta$ and $A$ (Equation 
 (\#eq:ch1-shm-initconditions2)
 \end{equation}
 
-## Frequency and angular frequency {#sec:shm-freq-angularfreq}
+## Frequency and angular frequency {#sec-shm-freq-angularfreq}
 
-In Section \@ref(sec:shm-comparing-xva) we stated that the nature of the oscillation meant that it repeats after every oscillation; mathematically $x(t) = x(t + T)$; the position $x$ at time $t$ is equal to the position at time $(t+T)$. 
+In Section \@ref(sec-shm-comparing-xva) we stated that the nature of the oscillation meant that it repeats after every oscillation; mathematically $x(t) = x(t + T)$; the position $x$ at time $t$ is equal to the position at time $(t+T)$. 
 
 When we apply this to the velocity, we obtain the following expression:
 
@@ -200,7 +200,7 @@ This gives us a way to think about $\omega$; its connection to circular motion (
 
 Additionally, since the frequency of the oscillation $f$ is the reciprocal of the period of oscillation ($f = \frac{1}{T}$), the angular frequency can be rewritten as $\omega = 2\pi f$, and $f = \frac{\omega}{2\pi}$.
 
-For the spring system we discussed in Section \@ref(sec:ch1-simpleshmexample), we stated that the angular frequency $\omega = \sqrt{\frac{k}{m}}$. Therefore we can obtain an expression for the frequency of our oscillator (Equation \@ref(eq:ch1-freq-angfreq1)):
+For the spring system we discussed in Section \@ref(sec-ch1-simpleshmexample), we stated that the angular frequency $\omega = \sqrt{\frac{k}{m}}$. Therefore we can obtain an expression for the frequency of our oscillator (Equation \@ref(eq:ch1-freq-angfreq1)):
 
 \begin{equation}
 f = \frac{1}{T} = \frac{1}{2\pi}\sqrt{\frac{k}{m}}
@@ -213,7 +213,7 @@ Inspection of this equation reveals the behaviour of our oscillator:
 * If we use an oscillator with larger mass (larger $m$), we would expect the frequency ($f$) to decrease.
 * The frequency (and therefore period) of simple harmonic oscillation is independent of amplitude.^[A caveat to this is for large amplitudes where other factors start to affect the behaviour. But this is then no longer *simple* harmonic motion!]
 
-## SHM and circular motion {#sec:ch1-shmcircmotion1}
+## SHM and circular motion {#sec-ch1-shmcircmotion1}
 
 We mentioned an "angular frequency" for SHM; this would appear to suggest behaviour akin to circular motion. It is therefore worth exploring our descriptions of circular motion.
 
@@ -241,7 +241,7 @@ We can also consider how its position maps onto the $y$-axis:
   
 This illustrates that circular motion is a combination of two perpendicular SHM oscillations of the same frequency and amplitude, but a relative phase of $\frac{\pi}{2}$.
 
-## Energy in SHM {#sec:ch1-shm-energy1}
+## Energy in SHM {#sec-ch1-shm-energy1}
 
 As with all isolated systems, the total energy $E$ of the simple harmonic oscillator is constant, however the contributions from potential energy ($U$) and KE vary with time.
 
